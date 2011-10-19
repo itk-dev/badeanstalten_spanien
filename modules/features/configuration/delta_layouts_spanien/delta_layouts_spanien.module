@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Delta Layouts: Spanien feature.
+ */
+
+include_once('delta_layouts_spanien.features.inc');
