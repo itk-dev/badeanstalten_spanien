@@ -1,0 +1,126 @@
+/* !---- Base typography ----- */
+body {
+  font-family: @font-std-fam;
+  font-weight: @font-std-wgt;
+  background: @color-background;
+  color: @color-text-primary;
+  line-height: 1.4em;
+  font-size: @font-size-base;
+}
+
+p {
+  margin-bottom: @parapgraph-space;
+}
+
+// Site name
+.site-name a {
+  font-family: @font-lgt-fam;
+  font-weight: @font-lgt-wgt;
+  font-size: @font-size-h2;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+// Page title
+.title {
+  font-family: @font-hvy-fam;
+  font-weight: @font-hvy-wgt;
+  text-transform: uppercase;
+  font-size: @font-size-title;
+  line-height: 1.2em;
+}
+
+// Block titles
+.block-title, .field-label {
+  font-size: @font-size-h2;
+  font-family: @font-lgt-fam;
+  font-weight: @font-lgt-wgt;
+  text-transform: uppercase;
+  line-height: 1.2em;
+  font-weight: normal;
+}
+
+// Content headings H2
+.text-content h2 {
+  font-family: @font-hvy-fam;
+  font-weight: @font-hvy-fam;
+  font-size: @font-size-h3;
+}
+
+// Content headings H3
+.text-content h3 {
+  font-family: @font-hvy-fam;
+  font-weight: @font-hvy-fam;
+  font-size: @font-size-h3;
+}
+
+// Formatting text content
+.text-content {
+
+  ul {
+    margin-left: 20px;
+    list-style: square;
+    margin-bottom: @parapgraph-space;
+  }
+  
+  ol {
+    margin-left: 20px;
+    list-style: decimal;
+    margin-bottom: @parapgraph-space;
+  }
+} 
+
+blockquote {
+  padding-left: 20px;
+}
+
+// Link styles
+a {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    margin-bottom: -1px;
+    border-bottom: 1px dotted;
+  }
+  &:link {
+    color: blue;
+    border-color: blue;
+  }
+  &:visited {
+    color: blue;
+    border-color: blue;
+  }
+  &:hover {
+    border: none;
+    margin-bottom: 0;
+  }
+}
+// Removed underlining on main menu
+.region-menu a {
+  border-bottom: none;
+  margin-bottom: 0;
+}  
+
+// Menus
+.zone-user {
+  a:link,
+  a:visited {
+    color: @color-text-primary;
+    margin-right: 16px;
+    border-color: @color-text-primary;
+  }
+}
+
+.region-menu {
+  a {
+    text-transform: uppercase;
+  }
+}
+
+// Forms
+input[type=submit],
+button {
+  font-family: @font-hvy-fam;
+  font-weight: @font-hvy-wgt;
+  text-transform: uppercase;
+}
