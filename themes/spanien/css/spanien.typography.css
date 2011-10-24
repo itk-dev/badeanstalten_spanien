@@ -1,0 +1,92 @@
+/* !----- / Variables / ----- */
+/* !---- Base typography ----- */
+body {
+  font-family: 'arial', sans-serif;
+  font-weight: 400;
+  background: #ffffff;
+  color: #272828;
+  line-height: 1.4em;
+  font-size: 14px;
+}
+p {
+  margin-bottom: 1em;
+}
+.site-name a {
+  font-family: 'arial', sans-serif;
+  font-weight: 300;
+  font-size: 21px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.title {
+  font-family: 'arial', 'myriad-pro', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 28px;
+  line-height: 1.2em;
+}
+.block-title, .field-label {
+  font-size: 21px;
+  font-family: 'arial', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 1.2em;
+  font-weight: normal;
+}
+.text-content h2 {
+  font-family: 'arial', 'myriad-pro', sans-serif;
+  font-weight: 'arial', 'myriad-pro', sans-serif;
+  font-size: 14px;
+}
+.text-content h3 {
+  font-family: 'arial', 'myriad-pro', sans-serif;
+  font-weight: 'arial', 'myriad-pro', sans-serif;
+  font-size: 14px;
+}
+.text-content ul {
+  margin-left: 20px;
+  list-style: square;
+  margin-bottom: 1em;
+}
+.text-content ol {
+  margin-left: 20px;
+  list-style: decimal;
+  margin-bottom: 1em;
+}
+blockquote {
+  padding-left: 20px;
+}
+a:link, a:visited {
+  text-decoration: none;
+  margin-bottom: -1px;
+  border-bottom: 1px dotted;
+}
+a:link {
+  color: blue;
+  border-color: blue;
+}
+a:visited {
+  color: blue;
+  border-color: blue;
+}
+a:hover {
+  border: none;
+  margin-bottom: 0;
+}
+.region-menu a {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.zone-user a:link, .zone-user a:visited {
+  color: #272828;
+  margin-right: 16px;
+  border-color: #272828;
+}
+.region-menu a {
+  text-transform: uppercase;
+}
+input[type=submit], button {
+  font-family: 'arial', 'myriad-pro', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
