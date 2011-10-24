@@ -3,7 +3,7 @@
 .alpha{margin-left:0;}
 .omega{margin-right:0;}
 .page{margin:0;padding:0;position:relative;}
-.section{max-width:1200px;margin:0 auto;padding:0 2%;}
+.section{max-width:800px;margin:0 auto;padding:0 2%;}
 .container-12{width:100%;}.container-12 .grid-1{width:6.333%;}
 .container-12 .grid-2{width:14.667%;}
 .container-12 .grid-3{width:23.0%;}

@@ -52,7 +52,7 @@ zones[postscript] = 'Postscript'
 
 ; ----- / OPTIONAL CSS / -----
 
-css[spanien.global.css][name] = 'Your custom global styles'
+css[spanien.global.css][name] = 'Global Styles for Spanien'
 css[spanien.global.css][description] = 'This file holds all the globally active custom CSS of your theme.'
 css[spanien.global.css][options][weight] = '10'
 
