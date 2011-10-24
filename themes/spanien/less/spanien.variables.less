@@ -1,13 +1,11 @@
 // Define {less} variables
 @color-background : #fff;
-@color-text-primary : #272828;
+@color-text-primary : #5d5d5d;
 
 // Brand colors
 @color-gray-light : #f1f1f1;
 @color-gray-med : #ddd;
 @color-gray-dark : #999;
-
-// Link & Menu colors
 
 // Typography
 @font-std-fam : 'arial', sans-serif;
@@ -24,3 +22,11 @@
 @font-size-small : @font-size-base * 0.9;
 
 @parapgraph-space : 1em;
+
+// Define {less} mixins
+
+.text-shadow(@param) {
+  -webkit-text-shadow: @param;
+  -moz-text-shadow: @param;
+  text-shadow: @param;
+}

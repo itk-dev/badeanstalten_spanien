@@ -1,0 +1,43 @@
+/* !---- Body ----- */
+
+.section-header {
+  background-color: #f3f3f3;
+  min-height: 236px;
+}
+
+.front .section-header {
+  min-height: 389px;
+}
+
+/* !---- Zone branding ----- */
+
+.zone-branding {
+  min-height: 115px;
+  position: relative;
+  .site-logo {
+    left: 0;
+    position: absolute;
+    top: 10px;
+  }
+}
+
+/* !---- Main menu ----- */
+
+.region-menu ul {
+  background-color: #404040;
+  overflow: hidden;
+  li {
+    float: left;
+    margin: 0;
+    a {
+      display: block;
+      padding: 10px 35px;  
+      &:hover {
+        background-color: #333;
+      }
+    }
+    &.active a {
+      background-color: #059ebb;
+    }
+  }
+}

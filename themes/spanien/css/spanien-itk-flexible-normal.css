@@ -1,0 +1,7 @@
+.section.section-header {
+  max-width: 100%;
+}
+.section .zone {
+  margin: 0 auto;
+  max-width: 1200px;
+}

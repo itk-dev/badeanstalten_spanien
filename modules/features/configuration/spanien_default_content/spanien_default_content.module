@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Spanien default content feature.
+ */
+
+include_once('spanien_default_content.features.inc');

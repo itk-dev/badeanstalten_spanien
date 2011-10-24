@@ -79,30 +79,24 @@ blockquote {
 
 // Link styles
 a {
-  &:link,
-  &:visited {
-    text-decoration: none;
-    margin-bottom: -1px;
-    border-bottom: 1px dotted;
-  }
   &:link {
-    color: blue;
-    border-color: blue;
+    color: #059db9;
+    text-decoration: underline;
   }
   &:visited {
-    color: blue;
-    border-color: blue;
+    color: #047488;
+    text-decoration: none;
   }
   &:hover {
-    border: none;
-    margin-bottom: 0;
+    color: #035361;
+    text-decoration: none;
   }
+  &:active {
+    color: #000;
+    text-decoration: none;
+  }  
 }
-// Removed underlining on main menu
-.region-menu a {
-  border-bottom: none;
-  margin-bottom: 0;
-}  
+
 
 // Menus
 .zone-user {
@@ -116,8 +110,17 @@ a {
 
 .region-menu {
   a {
-    text-transform: uppercase;
-  }
+    font-family: 'CartoGothicStdBook', 'arial', sans-serif;
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      color: #fff;
+      font-size: 1.15em;
+      text-decoration: none;
+      .text-shadow(rgba(0, 0, 0, .35) 1px 1px 1px);
+    }
+  }  
 }
 
 // Forms

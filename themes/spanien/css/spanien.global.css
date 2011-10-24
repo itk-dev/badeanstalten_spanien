@@ -6,7 +6,7 @@ body {
   font-family: 'arial', sans-serif;
   font-weight: 400;
   background: #ffffff;
-  color: #272828;
+  color: #5d5d5d;
   line-height: 1.4em;
   font-size: 14px;
 }
@@ -58,37 +58,84 @@ p {
 blockquote {
   padding-left: 20px;
 }
-a:link, a:visited {
-  text-decoration: none;
-  margin-bottom: -1px;
-  border-bottom: 1px dotted;
-}
 a:link {
-  color: blue;
-  border-color: blue;
+  color: #059db9;
+  text-decoration: underline;
 }
 a:visited {
-  color: blue;
-  border-color: blue;
+  color: #047488;
+  text-decoration: none;
 }
 a:hover {
-  border: none;
-  margin-bottom: 0;
+  color: #035361;
+  text-decoration: none;
 }
-.region-menu a {
-  border-bottom: none;
-  margin-bottom: 0;
+a:active {
+  color: #000;
+  text-decoration: none;
 }
 .zone-user a:link, .zone-user a:visited {
-  color: #272828;
+  color: #5d5d5d;
   margin-right: 16px;
-  border-color: #272828;
+  border-color: #5d5d5d;
 }
 .region-menu a {
-  text-transform: uppercase;
+  font-family: 'CartoGothicStdBook', 'arial', sans-serif;
+}
+.region-menu a:link,
+.region-menu a:visited,
+.region-menu a:hover,
+.region-menu a:active {
+  color: #fff;
+  font-size: 1.15em;
+  text-decoration: none;
+  -webkit-text-shadow: rgba(0, 0, 0, 0.35) 1px 1px 1px;
+  -moz-text-shadow: rgba(0, 0, 0, 0.35) 1px 1px 1px;
+  text-shadow: rgba(0, 0, 0, 0.35) 1px 1px 1px;
+  -webkit-text-shadow: rgba(0, 0, 0, 0.35) 1px 1px 1px;
+  -moz-text-shadow: rgba(0, 0, 0, 0.35) 1px 1px 1px;
+  text-shadow: rgba(0, 0, 0, 0.35) 1px 1px 1px;
 }
 input[type=submit], button {
   font-family: 'arial', 'myriad-pro', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
+}
+/* !----- / Layout ----- */
+/* !---- Body ----- */
+.section-header {
+  background-color: #f3f3f3;
+  min-height: 236px;
+}
+.front .section-header {
+  min-height: 389px;
+}
+/* !---- Zone branding ----- */
+.zone-branding {
+  min-height: 115px;
+  position: relative;
+}
+.zone-branding .site-logo {
+  left: 0;
+  position: absolute;
+  top: 10px;
+}
+/* !---- Main menu ----- */
+.region-menu ul {
+  background-color: #404040;
+  overflow: hidden;
+}
+.region-menu ul li {
+  float: left;
+  margin: 0;
+}
+.region-menu ul li a {
+  display: block;
+  padding: 10px 35px;
+}
+.region-menu ul li a:hover {
+  background-color: #333;
+}
+.region-menu ul li.active a {
+  background-color: #059ebb;
 }
