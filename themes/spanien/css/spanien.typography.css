@@ -1,5 +1,8 @@
 /* !----- / Variables / ----- */
 /* !---- Base typography ----- */
+html {
+  background-color: #0db7d7;
+}
 body {
   font-family: 'arial', sans-serif;
   font-weight: 400;
@@ -54,7 +57,7 @@ p {
   margin-bottom: 1em;
 }
 blockquote {
-  padding-left: 20px;
+  padding-left: 2em;
 }
 a:link {
   color: #059db9;
@@ -74,7 +77,7 @@ a:active {
 }
 .zone-user a:link, .zone-user a:visited {
   color: #5d5d5d;
-  margin-right: 16px;
+  margin-right: 1.6em;
   border-color: #5d5d5d;
 }
 .region-menu a {
