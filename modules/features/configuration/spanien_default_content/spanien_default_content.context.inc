@@ -23,7 +23,24 @@ function spanien_default_content_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array();
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'menu-menu-footer-links-first' => array(
+          'module' => 'menu',
+          'delta' => 'menu-footer-links-first',
+          'region' => 'footer_first',
+          'weight' => '-10',
+        ),
+        'menu-menu-footer-links-second' => array(
+          'module' => 'menu',
+          'delta' => 'menu-footer-links-second',
+          'region' => 'footer_second',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
   $context->condition_mode = 1;
 
   // Translatables
