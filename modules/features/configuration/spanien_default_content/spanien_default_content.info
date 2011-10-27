@@ -1,4 +1,5 @@
 core = "7.x"
+dependencies[] = "block"
 dependencies[] = "context"
 dependencies[] = "features"
 dependencies[] = "menu"

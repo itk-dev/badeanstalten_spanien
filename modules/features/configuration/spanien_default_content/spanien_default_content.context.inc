@@ -44,6 +44,12 @@ function spanien_default_content_context_default_contexts() {
           'region' => 'footer_second',
           'weight' => '-10',
         ),
+        'block-1' => array(
+          'module' => 'block',
+          'delta' => 1,
+          'region' => 'footer_fifth',
+          'weight' => '-10',
+        ),
       ),
     ),
   );
