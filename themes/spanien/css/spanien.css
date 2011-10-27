@@ -36,6 +36,31 @@
 .region-menu ul li.active a {
   background-color: #059ebb;
 }
+/* !---- Content ----- */
+.section.section-content {
+  margin: 0 0 50px;
+}
+/* !---- Blocks ----- */
+.block {
+  background-color: #f3f3f3;
+}
+.section-footer .block {
+  background-color: transparent;
+}
+.block h1,
+.block h2,
+.block h3,
+.block h4,
+.block h5 {
+  background-color: #fff;
+}
+.block .view .content {
+  padding: 20px;
+}
+.block .view .link {
+  padding: 0 20px 20px;
+  text-align: right;
+}
 /* !---- Footer ----- */
 .section-footer {
   background: #0db7d7 url('../images/footer-bg.jpg') repeat-x;
