@@ -26,6 +26,12 @@ function spanien_default_content_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'search-form' => array(
+          'module' => 'search',
+          'delta' => 'form',
+          'region' => 'search',
+          'weight' => '-10',
+        ),
         'menu-menu-footer-links-first' => array(
           'module' => 'menu',
           'delta' => 'menu-footer-links-first',
