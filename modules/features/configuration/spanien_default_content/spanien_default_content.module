@@ -12,13 +12,13 @@ include_once('spanien_default_content.features.inc');
 function spanien_default_content_menu_block_blocks() {
   // The array key is the block delta used by menu block.
   return array(
-    'spanien_default_content-1' => array(
+    'spanien_default_content' => array(
       'menu_name'   => MENU_TREE__CURRENT_PAGE_MENU,
       'parent_mlid' => 0,
       'title_link'  => 1,
       'admin_title' => 'Menu sidebar',
       'level'       => 2,
-      'follow'      => active,
+      'follow'      => 'active',
       'depth'       => 0,
       'expanded'    => 0,
       'sort'        => 0,
