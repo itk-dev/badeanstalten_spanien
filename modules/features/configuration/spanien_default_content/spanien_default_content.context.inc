@@ -38,12 +38,6 @@ function spanien_default_content_context_default_contexts() {
           'region' => 'sidebar_first',
           'weight' => '-10',
         ),
-        'delta_blocks-breadcrumb' => array(
-          'module' => 'delta_blocks',
-          'delta' => 'breadcrumb',
-          'region' => 'header_first',
-          'weight' => '-10',
-        ),
         'menu-menu-footer-links-first' => array(
           'module' => 'menu',
           'delta' => 'menu-footer-links-first',
