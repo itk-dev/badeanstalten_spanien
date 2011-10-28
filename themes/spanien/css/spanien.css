@@ -44,9 +44,6 @@
 .block {
   background-color: #f3f3f3;
 }
-.section-footer .block {
-  background-color: transparent;
-}
 .block h1,
 .block h2,
 .block h3,
@@ -58,15 +55,22 @@
   padding: 20px;
 }
 .block .view .link {
+  margin: -20px 0 0;
   padding: 0 20px 20px;
   text-align: right;
+}
+.section-footer .block {
+  background-color: transparent;
 }
 /* !---- Footer ----- */
 .section-footer {
   background: #0db7d7 url('../images/footer-bg.jpg') repeat-x;
   min-height: 250px;
 }
+.section-footer .region-footer-fifth {
+  text-align: center;
+}
 /* !---- Bottom ----- */
 .region-page-bottom {
-  background-color: #d3f1f7;
+  min-height: 0px;
 }

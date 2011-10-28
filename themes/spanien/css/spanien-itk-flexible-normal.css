@@ -2,6 +2,6 @@ body .section {
   max-width: 100%;
 }
 .section .zone {
-  margin: 0 auto;
-  max-width: 1200px;
+  margin: 0 auto 30px;
+  max-width: 1000px;
 }

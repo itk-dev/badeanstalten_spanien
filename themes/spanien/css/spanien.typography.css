@@ -110,3 +110,7 @@ input[type=submit], button {
   font-weight: 700;
   text-transform: uppercase;
 }
+/* !---- Blocks ----- */
+.block .view {
+  font-size: 0.9em;
+}

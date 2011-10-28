@@ -52,6 +52,23 @@
 
 .block {
   background-color: #f3f3f3;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    background-color: #fff;  
+  }
+  .view { // View (spotboxes etc.)
+    .content {
+      padding: 20px;    
+    }
+    .link {
+      margin: -20px 0 0;
+      padding: 0 20px 20px;
+      text-align: right;
+    }
+  }
 }
 
 // No background on footer blocks
@@ -59,33 +76,18 @@
   background-color: transparent;
 }
 
-.block h1,
-.block h2,
-.block h3,
-.block h4,
-.block h5 {
-  background-color: #fff;
-}
-
-// View (spotboxes etc.)
-.block .view .content {
-  padding: 20px;
-}
-
-.block .view .link {
-  padding: 0 20px 20px;
-  text-align: right;
-}
-
 /* !---- Footer ----- */
 
 .section-footer {
   background: #0db7d7 url('../images/footer-bg.jpg') repeat-x;
   min-height: 250px;
+  .region-footer-fifth {
+    text-align: center;
+  }
 }
 
 /* !---- Bottom ----- */
 
 .region-page-bottom {
-  background-color: #d3f1f7;
+  min-height: 0px;
 }
