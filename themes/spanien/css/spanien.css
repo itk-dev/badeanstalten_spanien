@@ -74,6 +74,12 @@
   background: none;
   list-style: circle inside;
 }
+.section-footer a.link {
+  background: url('../images/sprites.png') no-repeat top left;
+  display: block;
+  line-height: 120%;
+  padding: 0 0 0 25px;
+}
 .section-footer .zone-footer-second {
   background-color: #d3f1f7;
   text-align: center;
