@@ -11,7 +11,7 @@ body {
   background: #ffffff;
   color: #5d5d5d;
   line-height: 1.4em;
-  font-size: 14px;
+  font-size: 24px;
 }
 h1,
 h2,
@@ -26,7 +26,7 @@ p {
 .site-name a {
   font-family: 'CartoGothicStdBook', 'arial', sans-serif;
   font-weight: 300;
-  font-size: 18.55px;
+  font-size: 31.799999999999997px;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -34,11 +34,11 @@ p {
   font-family: 'CartoGothicStdBook', 'arial', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 28px;
+  font-size: 48px;
   line-height: 1.2em;
 }
 .block-title, .field-label {
-  font-size: 18.55px;
+  font-size: 31.799999999999997px;
   font-family: 'CartoGothicStdBook', 'arial', sans-serif;
   font-weight: 'CartoGothicStdBook', 'arial', sans-serif;
   text-transform: normal;
@@ -46,7 +46,7 @@ p {
   font-weight: normal;
 }
 h2.block-title {
-  font-size: 18.55px;
+  font-size: 31.799999999999997px;
 }
 h2.block-title a {
   color: #4c4c4c;
@@ -55,12 +55,12 @@ h2.block-title a {
 .text-content h2 {
   font-family: 'CartoGothicStdBook', 'arial', sans-serif;
   font-weight: 'CartoGothicStdBook', 'arial', sans-serif;
-  font-size: 18.55px;
+  font-size: 31.799999999999997px;
 }
 .text-content h3 {
   font-family: 'CartoGothicStdBook', 'arial', sans-serif;
   font-weight: 'CartoGothicStdBook', 'arial', sans-serif;
-  font-size: 14px;
+  font-size: 24px;
 }
 .text-content ul {
   margin-left: 20px;
@@ -115,6 +115,11 @@ input[type=submit], button {
   font-weight: 700;
   text-transform: uppercase;
 }
+/* !---- Blocks ----- */
+/* !---- Footer ----- */
+.section-footer .zone-footer-second {
+  color: #065d7f;
+}
 /* !----- / Layout ----- */
 /* !---- Body ----- */
 .section-header {
@@ -162,9 +167,6 @@ input[type=submit], button {
 .block {
   background-color: #f3f3f3;
 }
-.section-footer .block {
-  background-color: transparent;
-}
 .block h1,
 .block h2,
 .block h3,
@@ -176,15 +178,26 @@ input[type=submit], button {
   padding: 20px;
 }
 .block .view .link {
+  margin: -20px 0 0;
   padding: 0 20px 20px;
   text-align: right;
+}
+.section-footer .block {
+  background-color: transparent;
 }
 /* !---- Footer ----- */
 .section-footer {
   background: #0db7d7 url('../images/footer-bg.jpg') repeat-x;
   min-height: 250px;
 }
+.section-footer .zone-footer-second {
+  background-color: #d3f1f7;
+  text-align: center;
+}
+.section-footer .zone-footer-second p {
+  margin: 1% 0;
+}
 /* !---- Bottom ----- */
 .region-page-bottom {
-  background-color: #d3f1f7;
+  min-height: 0px;
 }

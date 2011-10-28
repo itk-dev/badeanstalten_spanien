@@ -1,4 +1,4 @@
-/* !---- Body ----- */
+/* !---- Header ----- */
 .section-header {
   background-color: #f3f3f3;
 }
@@ -38,7 +38,8 @@
 }
 /* !---- Content ----- */
 .section.section-content {
-  margin: 0 0 50px;
+  background-color: #fff;
+  padding: 0 0 30px;
 }
 /* !---- Blocks ----- */
 .block {
@@ -59,16 +60,22 @@
   padding: 0 20px 20px;
   text-align: right;
 }
-.section-footer .block {
+.section-footer h2, .section-footer .block {
   background-color: transparent;
 }
 /* !---- Footer ----- */
 .section-footer {
   background: #0db7d7 url('../images/footer-bg.jpg') repeat-x;
-  min-height: 250px;
 }
-.section-footer .region-footer-fifth {
+.section-footer .zone-footer .region {
+  margin: 50px 0 0;
+}
+.section-footer .zone-footer-second {
+  background-color: #d3f1f7;
   text-align: center;
+}
+.section-footer .zone-footer-second p {
+  margin: 1% 0;
 }
 /* !---- Bottom ----- */
 .region-page-bottom {

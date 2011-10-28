@@ -2,9 +2,20 @@
 
 body .section {
   max-width: 100%; 
+  padding: 0;
 }
 
 .section .zone {
-  margin: 0 auto;
+  margin: 0 auto 30px;
   max-width: 1000px;
+}
+
+.section-header.section .zone {
+  margin: 0 auto;
+}
+
+.section {
+  .zone.zone-footer-second {
+    max-width: 100%;
+  }
 }

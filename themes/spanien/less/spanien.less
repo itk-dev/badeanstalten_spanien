@@ -1,4 +1,4 @@
-/* !---- Body ----- */
+/* !---- Header ----- */
 
 .section-header {
   background-color: #f3f3f3;
@@ -45,7 +45,8 @@
 /* !---- Content ----- */
 
 .section.section-content {
-  margin: 0 0 50px;
+  background-color: #fff;
+  padding: 0 0 30px;
 }
 
 /* !---- Blocks ----- */
@@ -72,17 +73,28 @@
 }
 
 // No background on footer blocks
-.section-footer .block {
-  background-color: transparent;
+.section-footer {
+  h2,
+  .block {
+    background-color: transparent;
+  }  
 }
 
 /* !---- Footer ----- */
 
 .section-footer {
   background: #0db7d7 url('../images/footer-bg.jpg') repeat-x;
-  min-height: 250px;
-  .region-footer-fifth {
+  .zone-footer {
+    .region {
+      margin: 50px 0 0;
+    }  
+  }
+  .zone-footer-second {
+    background-color: #d3f1f7;
     text-align: center;
+    p {
+      margin: 1% 0;
+    }
   }
 }
 

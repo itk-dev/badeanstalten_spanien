@@ -32,22 +32,10 @@ function spanien_default_content_context_default_contexts() {
           'region' => 'search',
           'weight' => '0',
         ),
-        'menu_block-1' => array(
-          'module' => 'menu_block',
-          'delta' => 1,
-          'region' => 'sidebar_first',
-          'weight' => '-10',
-        ),
         'menu-menu-footer-links-first' => array(
           'module' => 'menu',
           'delta' => 'menu-footer-links-first',
           'region' => 'footer_first',
-          'weight' => '0',
-        ),
-        'menu-menu-footer-links-second' => array(
-          'module' => 'menu',
-          'delta' => 'menu-footer-links-second',
-          'region' => 'footer_second',
           'weight' => '0',
         ),
         'block-1' => array(

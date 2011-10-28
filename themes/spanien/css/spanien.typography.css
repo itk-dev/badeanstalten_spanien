@@ -6,10 +6,10 @@ html {
 body {
   font-family: 'CartoGothicStdBook', 'arial', sans-serif;
   font-weight: 400;
-  background: #ffffff;
+  background: #0db7d7;
   color: #5d5d5d;
   line-height: 1.4em;
-  font-size: 14px;
+  font-size: 13px;
 }
 h1,
 h2,
@@ -24,7 +24,7 @@ p {
 .site-name a {
   font-family: 'CartoGothicStdBook', 'arial', sans-serif;
   font-weight: 300;
-  font-size: 18.55px;
+  font-size: 18.525000000000002px;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -32,11 +32,11 @@ p {
   font-family: 'CartoGothicStdBook', 'arial', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 1.2em;
 }
 .block-title, .field-label {
-  font-size: 18.55px;
+  font-size: 18.525000000000002px;
   font-family: 'CartoGothicStdBook', 'arial', sans-serif;
   font-weight: 'CartoGothicStdBook', 'arial', sans-serif;
   text-transform: normal;
@@ -44,7 +44,7 @@ p {
   font-weight: normal;
 }
 h2.block-title {
-  font-size: 18.55px;
+  font-size: 18.525000000000002px;
 }
 h2.block-title a {
   color: #4c4c4c;
@@ -53,12 +53,12 @@ h2.block-title a {
 .text-content h2 {
   font-family: 'CartoGothicStdBook', 'arial', sans-serif;
   font-weight: 'CartoGothicStdBook', 'arial', sans-serif;
-  font-size: 18.55px;
+  font-size: 18.525000000000002px;
 }
 .text-content h3 {
   font-family: 'CartoGothicStdBook', 'arial', sans-serif;
   font-weight: 'CartoGothicStdBook', 'arial', sans-serif;
-  font-size: 14px;
+  font-size: 13px;
 }
 .text-content ul {
   margin-left: 20px;
@@ -99,7 +99,7 @@ a:active {
 .region-menu a:hover,
 .region-menu a:active {
   color: #fff;
-  font-size: 1.15em;
+  font-size: 1.25em;
   text-decoration: none;
   -webkit-text-shadow: rgba(0, 0, 0, 0.35) 1px 1px 1px;
   -moz-text-shadow: rgba(0, 0, 0, 0.35) 1px 1px 1px;
@@ -111,6 +111,27 @@ input[type=submit], button {
   text-transform: uppercase;
 }
 /* !---- Blocks ----- */
-.block .view {
-  font-size: 0.9em;
+.section-footer .block h2 {
+  color: #fff;
+  -webkit-text-shadow: #0392af 1px 1px 1px;
+  -moz-text-shadow: #0392af 1px 1px 1px;
+  text-shadow: #0392af 1px 1px 1px;
+}
+/* !---- Footer ----- */
+.section-footer a:link {
+  color: #fff;
+  text-decoration: none;
+}
+.section-footer a:visited {
+  border: 1px dashed red;
+  color: #c4eef6;
+}
+.section-footer a:hover {
+  text-decoration: underline;
+}
+.section-footer a:active {
+  color: #074049;
+}
+.section-footer .zone-footer-second {
+  color: #065d7f;
 }

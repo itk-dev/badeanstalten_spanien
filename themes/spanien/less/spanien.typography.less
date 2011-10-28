@@ -137,7 +137,7 @@ a {
     &:hover,
     &:active {
       color: #fff;
-      font-size: 1.15em;
+      font-size: 1.25em;
       text-decoration: none;
       .text-shadow(rgba(0, 0, 0, .35) 1px 1px 1px);
     }
@@ -155,7 +155,39 @@ button {
 /* !---- Blocks ----- */
 
 .block {
-  .view {
-    font-size: 0.9em;
+}
+
+// No background on footer blocks
+.section-footer .block {
+  h2 {
+    color: #fff;
+    .text-shadow(#0392af 1px 1px 1px);
+  }  
+}
+
+/* !---- Footer ----- */
+
+.section-footer {
+  a {
+    &:link {
+      color: #fff;
+      text-decoration: none;
+    }
+    &:visited {
+      border: 1px dashed red;
+      color: #c4eef6;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+    &:active {
+      color: #074049;
+    }
+  }
+}
+
+.section-footer {
+  .zone-footer-second {
+    color: #065d7f;
   }
 }
