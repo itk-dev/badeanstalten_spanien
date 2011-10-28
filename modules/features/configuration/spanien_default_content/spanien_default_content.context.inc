@@ -41,13 +41,13 @@ function spanien_default_content_context_default_contexts() {
         'block-2' => array(
           'module' => 'block',
           'delta' => 2,
-          'region' => 'footer_first',
-          'weight' => '-23',
+          'region' => 'footer_second',
+          'weight' => '-10',
         ),
         'block-3' => array(
           'module' => 'block',
           'delta' => 3,
-          'region' => 'footer_first',
+          'region' => 'footer_third',
           'weight' => '-10',
         ),
         'block-1' => array(
