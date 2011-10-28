@@ -113,11 +113,15 @@ input[type=submit], button {
 /* !---- Blocks ----- */
 .section-footer .block h2 {
   color: #fff;
+  font-size: 1.5em;
   -webkit-text-shadow: #0392af 1px 1px 1px;
   -moz-text-shadow: #0392af 1px 1px 1px;
   text-shadow: #0392af 1px 1px 1px;
 }
 /* !---- Footer ----- */
+.section-footer {
+  color: #fff;
+}
 .section-footer a:link {
   color: #fff;
   text-decoration: none;
@@ -131,6 +135,22 @@ input[type=submit], button {
 }
 .section-footer a:active {
   color: #074049;
+}
+.section-footer .zone-footer-second a:link {
+  color: #059db9;
+  text-decoration: underline;
+}
+.section-footer .zone-footer-second a:visited {
+  color: #047488;
+  text-decoration: none;
+}
+.section-footer .zone-footer-second a:hover {
+  color: #035361;
+  text-decoration: none;
+}
+.section-footer .zone-footer-second a:active {
+  color: #000;
+  text-decoration: none;
 }
 .section-footer .zone-footer-second {
   color: #065d7f;

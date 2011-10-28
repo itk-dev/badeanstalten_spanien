@@ -36,7 +36,19 @@ function spanien_default_content_context_default_contexts() {
           'module' => 'menu',
           'delta' => 'menu-footer-links-first',
           'region' => 'footer_first',
-          'weight' => '0',
+          'weight' => '-24',
+        ),
+        'block-2' => array(
+          'module' => 'block',
+          'delta' => 2,
+          'region' => 'footer_first',
+          'weight' => '-23',
+        ),
+        'block-3' => array(
+          'module' => 'block',
+          'delta' => 3,
+          'region' => 'footer_first',
+          'weight' => '-10',
         ),
         'block-1' => array(
           'module' => 'block',
