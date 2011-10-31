@@ -17,7 +17,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   letter-spacing: 0.05px;
 }
 p {
@@ -246,12 +247,16 @@ input[type=submit], button {
   line-height: 120%;
   padding: 0 0 0 25px;
 }
-.section-footer .zone-footer-second {
+.section-footer .zone-footer-second-wrapper {
   background-color: #d3f1f7;
+  padding: 1em 0;
   text-align: center;
 }
-.section-footer .zone-footer-second p {
+.section-footer .zone-footer-second-wrapper p {
   margin: 1% 0;
+}
+.section-footer .zone-footer-second-wrapper .zone-footer-second {
+  margin: 0 auto;
 }
 /* !---- Bottom ----- */
 .region-page-bottom {
