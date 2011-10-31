@@ -32,6 +32,12 @@ function spanien_default_content_context_default_contexts() {
           'region' => 'search',
           'weight' => '0',
         ),
+        'menu_block-spanien_default_content-1' => array(
+          'module' => 'menu_block',
+          'delta' => 'spanien_default_content-1',
+          'region' => 'sidebar_first',
+          'weight' => '-10',
+        ),
         'menu-menu-footer-links-first' => array(
           'module' => 'menu',
           'delta' => 'menu-footer-links-first',
