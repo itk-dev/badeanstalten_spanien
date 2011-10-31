@@ -42,6 +42,73 @@
   }
 }
 
+/* !---- Submenu ----- */
+
+.block.block-menu-block {
+  background-color: transparent;
+  h2 {
+    &.block-title {
+      a {
+        background-color: #f3f3f3;
+        display: block;
+        padding: 0 0 0 .75em;    
+      }
+    }
+  }
+  ul {
+    margin: 1px 0 0;
+    li {
+      margin: 1px 0 0;
+      a {
+        background: #f3f3f3 url('../images/sprites.png') no-repeat;
+        background-position: -69px -71px;
+        display: block;
+        padding: .5em 2.3em;
+        &:hover,
+        &.active-trail {
+          background-color: #e4e4e4;        
+        }        
+        &.active-trail {
+          background-position: -22px -21px;
+        }
+        &.active-trail.active {
+          background-color: #059ebb;
+          background-position: -46px -45px;
+        }
+      }
+      li {
+
+      }            
+      ul {
+        padding: 0;
+        li {
+          a {
+            background-position: -55px -71px;   
+            padding-left: 3.5em;
+            &.active-trail {
+              background-position: -55px -71px;              
+            }
+            &.active-trail.active {
+              background-position: -32px -46px;              
+            }            
+          }
+          li {
+            a {
+              background-position: -55px -71px;           
+            }
+            &.active-trail {
+              background-position: -55px -71px;              
+            }
+            &.active-trail.active {
+              background-position: -55px -71px;              
+            }
+          }
+        }
+      }
+    }
+  }
+}
+  
 /* !---- Content ----- */
 
 .section.section-content {
@@ -52,13 +119,15 @@
 /* !---- Blocks ----- */
 
 .block {
-  background-color: #f3f3f3;
   h1,
   h2,
   h3,
   h4,
   h5 {
     background-color: #fff;  
+  }
+  &.block-nodespotbox {
+    background-color: #f3f3f3;
   }
   .view { // View (spotboxes etc.)
     .content {

@@ -41,10 +41,10 @@ p {
 // Page title
 .title {
   font-family: @font-hvy-fam;
-  font-weight: @font-hvy-wgt;
-  text-transform: uppercase;
+  font-weight: @font-std-wgt;
+  text-transform: none;
   font-size: @font-size-title;
-  line-height: 1.2em;
+  line-height: 1em;
 }
 
 // Block titles
@@ -165,6 +165,33 @@ button {
     font-size: 1.5em;
     .text-shadow(#0392af 1px 1px 1px);
   }  
+}
+
+/* !---- Submenu ----- */
+
+.block.block-menu-block {
+  background-color: transparent;
+  h2 {
+    &.block-title {
+      font-size: 1.45em;
+    }
+  }
+  ul {
+    li {
+      font-size: .95em;
+      a {
+        color: #059ebb;
+        text-decoration: none;
+        &:hover {
+          color: #038298;
+        }
+        &.active-trail.active {
+          color: #fff;
+          .text-shadow(rgba(0, 0, 0, .5) 1px 1px 1px);
+        }
+      }
+    }
+  }
 }
 
 /* !---- Footer ----- */

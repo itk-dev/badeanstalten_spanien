@@ -15,7 +15,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   letter-spacing: 0.05px;
 }
 p {
@@ -30,10 +31,10 @@ p {
 }
 .title {
   font-family: 'CartoGothicStdBook', 'arial', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 26px;
-  line-height: 1.2em;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 29.25px;
+  line-height: 1em;
 }
 .block-title, .field-label {
   font-size: 18.525000000000002px;
@@ -117,6 +118,29 @@ input[type=submit], button {
   -webkit-text-shadow: #0392af 1px 1px 1px;
   -moz-text-shadow: #0392af 1px 1px 1px;
   text-shadow: #0392af 1px 1px 1px;
+}
+/* !---- Submenu ----- */
+.block.block-menu-block {
+  background-color: transparent;
+}
+.block.block-menu-block h2.block-title {
+  font-size: 1.45em;
+}
+.block.block-menu-block ul li {
+  font-size: .95em;
+}
+.block.block-menu-block ul li a {
+  color: #059ebb;
+  text-decoration: none;
+}
+.block.block-menu-block ul li a:hover {
+  color: #038298;
+}
+.block.block-menu-block ul li a.active-trail.active {
+  color: #fff;
+  -webkit-text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
+  -moz-text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
+  text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
 }
 /* !---- Footer ----- */
 .section-footer {
