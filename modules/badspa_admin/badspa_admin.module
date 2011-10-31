@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * Implements hook_image_styles_alter
+ */
+function badspa_admin_image_styles_alter(&$styles) {
+
+  // Update the featured content image width.
+  if (isset($styles['panorama_image'])) {
+    $styles['panorama_image']['effects'][5]['data']['width'] = 980;
+  }
+}
