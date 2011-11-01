@@ -33,7 +33,7 @@
 .region-menu ul li a:hover {
   background-color: #333;
 }
-.region-menu ul li.active a {
+.region-menu ul li.active a, .region-menu ul li.active-trail a {
   background-color: #059ebb;
 }
 /* !---- Submenu ----- */

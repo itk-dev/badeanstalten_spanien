@@ -85,11 +85,11 @@ function delta_layouts_spanien_delta_default_templates() {
         'spanien.css' => 'spanien.css',
         'spanien.typography.css' => 'spanien.typography.css',
         'spanien.variables.css' => 'spanien.variables.css',
+        'spanien.itk.flexible.normal.css' => 'spanien.itk.flexible.normal.css',
         'omega-branding.css' => 0,
         'omega-menu.css' => 0,
         'omega-forms.css' => 0,
         'omega-visuals.css' => 0,
-        'spanien.itk-flexible-normal.css' => 0,
       ),
       'alpha_exclude' => array(
         'modules/menu/menu.css' => 'modules/menu/menu.css',
