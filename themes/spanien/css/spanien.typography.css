@@ -126,11 +126,9 @@ input[type=submit], button {
 .block.block-menu-block h2.block-title {
   font-size: 1.45em;
 }
-.block.block-menu-block ul li {
-  font-size: .95em;
-}
 .block.block-menu-block ul li a {
   color: #059ebb;
+  font-size: .95em;
   text-decoration: none;
 }
 .block.block-menu-block ul li a:hover {
