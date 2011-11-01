@@ -188,6 +188,10 @@ input[type=submit], button {
 .section-footer .zone-footer-second {
   color: #065d7f;
 }
+/* !---- Featured content ----- */
+.view-featured-content-slidehow .coverlayer {
+  color: #fff;
+}
 /* !----- / Layout ----- */
 /* !---- Header ----- */
 .section-header {
@@ -224,7 +228,7 @@ input[type=submit], button {
 .region-menu ul li a:hover {
   background-color: #333;
 }
-.region-menu ul li.active a {
+.region-menu ul li.active a, .region-menu ul li.active-trail a {
   background-color: #059ebb;
 }
 /* !---- Submenu ----- */
@@ -398,6 +402,46 @@ input[type=submit], button {
 }
 .section-footer .zone-footer-second-wrapper .zone-footer-second {
   margin: 0 auto;
+}
+/* !---- Featured content ----- */
+.view-featured-content-slidehow {
+  bottom: 0;
+  margin: 0 0 -60px;
+}
+.view-featured-content-slidehow .coverlayer {
+  background-color: rgba(0, 0, 0, 0.75);
+  left: 0;
+  position: absolute;
+  top: 187px;
+  width: 100%;
+}
+.view-featured-content-slidehow .coverlayer .coverlayer-inner {
+  background: url('../images/featured-content-overlay.png') no-repeat center bottom;
+  bottom: 0;
+  height: 61px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.view-featured-content-slidehow .coverlayer .coverlayer-inner h2 {
+  background: none;
+  line-height: 250%;
+  margin: 0 20px;
+}
+.view-featured-content-slidehow .coverlayer .coverlayer-inner p {
+  margin: 0;
+}
+.view-featured-content-slidehow .panorama-image {
+  margin: 0;
+}
+.view-featured-content-slidehow .views-slideshow-controls-bottom {
+  bottom: 10px;
+  position: absolute;
+  right: 10px;
+  z-index: 3;
+}
+.view-featured-content-slidehow .views-slideshow-controls-bottom div {
+  display: inline;
 }
 /* !---- Bottom ----- */
 .region-page-bottom {

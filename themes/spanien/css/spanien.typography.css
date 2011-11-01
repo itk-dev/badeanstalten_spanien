@@ -177,3 +177,7 @@ input[type=submit], button {
 .section-footer .zone-footer-second {
   color: #065d7f;
 }
+/* !---- Featured content ----- */
+.view-featured-content-slidehow .coverlayer {
+  color: #fff;
+}
