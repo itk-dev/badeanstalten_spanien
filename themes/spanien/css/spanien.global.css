@@ -110,6 +110,9 @@ a:active {
   -webkit-text-shadow: rgba(0, 0, 0, 0.35) 1px 1px 1px;
   -moz-text-shadow: rgba(0, 0, 0, 0.35) 1px 1px 1px;
   text-shadow: rgba(0, 0, 0, 0.35) 1px 1px 1px;
+  -webkit-text-shadow: rgba(0, 0, 0, 0.35) 1px 1px 1px;
+  -moz-text-shadow: rgba(0, 0, 0, 0.35) 1px 1px 1px;
+  text-shadow: rgba(0, 0, 0, 0.35) 1px 1px 1px;
 }
 input[type=submit], button {
   font-family: 'CartoGothicStdBook', 'arial', sans-serif;
@@ -120,6 +123,9 @@ input[type=submit], button {
 .section-footer .block h2 {
   color: #fff;
   font-size: 1.5em;
+  -webkit-text-shadow: #0392af 1px 1px 1px;
+  -moz-text-shadow: #0392af 1px 1px 1px;
+  text-shadow: #0392af 1px 1px 1px;
   -webkit-text-shadow: #0392af 1px 1px 1px;
   -moz-text-shadow: #0392af 1px 1px 1px;
   text-shadow: #0392af 1px 1px 1px;
@@ -144,6 +150,9 @@ input[type=submit], button {
 }
 .block.block-menu-block ul li a.active-trail.active {
   color: #fff;
+  -webkit-text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
+  -moz-text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
+  text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
   -webkit-text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
   -moz-text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
   text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
@@ -193,6 +202,7 @@ input[type=submit], button {
   color: #fff;
 }
 /* !----- / Layout ----- */
+/* !----- / Variables / ----- */
 /* !---- Header ----- */
 .section-header {
   background-color: #f3f3f3;
@@ -351,7 +361,7 @@ input[type=submit], button {
 /* !---- Content ----- */
 .section.section-content {
   background-color: #fff;
-  padding: 30px 0 ;
+  padding: 30px 0;
 }
 /* !---- Blocks ----- */
 .block h1,
@@ -405,18 +415,25 @@ input[type=submit], button {
 }
 /* !---- Featured content ----- */
 .view-featured-content-slidehow {
+  background: url('../images/featured-content-overlay-bottom.png') no-repeat center bottom;
   bottom: 0;
-  margin: 0 0 -60px;
+  margin: 0 0 -86px;
+  max-width: 100%;
+  padding: 0 0 25px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 .view-featured-content-slidehow .coverlayer {
-  background-color: rgba(0, 0, 0, 0.75);
+  background: url('../images/black-bg-75.png');
+  background: rgba(0, 0, 0, 0.75);
   left: 0;
   position: absolute;
   top: 187px;
   width: 100%;
 }
 .view-featured-content-slidehow .coverlayer .coverlayer-inner {
-  background: url('../images/featured-content-overlay.png') no-repeat center bottom;
+  background: url('../images/featured-content-overlay-top.png') no-repeat center bottom;
   bottom: 0;
   height: 61px;
   margin: 0;
@@ -435,13 +452,34 @@ input[type=submit], button {
   margin: 0;
 }
 .view-featured-content-slidehow .views-slideshow-controls-bottom {
-  bottom: 10px;
+  bottom: 55px;
   position: absolute;
   right: 10px;
   z-index: 3;
 }
-.view-featured-content-slidehow .views-slideshow-controls-bottom div {
-  display: inline;
+.view-featured-content-slidehow .views-slideshow-controls-bottom .widget_pager .views-slideshow-pager-field-item {
+  float: left;
+  margin: 0 5px 0 0;
+}
+.view-featured-content-slidehow .views-slideshow-controls-bottom .widget_pager .views-slideshow-pager-field-item .views-field-counter .views-content-counter {
+  background-color: #949494;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  box-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  box-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  box-border-radius: 10px;
+  cursor: pointer;
+  height: 12px;
+  overflow: hidden;
+  text-indent: -10000px;
+  width: 12px;
+}
+.view-featured-content-slidehow .views-slideshow-controls-bottom .widget_pager .views-slideshow-pager-field-item.active .views-field-counter .views-content-counter {
+  background-color: #fff;
 }
 /* !---- Bottom ----- */
 .region-page-bottom {
