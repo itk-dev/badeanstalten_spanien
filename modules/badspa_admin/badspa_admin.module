@@ -21,3 +21,12 @@ function badspa_admin_image_styles_alter(&$styles) {
     $styles['spotbox_internal_link_image']['effects'][4]['data']['height'] = 255;
   }
 }
+
+/**
+ * Implements hook_form_FORM_ID_alter
+ *  
+ * Remove teaser field from featured content sldieshow.
+ */
+
+function badspa_admin_form_office_hours_node_form_alter(&$form, &$form_state, $form_id) {
+}
