@@ -8,6 +8,7 @@ function badspa_admin_image_styles_alter(&$styles) {
   // Update the featured content image width.
   if (isset($styles['panorama_image'])) {
     $styles['panorama_image']['effects'][5]['data']['width'] = 980;
+    $styles['panorama_image']['effects'][5]['data']['height'] = 248;
   }
 
   if (isset($styles['spotbox_external_link_image'])) {
@@ -19,4 +20,13 @@ function badspa_admin_image_styles_alter(&$styles) {
     $styles['spotbox_internal_link_image']['effects'][4]['data']['width'] = 375;
     $styles['spotbox_internal_link_image']['effects'][4]['data']['height'] = 155;
   }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter
+ *  
+ * Remove teaser field from featured content sldieshow.
+ */
+
+function badspa_admin_form_office_hours_node_form_alter(&$form, &$form_state, $form_id) {
 }
