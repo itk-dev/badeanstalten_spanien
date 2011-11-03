@@ -93,9 +93,13 @@ a:active {
   text-decoration: none;
 }
 .zone-user a:link, .zone-user a:visited {
-  color: #5d5d5d;
-  margin-right: 1.6em;
   border-color: #5d5d5d;
+  color: #797979;
+  font-size: .9em;
+  text-decoration: none;
+}
+.zone-user a:link:hover, .zone-user a:visited:hover {
+  text-decoration: underline;
 }
 .region-menu a:link,
 .region-menu a:visited,
@@ -207,13 +211,28 @@ input[type=submit], button {
 .section-header {
   background-color: #f3f3f3;
 }
+/* !---- Zone user ----- */
+.zone-user .menu {
+  margin: 1em 0 0;
+  text-align: right;
+}
+.zone-user .menu li {
+  background: url('../images/secondary-menu-sep.png') no-repeat right 1px;
+}
+.zone-user .menu li a {
+  margin: 0 10px 0 0;
+}
+.zone-user .menu li.last {
+  background: none;
+  margin: 0;
+}
 /* !---- Zone branding ----- */
 .zone-branding {
   min-height: 115px;
   position: relative;
 }
 .zone-branding .region-branding {
-  padding: 4em 0 0;
+  padding: 1em 0 0;
 }
 .zone-branding .region-branding .site-logo {
   float: left;

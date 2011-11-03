@@ -91,9 +91,13 @@ a:active {
   text-decoration: none;
 }
 .zone-user a:link, .zone-user a:visited {
-  color: #5d5d5d;
-  margin-right: 1.6em;
   border-color: #5d5d5d;
+  color: #797979;
+  font-size: .9em;
+  text-decoration: none;
+}
+.zone-user a:link:hover, .zone-user a:visited:hover {
+  text-decoration: underline;
 }
 .region-menu a:link,
 .region-menu a:visited,
