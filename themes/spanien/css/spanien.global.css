@@ -437,10 +437,10 @@ input[type=submit], button {
   padding: 10px 20px 5px;
   margin: 0 0 -20px;
 }
-.block .view .text-content {
+.block.block-nodespotbox .text-content {
   padding: 20px 20px 15px 22px;
 }
-.block .view .link {
+.block.block-nodespotbox .link {
   margin: -15px 0 0;
   padding: 0 20px 20px;
   text-align: right;
