@@ -17,6 +17,8 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: 'CartoGothicStdBook', 'arial', sans-serif;
+  font-weight: 400;
   letter-spacing: 0.05px;
 }
 p {
@@ -125,6 +127,20 @@ input[type=submit], button {
   -webkit-text-shadow: #0392af 1px 1px 1px;
   -moz-text-shadow: #0392af 1px 1px 1px;
   text-shadow: #0392af 1px 1px 1px;
+}
+.region-postscript-first .block h2 {
+  line-height: 100%;
+}
+.region-postscript-first .block#block-block-6 a {
+  color: #772600;
+  text-decoration: none;
+}
+.region-postscript-first .block#block-block-6 a.link {
+  color: #fff;
+  font-size: 1.25em;
+  -webkit-text-shadow: #8b3d10 1px 1px 1px;
+  -moz-text-shadow: #8b3d10 1px 1px 1px;
+  text-shadow: #8b3d10 1px 1px 1px;
 }
 /* !---- Submenu ----- */
 .block.block-menu-block {
