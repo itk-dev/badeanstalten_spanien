@@ -1,0 +1,7 @@
+<?php
+
+function badspa_admin_install() {
+  $instance = field_info_instance('node', 'field_featured_text', 'featured_content');
+  field_delete_instance($instance);
+  field_purge_batch(10000);
+}
