@@ -16,7 +16,28 @@
   width: 47.340425531914893617021276595745%;
 }
 .zone-branding .region-search {
-  padding: 0 0 5em;
+  margin-top: -13px;
+  padding: 0 0 3em;
+  text-align: right;
+}
+.zone-branding .region-search input {
+  border: 1px solid #cfcfcf;
+  height: 37px;
+  margin-right: -10px;
+  padding: 0 1em 0 .5em;
+  min-width: 320px;
+}
+.zone-branding .region-search input[type=submit] {
+  background: url('../images/sprites.png') no-repeat 12px 10px #059ebb;
+  border: 0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  box-border-radius: 10px;
+  margin-right: 0;
+  padding: 0;
+  text-indent: -10000px;
+  min-width: 41px;
+  width: 41px;
 }
 /* !---- Main menu ----- */
 .region-menu ul {
@@ -232,7 +253,7 @@
   text-indent: -10000px;
   top: 80px;
   width: 37px;
-  z-index: 4;
+  z-index: 10;
 }
 .slideshow-panorama .next {
   background-position: left center;

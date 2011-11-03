@@ -26,6 +26,12 @@ function spanien_default_content_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'menu-menu-secondary-links' => array(
+          'module' => 'menu',
+          'delta' => 'menu-secondary-links',
+          'region' => 'user_first',
+          'weight' => '-10',
+        ),
         'search-form' => array(
           'module' => 'search',
           'delta' => 'form',
@@ -42,25 +48,25 @@ function spanien_default_content_context_default_contexts() {
           'module' => 'menu',
           'delta' => 'menu-footer-links-first',
           'region' => 'footer_first',
-          'weight' => '-24',
+          'weight' => '0',
         ),
         'block-2' => array(
           'module' => 'block',
           'delta' => 2,
           'region' => 'footer_second',
-          'weight' => '-10',
+          'weight' => '0',
         ),
         'block-3' => array(
           'module' => 'block',
           'delta' => 3,
           'region' => 'footer_third',
-          'weight' => '-10',
+          'weight' => '0',
         ),
         'block-4' => array(
           'module' => 'block',
           'delta' => 4,
           'region' => 'footer_fourth',
-          'weight' => '-10',
+          'weight' => '0',
         ),
         'block-1' => array(
           'module' => 'block',

@@ -20,7 +20,26 @@
     }
   }
   .region-search {
-    padding: 0 0 5em;
+    margin-top: -13px;
+    padding: 0 0 3em;
+    text-align: right;
+    input {
+      border: 1px solid #cfcfcf;
+      height: 37px;
+      margin-right: -10px;
+      padding: 0 1em 0 .5em;
+      min-width: 320px;
+    }
+    input[type=submit] {
+      background: url('../images/sprites.png') no-repeat 12px 10px #059ebb;
+      border: 0;
+      .border-radius(10px);
+      margin-right: 0;
+      padding: 0;
+      text-indent: -10000px;
+      min-width: 41px;
+      width: 41px;
+    }
   }
 }
 
@@ -312,7 +331,7 @@
     text-indent: -10000px;
     top: 80px;
     width: 37px;
-    z-index: 4;
+    z-index: 10;
   }
   .next {
     background-position: left center;    
