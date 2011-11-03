@@ -348,9 +348,6 @@
 .region-sidebar-first .block-nodespotbox, .region-sidebar-second .block-nodespotbox {
   margin: 0 0 2em;
 }
-.region-sidebar-first .block-nodespotbox .block-nodespotbox, .region-sidebar-second .block-nodespotbox .block-nodespotbox {
-  margin: 0;
-}
 /* !---- Bottom ----- */
 .region-page-bottom {
   min-height: 0px;
