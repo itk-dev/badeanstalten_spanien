@@ -35,7 +35,7 @@ p {
   font-family: 'CartoGothicStdBook', 'arial', sans-serif;
   font-weight: 400;
   text-transform: none;
-  font-size: 29.25px;
+  font-size: 25.349999999999998px;
   line-height: 1em;
 }
 .block-title, .field-label {
@@ -437,10 +437,10 @@ input[type=submit], button {
   padding: 10px 20px 5px;
   margin: 0 0 -20px;
 }
-.block .view .text-content {
+.block.block-nodespotbox .text-content {
   padding: 20px 20px 15px 22px;
 }
-.block .view .link {
+.block.block-nodespotbox .link {
   margin: -15px 0 0;
   padding: 0 20px 20px;
   text-align: right;
@@ -460,7 +460,7 @@ input[type=submit], button {
   list-style: circle inside;
 }
 .section-footer a.link {
-  background: url('../images/sprites.png') no-repeat top left;
+  background: url('../images/menu-sprite.png') no-repeat top left;
   display: block;
   line-height: 120%;
   padding: 0 0 0 25px;
@@ -566,6 +566,13 @@ input[type=submit], button {
 }
 .slideshow-panorama .views-slideshow-controls-bottom .pager .pager-item.active {
   background-color: #fff;
+}
+/* !---- Sidebars ----- */
+.region-sidebar-first .block-nodespotbox, .region-sidebar-second .block-nodespotbox {
+  margin: 0 0 2em;
+}
+.region-sidebar-first .block-nodespotbox .block-nodespotbox, .region-sidebar-second .block-nodespotbox .block-nodespotbox {
+  margin: 0;
 }
 /* !---- Bottom ----- */
 .region-page-bottom {
