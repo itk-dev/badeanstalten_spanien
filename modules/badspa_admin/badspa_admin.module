@@ -11,13 +11,8 @@ function badspa_admin_image_styles_alter(&$styles) {
     $styles['panorama_image']['effects'][5]['data']['height'] = 248;
   }
 
-  if (isset($styles['spotbox_external_link_image'])) {
-    $styles['spotbox_external_link_image']['effects'][4]['data']['width'] = 375;
-    $styles['spotbox_external_link_image']['effects'][4]['data']['height'] = 155;
-  }
-
-  if (isset($styles['spotbox_internal_link_image'])) {
-    $styles['spotbox_internal_link_image']['effects'][4]['data']['width'] = 375;
-    $styles['spotbox_internal_link_image']['effects'][4]['data']['height'] = 155;
+  if (isset($styles['spotbox_image'])) {
+    $styles['spotbox_image']['effects'][4]['data']['width'] = 375;
+    $styles['spotbox_image']['effects'][4]['data']['height'] = 155;
   }
 }
