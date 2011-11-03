@@ -463,7 +463,7 @@ input[type=submit], button {
   text-indent: -10000px;
   top: 80px;
   width: 37px;
-  z-index: 4;
+  z-index: 10;
 }
 .slideshow-panorama .next {
   background-position: left center;
