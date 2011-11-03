@@ -229,6 +229,9 @@ input[type=submit], button {
   background: none;
   margin: 0;
 }
+.zone-user .menu li.last a {
+  margin: 0;
+}
 /* !---- Zone branding ----- */
 .zone-branding {
   min-height: 115px;
