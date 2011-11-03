@@ -37,7 +37,7 @@ function spanien_featured_content_slideshow_default_panels_mini() {
     $pane->pid = 'new-1';
     $pane->panel = 'middle';
     $pane->type = 'views_panes';
-    $pane->subtype = 'spanien_custom_featured_content_-spanien_featured_content';
+    $pane->subtype = 'spanien_custom_featured_content-spanien_featured_content';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
