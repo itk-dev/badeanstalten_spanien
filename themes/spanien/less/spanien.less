@@ -259,6 +259,11 @@
   padding: 30px 0;
 }
 
+// Make sure the regions are visible when editing frontpage with context
+.context-editing .section.section-content {
+  padding: 90px 0 30px;
+}
+
 /* !---- Blocks ----- */
 
 .block {
@@ -271,13 +276,22 @@
   }
   &.block-nodespotbox {
     background-color: #f3f3f3;
+    &.block-image {
+      h2 {
+        background-color: #f3f3f3;
+        a {
+          display: block;
+          padding: 10px 20px 5px;
+        }
+      }
+    }
   }
   .view { // View (spotboxes etc.)
-    .content {
-      padding: 20px;    
+    .text-content {
+      padding: 0 20px 15px 22px;
     }
     .link {
-      margin: -20px 0 0;
+      margin: -15px 0 0;
       padding: 0 20px 20px;
       text-align: right;
     }

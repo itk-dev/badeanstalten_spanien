@@ -116,6 +116,9 @@ input[type=submit], button {
   text-transform: uppercase;
 }
 /* !---- Blocks ----- */
+.block .view {
+  font-size: .9em;
+}
 .section-footer .block h2 {
   color: #fff;
   font-size: 1.5em;
