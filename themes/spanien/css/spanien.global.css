@@ -76,7 +76,11 @@ h2.block-title a {
   margin-bottom: 1em;
 }
 blockquote {
-  padding-left: 2em;
+  background: url('../images/sprites.png') no-repeat -945px -25px;
+  font-style: italic;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-left: 40px;
 }
 a:link {
   color: #059db9;
@@ -279,7 +283,7 @@ input[type=submit], button {
   min-width: 320px;
 }
 .zone-branding .region-search input[type=submit] {
-  background: url('../images/sprites.png') no-repeat 12px 10px #059ebb;
+  background: url('../images/sprites.png') no-repeat -971px 10px #059ebb;
   border: 0;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;

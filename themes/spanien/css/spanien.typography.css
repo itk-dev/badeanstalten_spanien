@@ -74,7 +74,11 @@ h2.block-title a {
   margin-bottom: 1em;
 }
 blockquote {
-  padding-left: 2em;
+  background: url('../images/sprites.png') no-repeat -945px -25px;
+  font-style: italic;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-left: 40px;
 }
 a:link {
   color: #059db9;
