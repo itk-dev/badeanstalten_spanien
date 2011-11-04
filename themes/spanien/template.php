@@ -15,3 +15,17 @@ function spanien_preprocess_html(&$variables) {
   // Add conditional CSS for IE7 and below.
   drupal_add_css(path_to_theme() . '/css/ie7.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 7', '!IE' => FALSE), 'weight' => 999, 'preprocess' => FALSE));
 }
+
+/**
+ * Implements hook_process_region().
+ *
+ * Makes breadcrumb,title and tabs available in content region for printing.
+ */
+function spanien_alpha_process_zone(&$vars) {
+    $theme = alpha_get_theme();
+    switch ($vars['elements']['#zone']) {
+      case 'header':
+        $vars['breadcrumb'] = $theme->page['breadcrumb'];
+        break;
+    }
+}
