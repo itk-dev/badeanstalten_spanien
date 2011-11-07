@@ -29,3 +29,29 @@ function spanien_alpha_process_zone(&$vars) {
         break;
     }
 }
+
+/**
+ * Implements hook_preprocess_block().
+ */
+function spanien_preprocess_block(&$vars) {
+  // Load region
+  $current_region = $vars['elements']['#block']->region;
+
+  // Add classes based on module & region
+  if ($current_region != 'footer_sitemap' &&
+      $current_region != 'user_first' && 
+      $current_region != 'user_second' && 
+      $current_region != 'menu' && 
+      $current_region != 'footer_first' && 
+      $current_region != 'footer_second') {
+    
+    switch($vars['elements']['#block']->module) {
+      case 'menu_block':
+        $vars['attributes_array']['class'][] = 'block-style-menu';
+        break;
+      
+      default:
+        break;
+    };
+  };
+}

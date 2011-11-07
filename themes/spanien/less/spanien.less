@@ -89,19 +89,17 @@
 
 /* !---- Submenu ----- */
 
-.block.block-menu-block {
+.block-style-menu {
   background-color: transparent;
   h2 {
     &.block-title {
-      a {
-        background-color: #f3f3f3;
-        display: block;
-        padding: 0 0 0 15px;    
-      }
+      background-color: #f3f3f3;
+      display: block;
+      padding: 0 0 0 15px; 
     }
   }
-  ul {
-    margin: 0;
+  ul:not(.contextual-links) {
+    margin: 0 0 20px;
     padding: 0;
     li {
       a {
@@ -118,6 +116,7 @@
           background-color: #059ebb;
         }        
       }
+      &.menu-item,
       &.level-2 {
         a {
           background-position: -68px -71px;

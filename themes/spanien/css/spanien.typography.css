@@ -147,21 +147,21 @@ input[type=submit], button {
   text-shadow: #8b3d10 1px 1px 1px;
 }
 /* !---- Submenu ----- */
-.block.block-menu-block {
+.block-style-menu {
   background-color: transparent;
 }
-.block.block-menu-block h2.block-title {
+.block-style-menu h2.block-title {
   font-size: 1.45em;
 }
-.block.block-menu-block ul li a {
+.block-style-menu ul:not(.contextual-links) li a {
   color: #059ebb;
   font-size: .95em;
   text-decoration: none;
 }
-.block.block-menu-block ul li a:hover {
+.block-style-menu ul:not(.contextual-links) li a:hover {
   color: #038298;
 }
-.block.block-menu-block ul li a.active-trail.active {
+.block-style-menu ul:not(.contextual-links) li a.active-trail.active {
   color: #fff;
   -webkit-text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
   -moz-text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
