@@ -75,3 +75,23 @@ function spanien_breadcrumb($variables) {
   return $output;
 }
 
+/**
+ * Implements hook_preprocess_panels_pane().
+ */
+function spanien_preprocess_panels_pane(&$vars) {
+  // Suggestions base on sub-type.
+  $vars['theme_hook_suggestions'][] = 'panels_pane__' . str_replace('-', '__', $vars['pane']->subtype);
+
+  // Suggestions on panel pane
+  $vars['theme_hook_suggestions'][] = 'panels_pane__' . $vars['pane']->panel;  
+}
+
+/**
+ * Implements hook_preprocess_region().
+ *
+ * Add region template suggestions based on first part of the current path alias.
+ */
+function spanien_preprocess_region(&$vars) {
+  $path = explode('/', drupal_get_path_alias());
+  $vars['theme_hook_suggestions'][] = 'region__' . $vars['region'] . '__' . $path[0];
+}
