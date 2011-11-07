@@ -65,6 +65,12 @@ function spanien_breadcrumb($variables) {
 
   // Build breadcrumb.
   if (!empty($breadcrumb)) {
+    // Add special case for news (we needs menu-trails).
+    $path = explode('/', drupal_get_path_alias());
+    if ($path[0] == 'nyheder' && count($path) > 1) {
+      $breadcrumb[] = l('Nyheder', 'nyheder');
+    }
+
     // Add current page title to the end of the breadcrumb.
     $breadcrumb[] = '<span>' . drupal_get_title() . '</span>';
   }
@@ -92,6 +98,9 @@ function spanien_preprocess_panels_pane(&$vars) {
  * Add region template suggestions based on first part of the current path alias.
  */
 function spanien_preprocess_region(&$vars) {
-  $path = explode('/', drupal_get_path_alias());
-  $vars['theme_hook_suggestions'][] = 'region__' . $vars['region'] . '__' . $path[0];
+  // Only create templet suggestions for panels.
+  if (page_manager_get_current_page()) {
+    $path = explode('/', drupal_get_path_alias());
+    $vars['theme_hook_suggestions'][] = 'region__' . $vars['region'] . '__' . $path[0];
+  }
 }
