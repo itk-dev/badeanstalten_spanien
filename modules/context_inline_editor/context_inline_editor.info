@@ -1,9 +1,0 @@
-name = Context inline editor
-description = "Adds the Context UI module's inline editor feature to a link in the shortcut bar"
-dependencies[] = context_ui
-dependencies[] = toolbar
-package = Context
-core = "7.x"
-
-files[] = context_inline_editor.module
-
