@@ -34,7 +34,7 @@ function employee_pages_field_default_fields() {
       'module' => 'text',
       'settings' => array(),
       'translatable' => '1',
-      'type' => 'text_long',
+      'type' => 'text_with_summary',
     ),
     'field_instance' => array(
       'bundle' => 'employee_page',
@@ -61,6 +61,7 @@ function employee_pages_field_default_fields() {
       'label' => 'Content',
       'required' => 1,
       'settings' => array(
+        'display_summary' => 0,
         'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
