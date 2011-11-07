@@ -96,12 +96,10 @@
       background-color: #f3f3f3;
       display: block;
       padding: 0 0 0 15px; 
-      a {   
-      }
     }
   }
-  ul {
-    margin: 0;
+  ul:not(.contextual-links) {
+    margin: 0 0 20px;
     padding: 0;
     li {
       a {
@@ -118,6 +116,7 @@
           background-color: #059ebb;
         }        
       }
+      &.menu-item,
       &.level-2 {
         a {
           background-position: -68px -71px;
@@ -360,7 +359,7 @@
   a.link {
     background: url('../images/menu-sprite.png') no-repeat top left;
     display: block;
-    line-height: 120%;
+    line-height: 125%;
     padding: 0 0 0 25px;
   }
   .zone-footer-second-wrapper {

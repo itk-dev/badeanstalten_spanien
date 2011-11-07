@@ -167,21 +167,21 @@ input[type=submit], button {
   text-shadow: #8b3d10 1px 1px 1px;
 }
 /* !---- Submenu ----- */
-.block.block-menu-block {
+.block-style-menu {
   background-color: transparent;
 }
-.block.block-menu-block h2.block-title {
+.block-style-menu h2.block-title {
   font-size: 1.45em;
 }
-.block.block-menu-block ul li a {
+.block-style-menu ul:not(.contextual-links) li a {
   color: #059ebb;
   font-size: .95em;
   text-decoration: none;
 }
-.block.block-menu-block ul li a:hover {
+.block-style-menu ul:not(.contextual-links) li a:hover {
   color: #038298;
 }
-.block.block-menu-block ul li a.active-trail.active {
+.block-style-menu ul:not(.contextual-links) li a.active-trail.active {
   color: #fff;
   -webkit-text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
   -moz-text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
@@ -328,112 +328,112 @@ input[type=submit], button {
   display: block;
   padding: 0 0 0 15px;
 }
-.block-style-menu ul {
-  margin: 0;
+.block-style-menu ul:not(.contextual-links) {
+  margin: 0 0 20px;
   padding: 0;
 }
-.block-style-menu ul li a {
+.block-style-menu ul:not(.contextual-links) li a {
   background: #f3f3f3 url('../images/menu-sprite.png') no-repeat;
   display: block;
   line-height: 30px;
   min-height: 30px;
   margin: 1px 0 0;
 }
-.block-style-menu ul li a:hover, .block-style-menu ul li a.active-trail {
+.block-style-menu ul:not(.contextual-links) li a:hover, .block-style-menu ul:not(.contextual-links) li a.active-trail {
   background-color: #e4e4e4;
 }
-.block-style-menu ul li a.active-trail.active {
+.block-style-menu ul:not(.contextual-links) li a.active-trail.active {
   background-color: #059ebb;
 }
-.block-style-menu ul li.level-2 a {
+.block-style-menu ul:not(.contextual-links) li.menu-item a, .block-style-menu ul:not(.contextual-links) li.level-2 a {
   background-position: -68px -71px;
   padding-left: 30px;
 }
-.block-style-menu ul li.level-2 a.active-trail {
+.block-style-menu ul:not(.contextual-links) li.menu-item a.active-trail, .block-style-menu ul:not(.contextual-links) li.level-2 a.active-trail {
   background-position: -22px -22px;
 }
-.block-style-menu ul li.level-2 a.active-trail.active {
+.block-style-menu ul:not(.contextual-links) li.menu-item a.active-trail.active, .block-style-menu ul:not(.contextual-links) li.level-2 a.active-trail.active {
   background-position: -45px -46px;
 }
-.block-style-menu ul li.level-2.expanded.active-trail > a.active-trail.active {
+.block-style-menu ul:not(.contextual-links) li.menu-item.expanded.active-trail > a.active-trail.active, .block-style-menu ul:not(.contextual-links) li.level-2.expanded.active-trail > a.active-trail.active {
   background-position: -90px -95px;
 }
-.block-style-menu ul li.level-3 a {
+.block-style-menu ul:not(.contextual-links) li.level-3 a {
   background-position: -55px -71px;
   padding-left: 45px;
 }
-.block-style-menu ul li.level-3 a.active-trail {
+.block-style-menu ul:not(.contextual-links) li.level-3 a.active-trail {
   background-position: -6px -22px;
 }
-.block-style-menu ul li.level-3 a.active-trail.active {
+.block-style-menu ul:not(.contextual-links) li.level-3 a.active-trail.active {
   background-position: -30px -46px;
 }
-.block-style-menu ul li.level-3.expanded.active-trail > a.active-trail.active {
+.block-style-menu ul:not(.contextual-links) li.level-3.expanded.active-trail > a.active-trail.active {
   background-position: -76px -95px;
 }
-.block-style-menu ul li.level-4 a {
+.block-style-menu ul:not(.contextual-links) li.level-4 a {
   background-position: -40px -71px;
   padding-left: 60px;
 }
-.block-style-menu ul li.level-4 a.active-trail {
+.block-style-menu ul:not(.contextual-links) li.level-4 a.active-trail {
   background-position: 10px -22px;
 }
-.block-style-menu ul li.level-4 a.active-trail.active {
+.block-style-menu ul:not(.contextual-links) li.level-4 a.active-trail.active {
   background-position: -16px -46px;
 }
-.block-style-menu ul li.level-4.expanded.active-trail > a.active-trail.active {
+.block-style-menu ul:not(.contextual-links) li.level-4.expanded.active-trail > a.active-trail.active {
   background-position: -60px -95px;
 }
-.block-style-menu ul li.level-5 a {
+.block-style-menu ul:not(.contextual-links) li.level-5 a {
   background-position: -23px -71px;
   padding-left: 75px;
 }
-.block-style-menu ul li.level-5 a.active-trail {
+.block-style-menu ul:not(.contextual-links) li.level-5 a.active-trail {
   background-position: 24px -22px;
 }
-.block-style-menu ul li.level-5 a.active-trail.active {
+.block-style-menu ul:not(.contextual-links) li.level-5 a.active-trail.active {
   background-position: 0 -46px;
 }
-.block-style-menu ul li.level-5.expanded.active-trail > a.active-trail.active {
+.block-style-menu ul:not(.contextual-links) li.level-5.expanded.active-trail > a.active-trail.active {
   background-position: -46px -95px;
 }
-.block-style-menu ul li.level-6 a {
+.block-style-menu ul:not(.contextual-links) li.level-6 a {
   background-position: -8px -71px;
   padding-left: 90px;
 }
-.block-style-menu ul li.level-6 a.active-trail {
+.block-style-menu ul:not(.contextual-links) li.level-6 a.active-trail {
   background-position: 40px -22px;
 }
-.block-style-menu ul li.level-6 a.active-trail.active {
+.block-style-menu ul:not(.contextual-links) li.level-6 a.active-trail.active {
   background-position: 14px -46px;
 }
-.block-style-menu ul li.level-6.expanded.active-trail > a.active-trail.active {
+.block-style-menu ul:not(.contextual-links) li.level-6.expanded.active-trail > a.active-trail.active {
   background-position: -30px -95px;
 }
-.block-style-menu ul li.level-7 a {
+.block-style-menu ul:not(.contextual-links) li.level-7 a {
   background-position: 6px -71px;
   padding-left: 105px;
 }
-.block-style-menu ul li.level-7 a.active-trail {
+.block-style-menu ul:not(.contextual-links) li.level-7 a.active-trail {
   background-position: 58px -22px;
 }
-.block-style-menu ul li.level-7 a.active-trail.active {
+.block-style-menu ul:not(.contextual-links) li.level-7 a.active-trail.active {
   background-position: 28px -46px;
 }
-.block-style-menu ul li.level-7.expanded.active-trail > a.active-trail.active {
+.block-style-menu ul:not(.contextual-links) li.level-7.expanded.active-trail > a.active-trail.active {
   background-position: -18px -95px;
 }
-.block-style-menu ul li.level-8 a {
+.block-style-menu ul:not(.contextual-links) li.level-8 a {
   background-position: 20px -71px;
   padding-left: 120px;
 }
-.block-style-menu ul li.level-8 a.active-trail {
+.block-style-menu ul:not(.contextual-links) li.level-8 a.active-trail {
   background-position: 76px -22px;
 }
-.block-style-menu ul li.level-8 a.active-trail.active {
+.block-style-menu ul:not(.contextual-links) li.level-8 a.active-trail.active {
   background-position: 44px -46px;
 }
-.block-style-menu ul li.level-8.expanded.active-trail > a.active-trail.active {
+.block-style-menu ul:not(.contextual-links) li.level-8.expanded.active-trail > a.active-trail.active {
   background-position: -24px -95px;
 }
 /* !---- Content ----- */
@@ -547,7 +547,7 @@ input[type=submit], button {
 .section-footer a.link {
   background: url('../images/menu-sprite.png') no-repeat top left;
   display: block;
-  line-height: 120%;
+  line-height: 125%;
   padding: 0 0 0 25px;
 }
 .section-footer .zone-footer-second-wrapper {
