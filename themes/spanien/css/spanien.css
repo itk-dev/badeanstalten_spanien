@@ -89,6 +89,7 @@
 /* !---- Submenu ----- */
 .block-style-menu {
   background-color: transparent;
+  margin: 0 0 2em;
 }
 .block-style-menu h2.block-title {
   background-color: #f3f3f3;
@@ -96,7 +97,7 @@
   padding: 0 0 0 15px;
 }
 .block-style-menu ul:not(.contextual-links) {
-  margin: 0 0 20px;
+  margin: 0;
   padding: 0;
 }
 .block-style-menu ul:not(.contextual-links) li a {
