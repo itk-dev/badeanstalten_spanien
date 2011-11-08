@@ -218,7 +218,10 @@ embed {
 /* !---- Content ----- */
 .section.section-content {
   background-color: #fff;
-  padding: 60px 0;
+  padding: 30px 0;
+}
+.front.section.section-content {
+  padding: 60px 0 30px;
 }
 .context-editing .section.section-content {
   padding: 90px 0 30px;
