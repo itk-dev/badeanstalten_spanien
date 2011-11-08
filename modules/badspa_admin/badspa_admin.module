@@ -15,4 +15,17 @@ function badspa_admin_image_styles_alter(&$styles) {
     $styles['spotbox_image']['effects'][4]['data']['width'] = 375;
     $styles['spotbox_image']['effects'][4]['data']['height'] = 155;
   }
+
+  if (isset($styles['title_image'])) {
+    $styles['title_image']['effects'][3]['data']['width'] = 1000;
+    $styles['title_image']['effects'][3]['data']['height'] = 285;
+  }
+}
+
+function badspa_admin_init() {
+  $instance = field_info_instance('node', 'field_featured_text', 'featured_content');
+  if ($instance) {
+    field_delete_instance($instance);
+    field_purge_batch(10000);
+  }
 }
