@@ -55,6 +55,13 @@ h2.block-title a {
   color: #4c4c4c;
   text-decoration: none;
 }
+h4.block-title {
+  font-size: 11.700000000000001px;
+}
+h4.block-title a {
+  color: #4c4c4c;
+  text-decoration: none;
+}
 .text-content h2 {
   font-family: 'CartoGothicStdBook', 'arial', sans-serif;
   font-weight: 'CartoGothicStdBook', 'arial', sans-serif;
@@ -247,8 +254,32 @@ input[type=submit], button {
 .slideshow-panorama .coverlayer {
   color: #fff;
 }
+/* !---- News ----- */
+.news-list h2, .news-list h4 {
+  color: #4c4c4c;
+  font-size: 1.5em;
+}
+.news-list h4 {
+  font-size: 1.35em;
+}
+.news-list a {
+  text-decoration: none;
+}
+.news-list .meta {
+  color: #999;
+}
+.news-list .link a {
+  text-decoration: underline;
+}
 /* !----- / Layout ----- */
 /* !----- / Variables / ----- */
+/* !----- / Image, video, object, embed / ----- */
+img,
+video,
+object,
+embed {
+  height: auto;
+}
 /* !---- Header ----- */
 .section-header {
   background-color: #f3f3f3;
@@ -652,7 +683,7 @@ input[type=submit], button {
   bottom: 48px;
   position: absolute;
   right: 10px;
-  z-index: 3;
+  z-index: 5;
 }
 .slideshow-panorama .views-slideshow-controls-bottom .pager .pager-item {
   float: left;
@@ -679,6 +710,44 @@ input[type=submit], button {
 /* !---- Sidebars ----- */
 .region-sidebar-first .block-nodespotbox, .region-sidebar-second .block-nodespotbox {
   margin: 0 0 2em;
+}
+/* !---- News ----- */
+.news-list {
+  list-style: none;
+}
+.news-list.featured-news .text-content {
+  margin: .5em 0 0;
+}
+.news-list.featured-news .link {
+  margin: 0;
+}
+.news-list h2, .news-list h4 {
+  margin: 0;
+}
+.news-list li {
+  border-bottom: 1px dashed #e8e8e8;
+  list-style: none;
+  overflow: hidden;
+  padding: 0 0 1.5em;
+}
+.news-list li .meta {
+  margin: 0;
+}
+.news-list li .text-content {
+  margin: .5em 0 0 33%;
+}
+.news-list li .link {
+  background: url('../images/menu-sprite.png') no-repeat -85px -78px;
+  display: block;
+  margin: 0 0 0 33%;
+}
+.news-list li .link a {
+  padding: 0 0 0 .75em;
+}
+.news-list .alignedimage {
+  float: left;
+  margin: 0 1em 0 0;
+  width: 30%;
 }
 /* !---- Bottom ----- */
 .region-page-bottom {

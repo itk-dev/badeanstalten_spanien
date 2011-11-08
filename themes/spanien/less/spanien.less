@@ -1,5 +1,12 @@
 /* !----- / Variables / ----- */
+
 @import 'spanien.variables.less';
+
+/* !----- / Image, video, object, embed / ----- */
+
+img, video, object, embed {
+    height: auto;
+}
 
 /* !---- Header ----- */
 
@@ -457,7 +464,7 @@
     bottom: 48px;
     position: absolute;
     right: 10px;
-    z-index: 3;
+    z-index: 5;
     .pager {
       .pager-item {
         float: left;
@@ -483,6 +490,49 @@
 .region-sidebar-second {
   .block-nodespotbox {
     margin: 0 0 2em;
+  }
+}
+
+/* !---- News ----- */
+
+.news-list {
+  list-style: none;
+  &.featured-news {
+    .text-content {
+      margin: .5em 0 0;
+    }
+    .link {
+      margin: 0;
+    }
+  }
+  h2,
+  h4 {
+    margin: 0;
+  }
+  li {
+    border-bottom: 1px dashed #e8e8e8;
+    list-style: none;
+    overflow: hidden;
+    padding: 0 0 1.5em;
+    .meta {
+      margin: 0;
+    }
+    .text-content {
+      margin: .5em 0 0 33%;
+    }
+    .link {
+      background: url('../images/menu-sprite.png') no-repeat -85px -78px;
+      display: block;
+      margin: 0 0 0 33%;
+      a {
+        padding: 0 0 0 .75em;
+      }
+    }
+  }
+  .alignedimage {
+    float: left;
+    margin: 0 1em 0 0;
+    width: 30%;
   }
 }
 

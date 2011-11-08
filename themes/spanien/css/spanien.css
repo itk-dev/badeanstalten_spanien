@@ -1,4 +1,11 @@
 /* !----- / Variables / ----- */
+/* !----- / Image, video, object, embed / ----- */
+img,
+video,
+object,
+embed {
+  height: auto;
+}
 /* !---- Header ----- */
 .section-header {
   background-color: #f3f3f3;
@@ -374,7 +381,7 @@
   bottom: 48px;
   position: absolute;
   right: 10px;
-  z-index: 3;
+  z-index: 5;
 }
 .slideshow-panorama .views-slideshow-controls-bottom .pager .pager-item {
   float: left;
@@ -395,6 +402,44 @@
 /* !---- Sidebars ----- */
 .region-sidebar-first .block-nodespotbox, .region-sidebar-second .block-nodespotbox {
   margin: 0 0 2em;
+}
+/* !---- News ----- */
+.news-list {
+  list-style: none;
+}
+.news-list.featured-news .text-content {
+  margin: .5em 0 0;
+}
+.news-list.featured-news .link {
+  margin: 0;
+}
+.news-list h2, .news-list h4 {
+  margin: 0;
+}
+.news-list li {
+  border-bottom: 1px dashed #e8e8e8;
+  list-style: none;
+  overflow: hidden;
+  padding: 0 0 1.5em;
+}
+.news-list li .meta {
+  margin: 0;
+}
+.news-list li .text-content {
+  margin: .5em 0 0 33%;
+}
+.news-list li .link {
+  background: url('../images/menu-sprite.png') no-repeat -85px -78px;
+  display: block;
+  margin: 0 0 0 33%;
+}
+.news-list li .link a {
+  padding: 0 0 0 .75em;
+}
+.news-list .alignedimage {
+  float: left;
+  margin: 0 1em 0 0;
+  width: 30%;
 }
 /* !---- Bottom ----- */
 .region-page-bottom {

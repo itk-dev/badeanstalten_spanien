@@ -53,6 +53,13 @@ h2.block-title a {
   color: #4c4c4c;
   text-decoration: none;
 }
+h4.block-title {
+  font-size: 11.700000000000001px;
+}
+h4.block-title a {
+  color: #4c4c4c;
+  text-decoration: none;
+}
 .text-content h2 {
   font-family: 'CartoGothicStdBook', 'arial', sans-serif;
   font-weight: 'CartoGothicStdBook', 'arial', sans-serif;
@@ -220,4 +227,21 @@ input[type=submit], button {
 /* !---- Featured content ----- */
 .slideshow-panorama .coverlayer {
   color: #fff;
+}
+/* !---- News ----- */
+.news-list h2, .news-list h4 {
+  color: #4c4c4c;
+  font-size: 1.5em;
+}
+.news-list h4 {
+  font-size: 1.35em;
+}
+.news-list a {
+  text-decoration: none;
+}
+.news-list .meta {
+  color: #999;
+}
+.news-list .link a {
+  text-decoration: underline;
 }
