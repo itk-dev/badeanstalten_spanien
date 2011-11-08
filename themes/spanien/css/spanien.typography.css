@@ -105,6 +105,10 @@ a:active {
   color: #4d4d4d;
   text-decoration: none;
 }
+.breadcrumb a:hover {
+  color: #059db9;
+  text-decoration: none;
+}
 .zone-user a:link, .zone-user a:visited {
   border-color: #5d5d5d;
   color: #797979;

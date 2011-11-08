@@ -107,6 +107,10 @@ a:active {
   color: #4d4d4d;
   text-decoration: none;
 }
+.breadcrumb a:hover {
+  color: #059db9;
+  text-decoration: none;
+}
 .zone-user a:link, .zone-user a:visited {
   border-color: #5d5d5d;
   color: #797979;
@@ -313,10 +317,10 @@ input[type=submit], button {
 .breadcrumb {
   margin: 0 0 1.25em;
 }
-.breadcrumb span {
-  background: url('../images/sprites.png') no-repeat -931px -62px;
-  margin: 0 0 0 .75em;
-  padding: 0 0 0 .75em;
+.breadcrumb a {
+  background: url('../images/breadcrumb-arrow.png') no-repeat right center;
+  margin: 0 .75em 0 0;
+  padding: 0 1.1em 0 0;
 }
 /* !---- Main menu ----- */
 .region-menu ul {
