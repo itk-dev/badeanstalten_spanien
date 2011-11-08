@@ -17,8 +17,8 @@ function badspa_admin_image_styles_alter(&$styles) {
   }
 
   if (isset($styles['title_image'])) {
-    $styles['title_image']['effects'][3]['data']['width'] = 1000;
-    $styles['title_image']['effects'][3]['data']['height'] = 285;
+    $styles['title_image']['effects'][3]['data']['width'] = 700;
+    $styles['title_image']['effects'][3]['data']['height'] = 200;
   }
 }
 
