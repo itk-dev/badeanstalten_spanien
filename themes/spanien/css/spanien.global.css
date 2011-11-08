@@ -222,7 +222,6 @@ input[type=submit], button {
   text-decoration: none;
 }
 .section-footer a:visited {
-  border: 1px dashed red;
   color: #c4eef6;
 }
 .section-footer a:hover {
