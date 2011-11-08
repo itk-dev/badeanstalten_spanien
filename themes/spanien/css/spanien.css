@@ -64,6 +64,10 @@ embed {
   min-width: 41px;
   width: 41px;
 }
+/* !----- / Regon content / ----- */
+.region-content .field-name-field-title-image {
+  margin: 0 0 2em;
+}
 /* !----- / Breadcrumb / ----- */
 .breadcrumb {
   margin: 0 0 1.25em;
@@ -214,7 +218,7 @@ embed {
 /* !---- Content ----- */
 .section.section-content {
   background-color: #fff;
-  padding: 30px 0;
+  padding: 60px 0;
 }
 .context-editing .section.section-content {
   padding: 90px 0 30px;
