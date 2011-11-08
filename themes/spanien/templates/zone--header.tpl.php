@@ -8,7 +8,7 @@
   <div<?php print $content_attributes; ?>>
     <?php print $content; ?>
     <?php if ($breadcrumb): ?>
-      <div id="breadcrumb" class="grid-<?php print $columns; ?>"><?php print $breadcrumb; ?></div>
+      <div id="breadcrumb" class="breadcrumb grid-<?php print $columns; ?>"><?php print $breadcrumb; ?></div>
     <?php endif; ?>
   </div>
 <?php if ($wrapper): ?></div><?php endif; ?>

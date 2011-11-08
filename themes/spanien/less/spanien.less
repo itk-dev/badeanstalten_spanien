@@ -65,10 +65,23 @@
   }
 }
 
+/* !----- / Breadcrumb / ----- */
+
+.breadcrumb {
+  margin: 0 0 1.25em;
+  a {
+    background: url('../images/breadcrumb-arrow.png') no-repeat right center;
+    margin: 0 .75em 0 0;
+    padding: 0 1.1em 0 0;
+  }
+}
+
+
 /* !---- Main menu ----- */
 
 .region-menu ul {
   background-color: #404040;
+  margin: 0 0 1.25em;
   overflow: hidden;
   li {
     float: left;
@@ -91,6 +104,7 @@
 
 .block-style-menu {
   background-color: transparent;
+  margin: 0 0 2em;
   h2 {
     &.block-title {
       background-color: #f3f3f3;
@@ -99,7 +113,7 @@
     }
   }
   ul:not(.contextual-links) {
-    margin: 0 0 20px;
+    margin: 0;
     padding: 0;
     li {
       a {

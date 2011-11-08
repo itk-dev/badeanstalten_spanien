@@ -98,6 +98,19 @@ a:active {
   color: #000;
   text-decoration: none;
 }
+/* !----- / Breadcrumb / ----- */
+.breadcrumb {
+  color: #999;
+  font-size: .9em;
+}
+.breadcrumb a {
+  color: #4d4d4d;
+  text-decoration: none;
+}
+.breadcrumb a:hover {
+  color: #059db9;
+  text-decoration: none;
+}
 .zone-user a:link, .zone-user a:visited {
   border-color: #5d5d5d;
   color: #797979;
@@ -300,9 +313,19 @@ input[type=submit], button {
   min-width: 41px;
   width: 41px;
 }
+/* !----- / Breadcrumb / ----- */
+.breadcrumb {
+  margin: 0 0 1.25em;
+}
+.breadcrumb a {
+  background: url('../images/breadcrumb-arrow.png') no-repeat right center;
+  margin: 0 .75em 0 0;
+  padding: 0 1.1em 0 0;
+}
 /* !---- Main menu ----- */
 .region-menu ul {
   background-color: #404040;
+  margin: 0 0 1.25em;
   overflow: hidden;
 }
 .region-menu ul li {
@@ -322,6 +345,7 @@ input[type=submit], button {
 /* !---- Submenu ----- */
 .block-style-menu {
   background-color: transparent;
+  margin: 0 0 2em;
 }
 .block-style-menu h2.block-title {
   background-color: #f3f3f3;
@@ -329,7 +353,7 @@ input[type=submit], button {
   padding: 0 0 0 15px;
 }
 .block-style-menu ul:not(.contextual-links) {
-  margin: 0 0 20px;
+  margin: 0;
   padding: 0;
 }
 .block-style-menu ul:not(.contextual-links) li a {
