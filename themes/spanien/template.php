@@ -76,7 +76,7 @@ function spanien_breadcrumb($variables) {
   }
 
   // Create the output
-  $output .= implode(' › ', $breadcrumb);
+  $output .= implode('', $breadcrumb);
 
   return $output;
 }

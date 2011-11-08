@@ -98,6 +98,15 @@ a:active {
   color: #000;
   text-decoration: none;
 }
+/* !----- / Breadcrumb / ----- */
+.breadcrumb {
+  color: #999;
+  font-size: .9em;
+}
+.breadcrumb a {
+  color: #4d4d4d;
+  text-decoration: none;
+}
 .zone-user a:link, .zone-user a:visited {
   border-color: #5d5d5d;
   color: #797979;
@@ -300,9 +309,19 @@ input[type=submit], button {
   min-width: 41px;
   width: 41px;
 }
+/* !----- / Breadcrumb / ----- */
+.breadcrumb {
+  margin: 0 0 1.25em;
+}
+.breadcrumb span {
+  background: url('../images/sprites.png') no-repeat -931px -62px;
+  margin: 0 0 0 .75em;
+  padding: 0 0 0 .75em;
+}
 /* !---- Main menu ----- */
 .region-menu ul {
   background-color: #404040;
+  margin: 0 0 1.25em;
   overflow: hidden;
 }
 .region-menu ul li {

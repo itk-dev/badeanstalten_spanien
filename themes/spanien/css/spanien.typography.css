@@ -96,6 +96,15 @@ a:active {
   color: #000;
   text-decoration: none;
 }
+/* !----- / Breadcrumb / ----- */
+.breadcrumb {
+  color: #999;
+  font-size: .9em;
+}
+.breadcrumb a {
+  color: #4d4d4d;
+  text-decoration: none;
+}
 .zone-user a:link, .zone-user a:visited {
   border-color: #5d5d5d;
   color: #797979;
