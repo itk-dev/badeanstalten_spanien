@@ -587,3 +587,35 @@ img, video, object, embed {
 div.messages {
   margin: 8px 0;
 }
+
+/* !---- Forms ----- */
+
+button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"] {
+  background: #c2f5fe;
+  border: 1px solid #7beafd;
+  .border-radius(0);
+  color: #059ebb;
+  padding: 5px 10px 4px;
+  &:hover {
+    background: #d4fffd;
+  }
+}
+
+.webform-client-form {
+  >div {
+    background-color: #f3f3f3;
+    padding: 2em;
+    textarea,
+    input[type="text"] {
+      border: 1px solid #ccc;
+      height: auto;
+      padding: 10px 5px;
+    }
+    .form-actions {
+      text-align: right;
+    }
+  }
+}

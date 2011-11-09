@@ -199,11 +199,16 @@ a {
 }
 
 // Forms
-input[type=submit],
-button {
+button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"] {
+  color: #059ebb;
   font-family: @font-hvy-fam;
-  font-weight: @font-hvy-wgt;
-  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: normal;
+  .text-shadow(0 0 0);
+  text-transform: none;  
 }
 
 /* !---- Blocks ----- */
