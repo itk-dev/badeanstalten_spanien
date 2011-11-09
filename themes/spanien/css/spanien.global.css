@@ -798,3 +798,7 @@ embed {
 .region-page-bottom {
   min-height: 0px;
 }
+/* !---- Messages ----- */
+div.messages {
+  margin: 8px 0;
+}
