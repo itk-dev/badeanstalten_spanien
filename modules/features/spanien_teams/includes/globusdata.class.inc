@@ -27,7 +27,7 @@ class GlobusdataParser extends FeedsParser {
       $item = array();
       $item['title'] = (string)$entry->title;
       $item['start'] = _parser_common_syndication_parse_date((string)$entry->start);
-      $item['slut'] = _parser_common_syndication_parse_date((string)$entry->slut);
+      $item['end'] = _parser_common_syndication_parse_date((string)$entry->slut);
 
       // Add feed item
       $result->items[] = $item;
@@ -51,7 +51,7 @@ class GlobusdataParser extends FeedsParser {
         'description' => t('The team start date and time'),
       ),
       'end' => array(
-        'name' => t('Slut date'),
+        'name' => t('End date'),
         'description' => t('The team end date and time'),
       ),
     ) + parent::getMappingSources();
