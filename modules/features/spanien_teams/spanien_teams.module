@@ -5,3 +5,30 @@
  */
 
 include_once('spanien_teams.features.inc');
+
+/**
+ * Defines a new feeds parser to parse globusdata calendar feeds.
+ *
+ * @return array $info
+ */
+function spanien_teams_feeds_plugins() {
+  $info = array();
+  $info['GlobusdataParser'] = array(
+    'name' => "Globusdata parser",
+    'description' => t('Parse globusdata feed'),
+    'handler' => array(
+      'parent' => 'FeedsParser',
+      'class' => 'GlobusdataParser',
+      'file' => 'globusdata.class.inc',
+      'path' => drupal_get_path('module', 'spanien_teams' ) . '/includes',
+    ),
+  );
+  return $info;
+}
+
+/**
+ * Make sure that the feed parser cache is cleared on module activation.
+ */
+function spanien_teams_enable() {
+  cache_clear_all('plugins:feeds:plugins', 'cache');
+}
