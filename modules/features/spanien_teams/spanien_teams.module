@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Hold booking feature.
+ */
+
+include_once('spanien_teams.features.inc');
