@@ -1,7 +1,9 @@
 <?php
 
 /**
- * Implements hook_image_styles_alter
+ * Implements hook_image_styles_alter().
+ *
+ * Cange image styles for select spotboxes and title images.
  */
 function badspa_admin_image_styles_alter(&$styles) {
 
@@ -22,6 +24,11 @@ function badspa_admin_image_styles_alter(&$styles) {
   }
 }
 
+/**
+ * Implements hook_init().
+ *
+ * Remove textarea from the featured content node type.
+ */
 function badspa_admin_init() {
   $instance = field_info_instance('node', 'field_featured_text', 'featured_content');
   if ($instance) {
