@@ -11,7 +11,7 @@ body {
   background: #0db7d7;
   color: #5d5d5d;
   line-height: 1.4em;
-  font-size: 13px;
+  font-size: 12px;
 }
 h1,
 h2,
@@ -22,14 +22,30 @@ h6 {
   font-family: 'CartoGothicStdBook', 'arial', sans-serif;
   font-weight: 400;
   letter-spacing: 0.05px;
+  margin-bottom: .25em;
+}
+h2 {
+  font-size: 21px;
+}
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 15.600000000000001px;
+}
+h5 {
+  font-size: 14.399999999999999px;
+}
+h6 {
+  font-size: 13.200000000000001px;
 }
 p {
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 .site-name a {
   font-family: 'CartoGothicStdBook', 'arial', sans-serif;
   font-weight: 300;
-  font-size: 18.525000000000002px;
+  font-size: 21px;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -37,11 +53,11 @@ p {
   font-family: 'CartoGothicStdBook', 'arial', sans-serif;
   font-weight: 400;
   text-transform: none;
-  font-size: 25.349999999999998px;
+  font-size: 23.4px;
   line-height: 1em;
 }
 .block-title, .field-label {
-  font-size: 18.525000000000002px;
+  font-size: 21px;
   font-family: 'CartoGothicStdBook', 'arial', sans-serif;
   font-weight: 'CartoGothicStdBook', 'arial', sans-serif;
   text-transform: normal;
@@ -49,14 +65,14 @@ p {
   font-weight: normal;
 }
 h2.block-title {
-  font-size: 18.525000000000002px;
+  font-size: 18.900000000000002px;
 }
 h2.block-title a {
   color: #4c4c4c;
   text-decoration: none;
 }
 h4.block-title {
-  font-size: 11.700000000000001px;
+  font-size: 15.600000000000001px;
 }
 h4.block-title a {
   color: #4c4c4c;
@@ -65,22 +81,22 @@ h4.block-title a {
 .text-content h2 {
   font-family: 'CartoGothicStdBook', 'arial', sans-serif;
   font-weight: 'CartoGothicStdBook', 'arial', sans-serif;
-  font-size: 18.525000000000002px;
+  font-size: 21px;
 }
 .text-content h3 {
   font-family: 'CartoGothicStdBook', 'arial', sans-serif;
   font-weight: 'CartoGothicStdBook', 'arial', sans-serif;
-  font-size: 13px;
+  font-size: 18px;
 }
 .text-content ul {
   margin-left: 20px;
   list-style: square;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 .text-content ol {
   margin-left: 20px;
   list-style: decimal;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 blockquote {
   background: url('../images/sprites.png') no-repeat -945px -25px;
@@ -108,7 +124,6 @@ a:active {
 /* !----- / Breadcrumb / ----- */
 .breadcrumb {
   color: #999;
-  font-size: .9em;
 }
 .breadcrumb a {
   color: #4d4d4d;
@@ -150,9 +165,6 @@ input[type=submit], button {
   text-transform: uppercase;
 }
 /* !---- Blocks ----- */
-.block .view {
-  font-size: .9em;
-}
 .section-footer .block h2 {
   color: #fff;
   font-size: 1.5em;
@@ -195,7 +207,6 @@ input[type=submit], button {
 }
 .block-style-menu ul:not(.contextual-links) li a {
   color: #059ebb;
-  font-size: .95em;
   text-decoration: none;
 }
 .block-style-menu ul:not(.contextual-links) li a:hover {
@@ -258,9 +269,6 @@ input[type=submit], button {
   color: #fff;
 }
 /* !---- News ----- */
-.node-type-news .submitted, .node-type-news .subject {
-  font-size: .9em;
-}
 .node-type-news .field-name-field-manchet {
   font-weight: bold;
 }

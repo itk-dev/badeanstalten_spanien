@@ -25,6 +25,27 @@ h6 {
   font-family: @font-std-fam;
   font-weight: @font-std-wgt;
   letter-spacing: 0.05px;
+  margin-bottom: .25em;
+}
+
+h2 {
+  font-size: @font-size-h2;
+}
+
+h3 {
+  font-size: @font-size-h3;
+}
+
+h4 {
+  font-size: @font-size-h4;
+}
+
+h5 {
+  font-size: @font-size-h5;
+}
+
+h6 {
+  font-size: @font-size-h6;
 }
 
 p {
@@ -61,7 +82,7 @@ p {
 
 // Block titles h2
 h2.block-title {
-  font-size: @font-size-h2;
+  font-size: @font-size-h2 * 0.9;
   a {
     color: #4c4c4c;
     text-decoration: none;
@@ -139,7 +160,6 @@ a {
 
 .breadcrumb {
   color: #999;
-  font-size: .9em;
   a {
     color: #4d4d4d;
     text-decoration: none;
@@ -188,12 +208,6 @@ button {
 
 /* !---- Blocks ----- */
 
-.block {
-  .view {
-    font-size: .9em;
-  }
-}
-
 // No background on footer blocks
 .section-footer .block {
   h2 {
@@ -237,7 +251,6 @@ button {
     li {
       a {
         color: #059ebb;
-        font-size: .95em;
         text-decoration: none;
         &:hover {
           color: #038298;
@@ -319,10 +332,6 @@ button {
 /* !---- News ----- */
 
 .node-type-news {
-  .submitted,
-  .subject {
-    font-size: .9em;
-  }
   .field-name-field-manchet {
     font-weight: bold;    
   }
