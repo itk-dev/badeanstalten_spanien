@@ -445,12 +445,12 @@ img, video, object, embed {
     z-index: 10;
   }
   .next {
-    background-position: left center;    
-    left: -20px;
-  }
-  .previous {
     background-position: right center;    
     right: -20px;
+  }
+  .previous {
+    background-position: left center;    
+    left: -20px;
   }
   .views-row {
     width: 980px;
@@ -517,6 +517,26 @@ img, video, object, embed {
 
 /* !---- News ----- */
 
+.node-type-news {
+  h1 {
+    margin: 0 0 .25em;
+  }
+  .meta {
+    margin: 0 0 .75em .1em;
+    .subject {
+      background: url('../images/sep-pipe.png') no-repeat right center;
+      margin: 0 .5em 0 0;
+      padding: 0 .5em 0 0;
+    }
+  }
+  .field-name-field-title-image {
+    margin: 0 0 1em;
+  }
+  .field-name-field-manchet {
+    padding: 0 0 .5em 0;    
+  }
+}
+
 .news-list {
   list-style: none;
   &.featured-news {
@@ -554,13 +574,6 @@ img, video, object, embed {
   .alignedimage {
     width: 30%;
   }
-}
-
-/* !---- General stuff ----- */
-
-.alignedimage {
-  float: left;
-  margin: 0 1em 0 0;
 }
 
 /* !---- Bottom ----- */

@@ -213,6 +213,10 @@ input[type=submit], button {
   -moz-text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
   text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
 }
+/* !----- / Fields / ----- */
+.subject a {
+  text-decoration: none;
+}
 /* !---- Footer ----- */
 .section-footer {
   color: #fff;
@@ -254,6 +258,12 @@ input[type=submit], button {
   color: #fff;
 }
 /* !---- News ----- */
+.node-type-news .submitted, .node-type-news .subject {
+  font-size: .9em;
+}
+.node-type-news .field-name-field-manchet {
+  font-weight: bold;
+}
 .news-list h2, .news-list h4 {
   color: #4c4c4c;
   font-size: 1.5em;
@@ -654,12 +664,12 @@ embed {
   z-index: 10;
 }
 .slideshow-panorama .next {
-  background-position: left center;
-  left: -20px;
-}
-.slideshow-panorama .previous {
   background-position: right center;
   right: -20px;
+}
+.slideshow-panorama .previous {
+  background-position: left center;
+  left: -20px;
 }
 .slideshow-panorama .views-row {
   width: 980px;
@@ -724,6 +734,23 @@ embed {
   margin: 0 0 2em;
 }
 /* !---- News ----- */
+.node-type-news h1 {
+  margin: 0 0 .25em;
+}
+.node-type-news .meta {
+  margin: 0 0 .75em .1em;
+}
+.node-type-news .meta .subject {
+  background: url('../images/sep-pipe.png') no-repeat right center;
+  margin: 0 .5em 0 0;
+  padding: 0 .5em 0 0;
+}
+.node-type-news .field-name-field-title-image {
+  margin: 0 0 1em;
+}
+.node-type-news .field-name-field-manchet {
+  padding: 0 0 .5em 0;
+}
 .news-list {
   list-style: none;
 }
@@ -758,11 +785,6 @@ embed {
 }
 .news-list .alignedimage {
   width: 30%;
-}
-/* !---- General stuff ----- */
-.alignedimage {
-  float: left;
-  margin: 0 1em 0 0;
 }
 /* !---- Bottom ----- */
 .region-page-bottom {

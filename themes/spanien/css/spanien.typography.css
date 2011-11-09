@@ -187,6 +187,10 @@ input[type=submit], button {
   -moz-text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
   text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
 }
+/* !----- / Fields / ----- */
+.subject a {
+  text-decoration: none;
+}
 /* !---- Footer ----- */
 .section-footer {
   color: #fff;
@@ -228,6 +232,12 @@ input[type=submit], button {
   color: #fff;
 }
 /* !---- News ----- */
+.node-type-news .submitted, .node-type-news .subject {
+  font-size: .9em;
+}
+.node-type-news .field-name-field-manchet {
+  font-weight: bold;
+}
 .news-list h2, .news-list h4 {
   color: #4c4c4c;
   font-size: 1.5em;
