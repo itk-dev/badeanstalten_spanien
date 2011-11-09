@@ -6,9 +6,15 @@ object,
 embed {
   height: auto;
 }
+/* !---- General styling ----- */
+.alignedimage {
+  float: left;
+  margin: 0 1em 0 0;
+}
 /* !---- Header ----- */
-.section-header {
+.section.section-header {
   background-color: #f3f3f3;
+  margin: -1px 0 0;
 }
 /* !---- Zone user ----- */
 .zone-user .menu {
@@ -444,9 +450,12 @@ embed {
   padding: 0 0 0 .75em;
 }
 .news-list .alignedimage {
+  width: 30%;
+}
+/* !---- General stuff ----- */
+.alignedimage {
   float: left;
   margin: 0 1em 0 0;
-  width: 30%;
 }
 /* !---- Bottom ----- */
 .region-page-bottom {
