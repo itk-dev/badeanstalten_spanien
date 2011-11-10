@@ -23,11 +23,17 @@ class GlobusdataParser extends FeedsParser {
     $result->description = 'Globusdata calendar';
 
     // Run through news items
-    foreach ($xml->entry as $entry) {
+    foreach ($xml->liste as $team) {
       $item = array();
-      $item['title'] = (string)$entry->title;
-      $item['start'] = _parser_common_syndication_parse_date((string)$entry->start);
-      $item['end'] = _parser_common_syndication_parse_date((string)$entry->slut);
+      $item['id'] = (int)$item->attributes()->$id;
+      $item['title'] = (string)$team->title;
+      $item['location'] = (string)$team->sted;
+      $item['start'] = _parser_common_syndication_parse_date((string)$team->start);
+      $item['end'] = _parser_common_syndication_parse_date((string)$team->slut);
+      $item['description'] = (string)$team->beskrivelse;
+      $item['instr'] = (string)$team->instr;
+      $item['status'] = (string)$team->status;
+      $item['tag'] = (string)$team->title;
 
       // Add feed item
       $result->items[] = $item;
@@ -46,6 +52,10 @@ class GlobusdataParser extends FeedsParser {
         'name' => t('Title'),
         'description' => t('Title.'),
       ),
+      'location' => array(
+        'name' => t('Location'),
+        'description' => t('Location.'),
+      ),
       'start' => array(
         'name' => t('Start date'),
         'description' => t('The team start date and time'),
@@ -53,6 +63,22 @@ class GlobusdataParser extends FeedsParser {
       'end' => array(
         'name' => t('End date'),
         'description' => t('The team end date and time'),
+      ),
+      'description' => array(
+        'name' => t('Description'),
+        'description' => t('Description.'),
+      ),
+      'instr' => array(
+        'name' => t('Instructor'),
+        'description' => t('Instructor.'),
+      ),
+      'status' => array(
+        'name' => t('Status'),
+        'description' => t('Status.'),
+      ),
+      'tag' => array(
+        'name' => t('Tag'),
+        'description' => t('Tag.'),
       ),
     ) + parent::getMappingSources();
   }
