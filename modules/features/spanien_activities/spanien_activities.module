@@ -4,14 +4,14 @@
  * Code for the Hold booking feature.
  */
 
-include_once('spanien_teams.features.inc');
+include_once('spanien_activities.features.inc');
 
 /**
  * Defines a new feeds parser to parse globusdata calendar feeds.
  *
  * @return array $info
  */
-function spanien_teams_feeds_plugins() {
+function spanien_activities_feeds_plugins() {
   $info = array();
   $info['GlobusdataParser'] = array(
     'name' => "Globusdata parser",
@@ -20,7 +20,7 @@ function spanien_teams_feeds_plugins() {
       'parent' => 'FeedsParser',
       'class' => 'GlobusdataParser',
       'file' => 'globusdata.class.inc',
-      'path' => drupal_get_path('module', 'spanien_teams' ) . '/includes',
+      'path' => drupal_get_path('module', 'spanien_activities' ) . '/includes',
     ),
   );
   return $info;
@@ -29,6 +29,6 @@ function spanien_teams_feeds_plugins() {
 /**
  * Make sure that the feed parser cache is cleared on module activation.
  */
-function spanien_teams_enable() {
+function spanien_activities_enable() {
   cache_clear_all('plugins:feeds:plugins', 'cache');
 }

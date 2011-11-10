@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * spanien_teams.features.field.inc
+ * spanien_activities.features.field.inc
  */
 
 /**
  * Implements hook_field_default_fields().
  */
-function spanien_teams_field_default_fields() {
+function spanien_activities_field_default_fields() {
   $fields = array();
 
   // Exported field: 'node-holdbooking-field_hold_date'
@@ -184,7 +184,7 @@ function spanien_teams_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'hold_emner',
+            'vocabulary' => 'activities',
             'parent' => '0',
           ),
         ),

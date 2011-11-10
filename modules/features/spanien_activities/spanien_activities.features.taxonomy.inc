@@ -7,11 +7,11 @@
 /**
  * Implements hook_taxonomy_default_vocabularies().
  */
-function spanien_teams_taxonomy_default_vocabularies() {
+function spanien_activities_taxonomy_default_vocabularies() {
   return array(
-    'hold_emner' => array(
-      'name' => 'Hold emner',
-      'machine_name' => 'hold_emner',
+    'activities' => array(
+      'name' => 'Activities',
+      'machine_name' => 'activities',
       'description' => '',
       'hierarchy' => '0',
       'module' => 'taxonomy',

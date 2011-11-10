@@ -7,7 +7,7 @@
 /**
  * Implements hook_feeds_importer_default().
  */
-function spanien_teams_feeds_importer_default() {
+function spanien_activities_feeds_importer_default() {
   $export = array();
 
   $feeds_importer = new stdClass;
@@ -16,7 +16,7 @@ function spanien_teams_feeds_importer_default() {
   $feeds_importer->id = 'globusdata';
   $feeds_importer->config = array(
     'name' => 'Globusdata',
-    'description' => 'Import team events from globusdata',
+    'description' => 'Import activities from globusdata',
     'fetcher' => array(
       'plugin_key' => 'FeedsHTTPFetcher',
       'config' => array(
