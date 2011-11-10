@@ -47,6 +47,6 @@
 <?php endif; ?>
 <span class="subject"<?php print $content_attributes; ?>>
   <?php foreach ($items as $delta => $item): ?>
-    <?php print render($item); ?>
+    <?php print l($item['#title'], 'nyheder/emne/' . $item['#options']['entity']->tid); ?>
   <?php endforeach; ?>
 </span>
