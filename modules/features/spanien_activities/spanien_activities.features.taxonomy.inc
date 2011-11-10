@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * spanien_teams.features.taxonomy.inc
+ * spanien_activities.features.taxonomy.inc
  */
 
 /**

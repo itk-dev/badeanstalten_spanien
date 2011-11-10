@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * spanien_teams.feeds_importer_default.inc
+ * spanien_activities.feeds_importer_default.inc
  */
 
 /**
@@ -49,6 +49,31 @@ function spanien_activities_feeds_importer_default() {
           2 => array(
             'source' => 'end',
             'target' => 'field_hold_date:end',
+            'unique' => FALSE,
+          ),
+          3 => array(
+            'source' => 'location',
+            'target' => 'field_hold_location',
+            'unique' => FALSE,
+          ),
+          4 => array(
+            'source' => 'description',
+            'target' => 'field_hold_description',
+            'unique' => FALSE,
+          ),
+          5 => array(
+            'source' => 'instr',
+            'target' => 'field_hold_instr',
+            'unique' => FALSE,
+          ),
+          6 => array(
+            'source' => 'status',
+            'target' => 'field_hold_status',
+            'unique' => FALSE,
+          ),
+          7 => array(
+            'source' => 'tag',
+            'target' => 'field_hold_emne',
             'unique' => FALSE,
           ),
         ),

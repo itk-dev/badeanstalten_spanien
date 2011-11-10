@@ -23,17 +23,17 @@ class GlobusdataParser extends FeedsParser {
     $result->description = 'Globusdata calendar';
 
     // Run through news items
-    foreach ($xml->liste as $team) {
+    foreach ($xml->hold as $team) {
       $item = array();
-      $item['id'] = (int)$item->attributes()->$id;
-      $item['title'] = (string)$team->title;
+      $item['id'] = (int)$team->attributes()->$id;
+      $item['title'] = (string)$team->titel;
       $item['location'] = (string)$team->sted;
       $item['start'] = _parser_common_syndication_parse_date((string)$team->start);
       $item['end'] = _parser_common_syndication_parse_date((string)$team->slut);
       $item['description'] = (string)$team->beskrivelse;
       $item['instr'] = (string)$team->instr;
       $item['status'] = (string)$team->status;
-      $item['tag'] = (string)$team->title;
+      $item['tag'] = (string)$team->titel;
 
       // Add feed item
       $result->items[] = $item;
