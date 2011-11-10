@@ -450,6 +450,7 @@ embed {
   border-bottom: 1px dashed #e8e8e8;
   list-style: none;
   overflow: hidden;
+  margin: 0 0 1.5em;
   padding: 0 0 1.5em;
 }
 .news-list li .meta {
