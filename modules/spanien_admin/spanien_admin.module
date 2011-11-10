@@ -5,7 +5,7 @@
  *
  * Cange image styles for select spotboxes and title images.
  */
-function badspa_admin_image_styles_alter(&$styles) {
+function spanien_admin_image_styles_alter(&$styles) {
 
   // Update the featured content image width.
   if (isset($styles['panorama_image'])) {
@@ -29,10 +29,19 @@ function badspa_admin_image_styles_alter(&$styles) {
  *
  * Remove textarea from the featured content node type.
  */
-function badspa_admin_init() {
+function spanien_admin_init() {
   $instance = field_info_instance('node', 'field_featured_text', 'featured_content');
   if ($instance) {
     field_delete_instance($instance);
     field_purge_batch(10000);
   }
+}
+
+
+/**
+ * Implements hook_pathauto_alias_alter().
+ */
+function spanien_admin_pathauto_alias_alter(&$alias, array &$context) {
+  // Force all aliases to be saved as language neutral.
+  $context['language'] = LANGUAGE_NONE;
 }
