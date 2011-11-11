@@ -10,6 +10,14 @@ img, video, object, embed {
 
 /* !---- General styling ----- */
 
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
 .alignedimage {
   float: left;
   margin: 0 1em 0 0;
@@ -399,11 +407,13 @@ img, video, object, embed {
       list-style: circle inside;
     }
   }
-  a.link {
-    background: url('../images/menu-sprite.png') no-repeat top left;
-    display: block;
-    line-height: 125%;
-    padding: 0 0 0 25px;
+  span.link {
+    a {
+      background: url('../images/menu-sprite.png') no-repeat top left;
+      display: block;
+      line-height: 135%;
+      padding: 0 0 0 25px;    
+    }
   }
   .zone-footer-second-wrapper {
     background-color: #d3f1f7;

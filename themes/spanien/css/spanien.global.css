@@ -312,6 +312,12 @@ embed {
   height: auto;
 }
 /* !---- General styling ----- */
+.align-left {
+  text-align: left;
+}
+.align-right {
+  text-align: right;
+}
 .alignedimage {
   float: left;
   margin: 0 1em 0 0;
@@ -643,10 +649,10 @@ embed {
   background: none;
   list-style: circle inside;
 }
-.section-footer a.link {
+.section-footer span.link a {
   background: url('../images/menu-sprite.png') no-repeat top left;
   display: block;
-  line-height: 125%;
+  line-height: 135%;
   padding: 0 0 0 25px;
 }
 .section-footer .zone-footer-second-wrapper {
