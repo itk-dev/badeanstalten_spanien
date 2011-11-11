@@ -18,11 +18,10 @@ function spanien_activities_feeds_importer_default() {
     'name' => 'Globusdata',
     'description' => 'Import activities from globusdata',
     'fetcher' => array(
-      'plugin_key' => 'FeedsHTTPFetcher',
+      'plugin_key' => 'FeedsFileFetcher',
       'config' => array(
-        'auto_detect_feeds' => FALSE,
-        'use_pubsubhubbub' => FALSE,
-        'designated_hub' => '',
+        'allowed_extensions' => 'txt csv tsv xml opml',
+        'direct' => FALSE,
       ),
     ),
     'parser' => array(
@@ -75,6 +74,11 @@ function spanien_activities_feeds_importer_default() {
             'source' => 'tag',
             'target' => 'field_hold_emne',
             'unique' => FALSE,
+          ),
+          8 => array(
+            'source' => 'id',
+            'target' => 'guid',
+            'unique' => 1,
           ),
         ),
         'update_existing' => '1',
