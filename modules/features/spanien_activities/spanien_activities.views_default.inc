@@ -180,8 +180,10 @@ function spanien_activities_views_default_views() {
   $handler->display->display_options['filters']['field_hold_date_value']['table'] = 'field_data_field_hold_date';
   $handler->display->display_options['filters']['field_hold_date_value']['field'] = 'field_hold_date_value';
   $handler->display->display_options['filters']['field_hold_date_value']['operator'] = 'between';
-  $handler->display->display_options['filters']['field_hold_date_value']['default_date'] = 'last monday';
-  $handler->display->display_options['filters']['field_hold_date_value']['default_to_date'] = 'next monday';
+  $handler->display->display_options['filters']['field_hold_date_value']['granularity'] = 'month';
+  $handler->display->display_options['filters']['field_hold_date_value']['form_type'] = 'date_text';
+  $handler->display->display_options['filters']['field_hold_date_value']['default_date'] = 'first day of this month';
+  $handler->display->display_options['filters']['field_hold_date_value']['default_to_date'] = 'last day of this month';
 
   /* Display: Today */
   $handler = $view->new_display('page', 'Today', 'page');
@@ -340,6 +342,11 @@ function spanien_activities_views_default_views() {
   $handler = $view->new_display('page', 'Week', 'page_1');
   $handler->display->display_options['display_description'] = 'Show activities that happens this week only';
   $handler->display->display_options['path'] = 'aktiviteter/uge';
+
+  /* Display: Month */
+  $handler = $view->new_display('page', 'Month', 'page_2');
+  $handler->display->display_options['display_description'] = 'Show activities that happens this month only';
+  $handler->display->display_options['path'] = 'aktiviteter/maaned';
   $translatables['activities'] = array(
     t('Master'),
     t('Activities'),
@@ -358,6 +365,8 @@ function spanien_activities_views_default_views() {
     t('Show activities that happens today only'),
     t('Week'),
     t('Show activities that happens this week only'),
+    t('Month'),
+    t('Show activities that happens this month only'),
   );
   $export['activities'] = $view;
 
