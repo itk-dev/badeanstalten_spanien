@@ -44,10 +44,10 @@ function spanien_activities_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'date',
           'settings' => array(
-            'format_type' => 'long',
+            'format_type' => 'activities_time',
             'fromto' => 'both',
             'multiple_from' => '',
             'multiple_number' => '',
@@ -55,7 +55,7 @@ function spanien_activities_field_default_fields() {
             'show_repeat_rule' => 'show',
           ),
           'type' => 'date_default',
-          'weight' => 2,
+          'weight' => '0',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -126,11 +126,11 @@ function spanien_activities_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 1,
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -199,11 +199,11 @@ function spanien_activities_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 5,
+          'weight' => '5',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -267,11 +267,11 @@ function spanien_activities_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'inline',
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 3,
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -335,11 +335,11 @@ function spanien_activities_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 0,
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -403,11 +403,11 @@ function spanien_activities_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'inline',
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 4,
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'above',
