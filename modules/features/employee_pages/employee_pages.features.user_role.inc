@@ -13,7 +13,7 @@ function employee_pages_user_default_roles() {
   // Exported role: medarbejder
   $roles['medarbejder'] = array(
     'name' => 'medarbejder',
-    'weight' => '3',
+    'weight' => '2',
   );
 
   return $roles;
