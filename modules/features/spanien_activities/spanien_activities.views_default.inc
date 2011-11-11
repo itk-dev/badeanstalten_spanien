@@ -208,6 +208,8 @@ function spanien_activities_views_default_views() {
 
   /* Display: Today */
   $handler = $view->new_display('page', 'Today', 'page');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Vis kun i dag';
   $handler->display->display_options['display_description'] = 'Show activities that happens today only';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Dato */
@@ -379,12 +381,14 @@ function spanien_activities_views_default_views() {
   $handler->display->display_options['filters']['field_hold_date_value']['default_to_date'] = 'next monday';
   $handler->display->display_options['path'] = 'aktiviteter';
   $handler->display->display_options['menu']['type'] = 'normal';
-  $handler->display->display_options['menu']['title'] = 'Aktiviter';
+  $handler->display->display_options['menu']['title'] = 'Aktiviteter';
   $handler->display->display_options['menu']['weight'] = '0';
   $handler->display->display_options['menu']['name'] = 'main-menu';
 
   /* Display: Week */
   $handler = $view->new_display('page', 'Week', 'page_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Denne uge';
   $handler->display->display_options['display_description'] = 'Show activities that happens this week only';
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Type */
@@ -415,6 +419,8 @@ function spanien_activities_views_default_views() {
 
   /* Display: Month */
   $handler = $view->new_display('page', 'Month', 'page_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Denne måned';
   $handler->display->display_options['display_description'] = 'Show activities that happens this month only';
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Type */
@@ -446,6 +452,8 @@ function spanien_activities_views_default_views() {
 
   /* Display: All */
   $handler = $view->new_display('page', 'All', 'page_3');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Vis alle';
   $handler->display->display_options['path'] = 'aktiviteter/all';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Vis alle';
@@ -466,12 +474,16 @@ function spanien_activities_views_default_views() {
     t('[title_1] <span>- [field_hold_location]</span>'),
     t('aktiviteter/emne/[tid]'),
     t('Today'),
+    t('Vis kun i dag'),
     t('Show activities that happens today only'),
     t('Week'),
+    t('Denne uge'),
     t('Show activities that happens this week only'),
     t('Month'),
+    t('Denne måned'),
     t('Show activities that happens this month only'),
     t('All'),
+    t('Vis alle'),
   );
   $export['activities'] = $view;
 
