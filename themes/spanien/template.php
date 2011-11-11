@@ -65,10 +65,16 @@ function spanien_breadcrumb($variables) {
 
   // Build breadcrumb.
   if (!empty($breadcrumb)) {
-    // Add special case for news (we needs menu-trails).
-    $path = explode('/', drupal_get_path_alias());
-    if ($path[0] == 'nyheder' && count($path) > 1) {
+    $path = drupal_get_path_alias();
+
+    // Add breadcrumb for news.
+    if (preg_match('/^nyheder\//', $path)) {
       $breadcrumb[] = l('Nyheder', 'nyheder');
+    }
+
+    // Add breadcrumb for activities.
+    if (preg_match('/^aktiviteter\/hold\/(\d+)/', $path)) {
+      $breadcrumb[] = l('Aktiviteter', 'aktiviteter');
     }
 
     // Add current page title to the end of the breadcrumb.
