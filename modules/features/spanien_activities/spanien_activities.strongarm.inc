@@ -49,7 +49,9 @@ function spanien_activities_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_holdbooking';
-  $strongarm->value = array();
+  $strongarm->value = array(
+    0 => 'status',
+  );
   $export['node_options_holdbooking'] = $strongarm;
 
   $strongarm = new stdClass;
@@ -65,6 +67,13 @@ function spanien_activities_strongarm() {
   $strongarm->name = 'node_submitted_holdbooking';
   $strongarm->value = 0;
   $export['node_submitted_holdbooking'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_holdbooking_pattern';
+  $strongarm->value = 'aktiviteter/hold/[node:nid]';
+  $export['pathauto_node_holdbooking_pattern'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
