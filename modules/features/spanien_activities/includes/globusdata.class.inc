@@ -25,7 +25,7 @@ class GlobusdataParser extends FeedsParser {
     // Run through news items
     foreach ($xml->hold as $team) {
       $item = array();
-      $item['id'] = (int)$team->attributes()->$id;
+      $item['id'] = (string)$team->attributes()->id;
       $item['title'] = (string)$team->titel;
       $item['location'] = (string)$team->sted;
       $item['start'] = _parser_common_syndication_parse_date((string)$team->start);
@@ -45,8 +45,8 @@ class GlobusdataParser extends FeedsParser {
   public function getMappingSources() {
     return array(
       'id' => array(
-        'name' => t('GUID'),
-        'description' => t('GUID for the team.'),
+        'name' => t('Id'),
+        'description' => t('Id for the team.'),
       ),
       'title' => array(
         'name' => t('Title'),
