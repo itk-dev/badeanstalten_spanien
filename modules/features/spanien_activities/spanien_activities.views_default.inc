@@ -175,15 +175,6 @@ function spanien_activities_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'holdbooking' => 'holdbooking',
   );
-  /* Filter criterion: Content: Dato -  start date (field_hold_date) */
-  $handler->display->display_options['filters']['field_hold_date_value']['id'] = 'field_hold_date_value';
-  $handler->display->display_options['filters']['field_hold_date_value']['table'] = 'field_data_field_hold_date';
-  $handler->display->display_options['filters']['field_hold_date_value']['field'] = 'field_hold_date_value';
-  $handler->display->display_options['filters']['field_hold_date_value']['operator'] = 'between';
-  $handler->display->display_options['filters']['field_hold_date_value']['granularity'] = 'month';
-  $handler->display->display_options['filters']['field_hold_date_value']['form_type'] = 'date_text';
-  $handler->display->display_options['filters']['field_hold_date_value']['default_date'] = 'first day of this month';
-  $handler->display->display_options['filters']['field_hold_date_value']['default_to_date'] = 'last day of this month';
 
   /* Display: Today */
   $handler = $view->new_display('page', 'Today', 'page');
@@ -346,7 +337,27 @@ function spanien_activities_views_default_views() {
   /* Display: Month */
   $handler = $view->new_display('page', 'Month', 'page_2');
   $handler->display->display_options['display_description'] = 'Show activities that happens this month only';
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'holdbooking' => 'holdbooking',
+  );
+  /* Filter criterion: Content: Dato -  start date (field_hold_date) */
+  $handler->display->display_options['filters']['field_hold_date_value']['id'] = 'field_hold_date_value';
+  $handler->display->display_options['filters']['field_hold_date_value']['table'] = 'field_data_field_hold_date';
+  $handler->display->display_options['filters']['field_hold_date_value']['field'] = 'field_hold_date_value';
+  $handler->display->display_options['filters']['field_hold_date_value']['granularity'] = 'month';
+  $handler->display->display_options['filters']['field_hold_date_value']['form_type'] = 'date_text';
+  $handler->display->display_options['filters']['field_hold_date_value']['default_date'] = 'now';
+  $handler->display->display_options['filters']['field_hold_date_value']['default_to_date'] = 'last day of month';
   $handler->display->display_options['path'] = 'aktiviteter/maaned';
+
+  /* Display: All */
+  $handler = $view->new_display('page', 'All', 'page_3');
+  $handler->display->display_options['path'] = 'aktiviteter/all';
   $translatables['activities'] = array(
     t('Master'),
     t('Activities'),
@@ -367,6 +378,7 @@ function spanien_activities_views_default_views() {
     t('Show activities that happens this week only'),
     t('Month'),
     t('Show activities that happens this month only'),
+    t('All'),
   );
   $export['activities'] = $view;
 
