@@ -34,6 +34,21 @@ function spanien_activities_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'menu_default_active_menus';
+  $strongarm->value = array(
+    0 => 'navigation',
+    1 => 'management',
+    2 => 'user-menu',
+    3 => 'main-menu',
+    6 => 'menu-footer-links-first',
+    7 => 'devel',
+    8 => 'menu-secondary-links',
+  );
+  $export['menu_default_active_menus'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_holdbooking';
   $strongarm->value = array();
   $export['menu_options_holdbooking'] = $strongarm;
