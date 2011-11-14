@@ -4,4 +4,4 @@
  * Code for the aabningstider feature.
  */
 
-include_once('aabningstider.features.inc');
+include_once('spanien_aabningstider.features.inc');
