@@ -7,7 +7,7 @@
 /**
  * Implements hook_strongarm().
  */
-function aabningstider_strongarm() {
+function spanien_aabningstider_strongarm() {
   $export = array();
 
   $strongarm = new stdClass;

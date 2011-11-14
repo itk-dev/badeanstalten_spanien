@@ -7,7 +7,7 @@
 /**
  * Implements hook_field_default_fields().
  */
-function aabningstider_field_default_fields() {
+function spanien_aabningstider_field_default_fields() {
   $fields = array();
 
   // Exported field: 'node-office_hours-field_content'
@@ -34,7 +34,7 @@ function aabningstider_field_default_fields() {
       'module' => 'text',
       'settings' => array(),
       'translatable' => '1',
-      'type' => 'text_long',
+      'type' => 'text_with_summary',
     ),
     'field_instance' => array(
       'bundle' => 'office_hours',
