@@ -690,3 +690,30 @@ input[type="button"] {
   
   }  
 }
+
+/* !---- Opening hours ----- */
+
+.office-hours {
+  margin: 0 0 1.5em;
+  .oh-display {
+    display: block;
+    margin: 0 0 1px;
+    &.odd {
+      .oh-display-day,
+      .oh-display-hours {    
+        background-color: #f3f3f3;
+      }
+    }
+    .oh-display-day,
+    .oh-display-hours {
+      display: inline-block;
+      padding: 5px;
+    }        
+    .oh-display-day{
+      min-width: 15%;
+    }
+    .oh-display-hours {
+      min-width: 15%;
+    }
+  }
+}
