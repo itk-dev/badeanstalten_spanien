@@ -1,11 +1,4 @@
 /* !----- / Variables / ----- */
-/* !----- / Image, video, object, embed / ----- */
-img,
-video,
-object,
-embed {
-  height: auto;
-}
 /* !---- General styling ----- */
 .align-left {
   text-align: left;
