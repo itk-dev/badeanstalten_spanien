@@ -23,6 +23,7 @@ function spanien_aabningstider_views_default_views() {
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Spotbox: office hours';
+  $handler->display->display_options['css_class'] = 'block block-nodespotbox block-image';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -33,6 +34,8 @@ function spanien_aabningstider_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['hide_empty'] = 0;
+  $handler->display->display_options['row_options']['default_field_elements'] = 0;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -50,8 +53,10 @@ function spanien_aabningstider_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
   $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['title']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['title']['element_type'] = 'h2';
+  $handler->display->display_options['fields']['title']['element_class'] = 'block-title';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['title']['element_default_classes'] = 0;
   $handler->display->display_options['fields']['title']['hide_empty'] = 0;
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = 0;
@@ -73,8 +78,10 @@ function spanien_aabningstider_views_default_views() {
   $handler->display->display_options['fields']['field_office_hours']['alter']['strip_tags'] = 0;
   $handler->display->display_options['fields']['field_office_hours']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['field_office_hours']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['field_office_hours']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_office_hours']['element_class'] = 'text-content';
   $handler->display->display_options['fields']['field_office_hours']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_office_hours']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['field_office_hours']['element_default_classes'] = 0;
   $handler->display->display_options['fields']['field_office_hours']['hide_empty'] = 0;
   $handler->display->display_options['fields']['field_office_hours']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_office_hours']['hide_alter_empty'] = 0;
