@@ -70,7 +70,9 @@ function spanien_aabningstider_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_office_hours';
-  $strongarm->value = array();
+  $strongarm->value = array(
+    0 => 'main-menu',
+  );
   $export['menu_options_office_hours'] = $strongarm;
 
   $strongarm = new stdClass;
