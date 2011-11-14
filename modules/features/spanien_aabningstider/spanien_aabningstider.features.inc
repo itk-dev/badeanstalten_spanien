@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * aabningstider.features.inc
+ * spanien_aabningstider.features.inc
  */
 
 /**
@@ -15,6 +15,16 @@ function spanien_aabningstider_ctools_plugin_api() {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function spanien_aabningstider_views_api() {
+  list($module, $api) = func_get_args();
+  if ($module == "views" && $api == "views_default") {
+    return array("version" => "3.0");
+  }
+}
+
+/**
  * Implements hook_node_info().
  */
 function spanien_aabningstider_node_info() {
@@ -22,7 +32,7 @@ function spanien_aabningstider_node_info() {
     'office_hours' => array(
       'name' => t('Åbningstider'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Administrate nodes with opening hours, there should only be one node on the system.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
