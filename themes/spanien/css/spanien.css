@@ -5,7 +5,7 @@ video,
 object,
 embed {
   height: auto;
-  width: auto\9;
+  width: 100%\9;
   /* ie8 */
 
 }
