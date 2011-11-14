@@ -24,8 +24,8 @@ function spanien_admin_image_styles_alter(&$styles) {
   }
   
   if (isset($styles['news'])) {
-    $styles['title_image']['effects'][2]['data']['width'] = 1000;
-    $styles['title_image']['effects'][2]['data']['height'] = 286;
+    $styles['news']['effects'][2]['data']['width'] = 1000;
+    $styles['news']['effects'][2]['data']['height'] = 286;
   }  
 }
 
