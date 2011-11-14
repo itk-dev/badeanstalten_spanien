@@ -1,4 +1,14 @@
 /* !----- / Variables / ----- */
+/* !----- / Image, video, object, embed / ----- */
+img,
+video,
+object,
+embed {
+  height: auto;
+  width: auto\9;
+  /* ie8 */
+
+}
 /* !---- General styling ----- */
 .align-left {
   text-align: left;

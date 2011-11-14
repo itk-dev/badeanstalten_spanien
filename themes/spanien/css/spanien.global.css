@@ -219,14 +219,14 @@ input[type="button"] {
 .block-style-menu h2.block-title {
   font-size: 1.45em;
 }
-.block-style-menu ul:not(.contextual-links) li a {
+.block-style-menu ul li a {
   color: #059ebb;
   text-decoration: none;
 }
-.block-style-menu ul:not(.contextual-links) li a:hover {
+.block-style-menu ul li a:hover {
   color: #038298;
 }
-.block-style-menu ul:not(.contextual-links) li a.active-trail.active {
+.block-style-menu ul li a.active-trail.active {
   color: #fff;
   -webkit-text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
   -moz-text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
@@ -304,13 +304,6 @@ input[type="button"] {
 }
 /* !----- / Layout ----- */
 /* !----- / Variables / ----- */
-/* !----- / Image, video, object, embed / ----- */
-img,
-video,
-object,
-embed {
-  height: auto;
-}
 /* !---- General styling ----- */
 .align-left {
   text-align: left;
