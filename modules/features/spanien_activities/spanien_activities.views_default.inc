@@ -23,6 +23,7 @@ function spanien_activities_views_default_views() {
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Activities';
+  $handler->display->display_options['css_class'] = 'activities';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -123,7 +124,7 @@ function spanien_activities_views_default_views() {
   $handler->display->display_options['fields']['title']['ui_name'] = 'Title + location';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['alter_text'] = 1;
-  $handler->display->display_options['fields']['title']['alter']['text'] = '[title_1] <span>- [field_hold_location]</span>';
+  $handler->display->display_options['fields']['title']['alter']['text'] = '<h4>[title_1] <span>- [field_hold_location]</span></h4>';
   $handler->display->display_options['fields']['title']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['title']['alter']['external'] = 0;
@@ -164,30 +165,29 @@ function spanien_activities_views_default_views() {
   $handler->display->display_options['fields']['field_hold_description']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_hold_description']['hide_alter_empty'] = 0;
   $handler->display->display_options['fields']['field_hold_description']['field_api_classes'] = 0;
-  /* Field: Content: Emne */
-  $handler->display->display_options['fields']['field_hold_emne']['id'] = 'field_hold_emne';
-  $handler->display->display_options['fields']['field_hold_emne']['table'] = 'field_data_field_hold_emne';
-  $handler->display->display_options['fields']['field_hold_emne']['field'] = 'field_hold_emne';
-  $handler->display->display_options['fields']['field_hold_emne']['label'] = '';
-  $handler->display->display_options['fields']['field_hold_emne']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['field_hold_emne']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['field_hold_emne']['alter']['path'] = 'aktiviteter/emne/[tid]';
-  $handler->display->display_options['fields']['field_hold_emne']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['field_hold_emne']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['field_hold_emne']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['field_hold_emne']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['field_hold_emne']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['field_hold_emne']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['field_hold_emne']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['field_hold_emne']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['field_hold_emne']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['field_hold_emne']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['field_hold_emne']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_hold_emne']['element_default_classes'] = 0;
-  $handler->display->display_options['fields']['field_hold_emne']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['field_hold_emne']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['field_hold_emne']['hide_alter_empty'] = 0;
-  $handler->display->display_options['fields']['field_hold_emne']['field_api_classes'] = 0;
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['table'] = 'node';
+  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['alter']['alter_text'] = 1;
+  $handler->display->display_options['fields']['view_node']['alter']['text'] = '<span class="link-icon">[title_1]</span>';
+  $handler->display->display_options['fields']['view_node']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['view_node']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['view_node']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['view_node']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['view_node']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['view_node']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['view_node']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['view_node']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['view_node']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['view_node']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['view_node']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['element_default_classes'] = 0;
+  $handler->display->display_options['fields']['view_node']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['view_node']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['view_node']['hide_alter_empty'] = 0;
   /* Sort criterion: Content: Dato -  start date (field_hold_date) */
   $handler->display->display_options['sorts']['field_hold_date_value']['id'] = 'field_hold_date_value';
   $handler->display->display_options['sorts']['field_hold_date_value']['table'] = 'field_data_field_hold_date';
@@ -300,7 +300,7 @@ function spanien_activities_views_default_views() {
   $handler->display->display_options['fields']['title']['ui_name'] = 'Title + location';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['alter_text'] = 1;
-  $handler->display->display_options['fields']['title']['alter']['text'] = '[title_1] <span>- [field_hold_location]</span>';
+  $handler->display->display_options['fields']['title']['alter']['text'] = '<h4>[title_1] <span>- [field_hold_location]</span></h4>';
   $handler->display->display_options['fields']['title']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['title']['alter']['external'] = 0;
@@ -359,8 +359,10 @@ function spanien_activities_views_default_views() {
   $handler->display->display_options['fields']['field_hold_emne']['alter']['strip_tags'] = 0;
   $handler->display->display_options['fields']['field_hold_emne']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['field_hold_emne']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['field_hold_emne']['element_type'] = 'span';
+  $handler->display->display_options['fields']['field_hold_emne']['element_class'] = 'link-icon';
   $handler->display->display_options['fields']['field_hold_emne']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_hold_emne']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['field_hold_emne']['element_default_classes'] = 0;
   $handler->display->display_options['fields']['field_hold_emne']['hide_empty'] = 0;
   $handler->display->display_options['fields']['field_hold_emne']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_hold_emne']['hide_alter_empty'] = 0;
@@ -471,11 +473,12 @@ function spanien_activities_views_default_views() {
     t('Items per page'),
     t('- All -'),
     t('Offset'),
-    t('[title_1] <span>- [field_hold_location]</span>'),
-    t('aktiviteter/emne/[tid]'),
+    t('<h4>[title_1] <span>- [field_hold_location]</span></h4>'),
+    t('<span class="link-icon">[title_1]</span>'),
     t('Today'),
     t('Vis kun i dag'),
     t('Show activities that happens today only'),
+    t('aktiviteter/emne/[tid]'),
     t('Week'),
     t('Denne uge'),
     t('Show activities that happens this week only'),

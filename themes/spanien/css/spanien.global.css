@@ -121,6 +121,19 @@ a:active {
   color: #000;
   text-decoration: none;
 }
+/* !----- / Link icon / ----- */
+.link-icon a:link {
+  text-decoration: none;
+}
+.link-icon a:visited {
+  text-decoration: none;
+}
+.link-icon a:hover {
+  text-decoration: none;
+}
+.link-icon a:active {
+  text-decoration: none;
+}
 /* !----- / Breadcrumb / ----- */
 .breadcrumb {
   color: #999;
@@ -302,8 +315,42 @@ input[type="button"] {
 .news-list .link a {
   text-decoration: underline;
 }
+/* !---- Activities ----- */
+.activities fieldset h4 a {
+  color: #4c4c4c;
+  text-decoration: none;
+}
+.activities fieldset h4 a:link {
+  color: #4c4c4c;
+  text-decoration: none;
+}
+.activities fieldset h4 a:visited {
+  color: #4c4c4c;
+  text-decoration: none;
+}
+.activities fieldset h4 a:hover {
+  color: #4c4c4c;
+  text-decoration: none;
+}
+.activities fieldset h4 a:active {
+  color: #4c4c4c;
+  text-decoration: none;
+}
+.activities fieldset h4 span {
+  color: #8c8c8c;
+}
 /* !----- / Layout ----- */
 /* !----- / Variables / ----- */
+/* !----- / Image, video, object, embed / ----- */
+img,
+video,
+object,
+embed {
+  height: auto;
+  width: 100%\9;
+  /* ie8 */
+
+}
 /* !---- General styling ----- */
 .align-left {
   text-align: left;
@@ -314,6 +361,10 @@ input[type="button"] {
 .alignedimage {
   float: left;
   margin: 0 1em 0 0;
+}
+.link-icon {
+  background: url('../images/arrow.png') no-repeat left 5px;
+  padding: 0 0 0 .75em;
 }
 /* !---- Header ----- */
 .section.section-header {
@@ -856,4 +907,23 @@ input[type="button"]:hover {
 }
 .webform-client-form > div .form-actions {
   text-align: right;
+}
+/* !---- Activities ----- */
+.activities fieldset {
+  border: 1px solid #e0e0e0;
+}
+.activities fieldset legend {
+  margin: 0 .8em;
+  padding: 0 .8em;
+}
+.activities fieldset h4 {
+  background: transparent;
+}
+.activities fieldset .text-content {
+  background-color: #f3f3f3;
+  margin: 1em 1.6em 1.6em;
+  padding: 1em 1.3em;
+}
+.activities fieldset .text-content p {
+  margin: 1em 0;
 }
