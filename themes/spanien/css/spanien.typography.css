@@ -54,7 +54,7 @@ p {
   font-size: 23.4px;
   line-height: 1em;
 }
-.block-title, .field-label {
+.block-title {
   font-size: 21px;
   font-family: 'CartoGothicStdBook', 'arial', sans-serif;
   font-weight: 'CartoGothicStdBook', 'arial', sans-serif;

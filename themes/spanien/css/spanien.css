@@ -545,3 +545,16 @@ input[type="button"]:hover {
 .activities fieldset .text-content p {
   margin: 1em 0;
 }
+.node-activities .field-label {
+  display: inline;
+  font-weight: bold;
+}
+.node-activities .activities-date {
+  display: inline;
+}
+.node-activities .activities-location {
+  display: inline;
+}
+.node-activities .activities-description {
+  padding: 1.5em 0 0;
+}

@@ -56,7 +56,7 @@ p {
   font-size: 23.4px;
   line-height: 1em;
 }
-.block-title, .field-label {
+.block-title {
   font-size: 21px;
   font-family: 'CartoGothicStdBook', 'arial', sans-serif;
   font-weight: 'CartoGothicStdBook', 'arial', sans-serif;
@@ -926,4 +926,17 @@ input[type="button"]:hover {
 }
 .activities fieldset .text-content p {
   margin: 1em 0;
+}
+.node-activities .field-label {
+  display: inline;
+  font-weight: bold;
+}
+.node-activities .activities-date {
+  display: inline;
+}
+.node-activities .activities-location {
+  display: inline;
+}
+.node-activities .activities-description {
+  padding: 1.5em 0 0;
 }
