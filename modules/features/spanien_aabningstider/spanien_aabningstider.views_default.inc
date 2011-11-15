@@ -23,7 +23,7 @@ function spanien_aabningstider_views_default_views() {
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Spotbox: office hours';
-  $handler->display->display_options['css_class'] = 'block block-nodespotbox block-image';
+  $handler->display->display_options['css_class'] = 'block block-nodespotbox block-image office-hours';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
