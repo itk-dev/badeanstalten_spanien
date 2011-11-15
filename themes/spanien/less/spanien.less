@@ -695,6 +695,26 @@ input[type="button"] {
 
 .office-hours {
   margin: 0 0 1.5em;
+  &.block {
+    ul,
+    li {
+      margin: 0;
+      .oh-display {
+        &.odd {
+          .oh-display-day,
+          .oh-display-hours {    
+            background-color: #fff;
+          }
+        }
+        &.even {
+          .oh-display-day,
+          .oh-display-hours {    
+            background-color: #f3f3f3;
+          }
+        }
+      }
+    }
+  }  
   .oh-display {
     display: block;
     margin: 0 0 1px;
@@ -704,16 +724,20 @@ input[type="button"] {
         background-color: #f3f3f3;
       }
     }
+    &.even {
+      .oh-display-day,
+      .oh-display-hours {    
+        background-color: #fff;
+      }
+    }
     .oh-display-day,
     .oh-display-hours {
       display: inline-block;
       padding: 5px;
     }        
-    .oh-display-day{
-      min-width: 15%;
-    }
+    .oh-display-day,
     .oh-display-hours {
-      min-width: 15%;
+      min-width: 115px;
     }
   }
 }

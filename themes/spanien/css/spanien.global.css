@@ -940,3 +940,24 @@ input[type="button"]:hover {
 .node-activities .activities-description {
   padding: 1.5em 0 0;
 }
+/* !---- Opening hours ----- */
+.office-hours {
+  margin: 0 0 1.5em;
+}
+.office-hours .oh-display {
+  display: block;
+  margin: 0 0 1px;
+}
+.office-hours .oh-display.odd .oh-display-day, .office-hours .oh-display.odd .oh-display-hours {
+  background-color: #f3f3f3;
+}
+.office-hours .oh-display .oh-display-day, .office-hours .oh-display .oh-display-hours {
+  display: inline-block;
+  padding: 5px;
+}
+.office-hours .oh-display .oh-display-day {
+  min-width: 15%;
+}
+.office-hours .oh-display .oh-display-hours {
+  min-width: 15%;
+}
