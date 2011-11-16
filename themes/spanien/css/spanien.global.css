@@ -944,6 +944,21 @@ input[type="button"]:hover {
 .office-hours {
   margin: 0 0 1.5em;
 }
+.office-hours.block ul, .office-hours.block li {
+  margin: 0;
+}
+.office-hours.block ul .oh-display.odd .oh-display-day,
+.office-hours.block li .oh-display.odd .oh-display-day,
+.office-hours.block ul .oh-display.odd .oh-display-hours,
+.office-hours.block li .oh-display.odd .oh-display-hours {
+  background-color: #e1e1e1;
+}
+.office-hours.block ul .oh-display.even .oh-display-day,
+.office-hours.block li .oh-display.even .oh-display-day,
+.office-hours.block ul .oh-display.even .oh-display-hours,
+.office-hours.block li .oh-display.even .oh-display-hours {
+  background-color: #f3f3f3;
+}
 .office-hours .oh-display {
   display: block;
   margin: 0 0 1px;
@@ -951,13 +966,13 @@ input[type="button"]:hover {
 .office-hours .oh-display.odd .oh-display-day, .office-hours .oh-display.odd .oh-display-hours {
   background-color: #f3f3f3;
 }
+.office-hours .oh-display.even .oh-display-day, .office-hours .oh-display.even .oh-display-hours {
+  background-color: #fff;
+}
 .office-hours .oh-display .oh-display-day, .office-hours .oh-display .oh-display-hours {
   display: inline-block;
   padding: 5px;
 }
-.office-hours .oh-display .oh-display-day {
-  min-width: 15%;
-}
-.office-hours .oh-display .oh-display-hours {
-  min-width: 15%;
+.office-hours .oh-display .oh-display-day, .office-hours .oh-display .oh-display-hours {
+  min-width: 115px;
 }
