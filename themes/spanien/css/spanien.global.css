@@ -56,7 +56,7 @@ p {
   font-size: 23.4px;
   line-height: 1em;
 }
-.block-title, .field-label {
+.block-title {
   font-size: 21px;
   font-family: 'CartoGothicStdBook', 'arial', sans-serif;
   font-weight: 'CartoGothicStdBook', 'arial', sans-serif;
@@ -119,6 +119,19 @@ a:hover {
 }
 a:active {
   color: #000;
+  text-decoration: none;
+}
+/* !----- / Link icon / ----- */
+.link-icon a:link {
+  text-decoration: none;
+}
+.link-icon a:visited {
+  text-decoration: none;
+}
+.link-icon a:hover {
+  text-decoration: none;
+}
+.link-icon a:active {
   text-decoration: none;
 }
 /* !----- / Breadcrumb / ----- */
@@ -219,14 +232,14 @@ input[type="button"] {
 .block-style-menu h2.block-title {
   font-size: 1.45em;
 }
-.block-style-menu ul:not(.contextual-links) li a {
+.block-style-menu ul li a {
   color: #059ebb;
   text-decoration: none;
 }
-.block-style-menu ul:not(.contextual-links) li a:hover {
+.block-style-menu ul li a:hover {
   color: #038298;
 }
-.block-style-menu ul:not(.contextual-links) li a.active-trail.active {
+.block-style-menu ul li a.active-trail.active {
   color: #fff;
   -webkit-text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
   -moz-text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
@@ -302,6 +315,30 @@ input[type="button"] {
 .news-list .link a {
   text-decoration: underline;
 }
+/* !---- Activities ----- */
+.activities fieldset h4 a {
+  color: #4c4c4c;
+  text-decoration: none;
+}
+.activities fieldset h4 a:link {
+  color: #4c4c4c;
+  text-decoration: none;
+}
+.activities fieldset h4 a:visited {
+  color: #4c4c4c;
+  text-decoration: none;
+}
+.activities fieldset h4 a:hover {
+  color: #4c4c4c;
+  text-decoration: none;
+}
+.activities fieldset h4 a:active {
+  color: #4c4c4c;
+  text-decoration: none;
+}
+.activities fieldset h4 span {
+  color: #8c8c8c;
+}
 /* !----- / Layout ----- */
 /* !----- / Variables / ----- */
 /* !----- / Image, video, object, embed / ----- */
@@ -310,6 +347,9 @@ video,
 object,
 embed {
   height: auto;
+  width: 100%\9;
+  /* ie8 */
+
 }
 /* !---- General styling ----- */
 .align-left {
@@ -321,6 +361,10 @@ embed {
 .alignedimage {
   float: left;
   margin: 0 1em 0 0;
+}
+.link-icon {
+  background: url('../images/arrow.png') no-repeat left 5px;
+  padding: 0 0 0 .75em;
 }
 /* !---- Header ----- */
 .section.section-header {
@@ -863,4 +907,57 @@ input[type="button"]:hover {
 }
 .webform-client-form > div .form-actions {
   text-align: right;
+}
+/* !---- Activities ----- */
+.activities fieldset {
+  border: 1px solid #e0e0e0;
+}
+.activities fieldset legend {
+  margin: 0 .8em;
+  padding: 0 .8em;
+}
+.activities fieldset h4 {
+  background: transparent;
+}
+.activities fieldset .text-content {
+  background-color: #f3f3f3;
+  margin: 1em 1.6em 1.6em;
+  padding: 1em 1.3em;
+}
+.activities fieldset .text-content p {
+  margin: 1em 0;
+}
+.node-activities .field-label {
+  display: inline;
+  font-weight: bold;
+}
+.node-activities .activities-date {
+  display: inline;
+}
+.node-activities .activities-location {
+  display: inline;
+}
+.node-activities .activities-description {
+  padding: 1.5em 0 0;
+}
+/* !---- Opening hours ----- */
+.office-hours {
+  margin: 0 0 1.5em;
+}
+.office-hours .oh-display {
+  display: block;
+  margin: 0 0 1px;
+}
+.office-hours .oh-display.odd .oh-display-day, .office-hours .oh-display.odd .oh-display-hours {
+  background-color: #f3f3f3;
+}
+.office-hours .oh-display .oh-display-day, .office-hours .oh-display .oh-display-hours {
+  display: inline-block;
+  padding: 5px;
+}
+.office-hours .oh-display .oh-display-day {
+  min-width: 15%;
+}
+.office-hours .oh-display .oh-display-hours {
+  min-width: 15%;
 }

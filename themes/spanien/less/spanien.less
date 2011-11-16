@@ -5,7 +5,8 @@
 /* !----- / Image, video, object, embed / ----- */
 
 img, video, object, embed {
-    height: auto;
+  height: auto;
+  width: 100%\9; /* ie8 */
 }
 
 /* !---- General styling ----- */
@@ -21,6 +22,11 @@ img, video, object, embed {
 .alignedimage {
   float: left;
   margin: 0 1em 0 0;
+}
+
+.link-icon {
+  background: url('../images/arrow.png') no-repeat left 5px;
+  padding: 0 0 0 .75em;
 }
 
 /* !---- Header ----- */
@@ -633,6 +639,105 @@ input[type="button"] {
     }
     .form-actions {
       text-align: right;
+    }
+  }
+}
+
+/* !---- Activities ----- */
+
+.activities {
+  fieldset {
+    border: 1px solid #e0e0e0;
+    legend {
+      margin: 0 .8em;
+      padding: 0 .8em;
+    }
+    h4 {
+      background: transparent;
+    }
+    .text-content {
+      background-color: #f3f3f3;
+      margin: 1em 1.6em 1.6em;
+      padding: 1em 1.3em;
+      p {
+        margin: 1em 0;
+      }
+    }
+  }
+}
+
+.node-activities {
+  .field-label {
+    display: inline;
+    font-weight: bold;
+  }
+  .activities-date {
+    display: inline;    
+  }
+  .activities-location {  
+    display: inline;    
+  }
+  .activities-description {
+    padding: 1.5em 0 0;
+  }
+  .activities-instructor {
+  
+  }
+  .activities-status {
+  
+  }
+  .activities-subject {
+  
+  }  
+}
+
+/* !---- Opening hours ----- */
+
+.office-hours {
+  margin: 0 0 1.5em;
+  &.block {
+    ul,
+    li {
+      margin: 0;
+      .oh-display {
+        &.odd {
+          .oh-display-day,
+          .oh-display-hours {    
+            background-color: #e1e1e1;
+          }
+        }
+        &.even {
+          .oh-display-day,
+          .oh-display-hours {    
+            background-color: #f3f3f3;
+          }
+        }
+      }
+    }
+  }  
+  .oh-display {
+    display: block;
+    margin: 0 0 1px;
+    &.odd {
+      .oh-display-day,
+      .oh-display-hours {    
+        background-color: #f3f3f3;
+      }
+    }
+    &.even {
+      .oh-display-day,
+      .oh-display-hours {    
+        background-color: #fff;
+      }
+    }
+    .oh-display-day,
+    .oh-display-hours {
+      display: inline-block;
+      padding: 5px;
+    }        
+    .oh-display-day,
+    .oh-display-hours {
+      min-width: 115px;
     }
   }
 }

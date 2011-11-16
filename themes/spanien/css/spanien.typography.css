@@ -54,7 +54,7 @@ p {
   font-size: 23.4px;
   line-height: 1em;
 }
-.block-title, .field-label {
+.block-title {
   font-size: 21px;
   font-family: 'CartoGothicStdBook', 'arial', sans-serif;
   font-weight: 'CartoGothicStdBook', 'arial', sans-serif;
@@ -117,6 +117,19 @@ a:hover {
 }
 a:active {
   color: #000;
+  text-decoration: none;
+}
+/* !----- / Link icon / ----- */
+.link-icon a:link {
+  text-decoration: none;
+}
+.link-icon a:visited {
+  text-decoration: none;
+}
+.link-icon a:hover {
+  text-decoration: none;
+}
+.link-icon a:active {
   text-decoration: none;
 }
 /* !----- / Breadcrumb / ----- */
@@ -193,14 +206,14 @@ input[type="button"] {
 .block-style-menu h2.block-title {
   font-size: 1.45em;
 }
-.block-style-menu ul:not(.contextual-links) li a {
+.block-style-menu ul li a {
   color: #059ebb;
   text-decoration: none;
 }
-.block-style-menu ul:not(.contextual-links) li a:hover {
+.block-style-menu ul li a:hover {
   color: #038298;
 }
-.block-style-menu ul:not(.contextual-links) li a.active-trail.active {
+.block-style-menu ul li a.active-trail.active {
   color: #fff;
   -webkit-text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
   -moz-text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
@@ -269,4 +282,28 @@ input[type="button"] {
 }
 .news-list .link a {
   text-decoration: underline;
+}
+/* !---- Activities ----- */
+.activities fieldset h4 a {
+  color: #4c4c4c;
+  text-decoration: none;
+}
+.activities fieldset h4 a:link {
+  color: #4c4c4c;
+  text-decoration: none;
+}
+.activities fieldset h4 a:visited {
+  color: #4c4c4c;
+  text-decoration: none;
+}
+.activities fieldset h4 a:hover {
+  color: #4c4c4c;
+  text-decoration: none;
+}
+.activities fieldset h4 a:active {
+  color: #4c4c4c;
+  text-decoration: none;
+}
+.activities fieldset h4 span {
+  color: #8c8c8c;
 }

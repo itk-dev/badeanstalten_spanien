@@ -5,6 +5,9 @@ video,
 object,
 embed {
   height: auto;
+  width: 100%\9;
+  /* ie8 */
+
 }
 /* !---- General styling ----- */
 .align-left {
@@ -16,6 +19,10 @@ embed {
 .alignedimage {
   float: left;
   margin: 0 1em 0 0;
+}
+.link-icon {
+  background: url('../images/arrow.png') no-repeat left 5px;
+  padding: 0 0 0 .75em;
 }
 /* !---- Header ----- */
 .section.section-header {
@@ -518,4 +525,72 @@ input[type="button"]:hover {
 }
 .webform-client-form > div .form-actions {
   text-align: right;
+}
+/* !---- Activities ----- */
+.activities fieldset {
+  border: 1px solid #e0e0e0;
+}
+.activities fieldset legend {
+  margin: 0 .8em;
+  padding: 0 .8em;
+}
+.activities fieldset h4 {
+  background: transparent;
+}
+.activities fieldset .text-content {
+  background-color: #f3f3f3;
+  margin: 1em 1.6em 1.6em;
+  padding: 1em 1.3em;
+}
+.activities fieldset .text-content p {
+  margin: 1em 0;
+}
+.node-activities .field-label {
+  display: inline;
+  font-weight: bold;
+}
+.node-activities .activities-date {
+  display: inline;
+}
+.node-activities .activities-location {
+  display: inline;
+}
+.node-activities .activities-description {
+  padding: 1.5em 0 0;
+}
+/* !---- Opening hours ----- */
+.office-hours {
+  margin: 0 0 1.5em;
+}
+.office-hours.block ul, .office-hours.block li {
+  margin: 0;
+}
+.office-hours.block ul .oh-display.odd .oh-display-day,
+.office-hours.block li .oh-display.odd .oh-display-day,
+.office-hours.block ul .oh-display.odd .oh-display-hours,
+.office-hours.block li .oh-display.odd .oh-display-hours {
+  background-color: #e1e1e1;
+}
+.office-hours.block ul .oh-display.even .oh-display-day,
+.office-hours.block li .oh-display.even .oh-display-day,
+.office-hours.block ul .oh-display.even .oh-display-hours,
+.office-hours.block li .oh-display.even .oh-display-hours {
+  background-color: #f3f3f3;
+}
+.office-hours .oh-display {
+  display: block;
+  margin: 0 0 1px;
+}
+.office-hours .oh-display.odd .oh-display-day, .office-hours .oh-display.odd .oh-display-hours {
+  background-color: #f3f3f3;
+}
+.office-hours .oh-display.even .oh-display-day, .office-hours .oh-display.even .oh-display-hours {
+  background-color: #fff;
+}
+.office-hours .oh-display .oh-display-day, .office-hours .oh-display .oh-display-hours {
+  display: inline-block;
+  padding: 5px;
+}
+.office-hours .oh-display .oh-display-day, .office-hours .oh-display .oh-display-hours {
+  min-width: 115px;
 }
