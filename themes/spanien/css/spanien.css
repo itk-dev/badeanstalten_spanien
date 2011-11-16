@@ -253,10 +253,10 @@ embed {
 .block.block-nodespotbox {
   background-color: #f3f3f3;
 }
-.block.block-nodespotbox.block-image h2 {
+.block.block-nodespotbox .block-image h2 {
   background-color: #f3f3f3;
 }
-.block.block-nodespotbox.block-image h2 a {
+.block.block-nodespotbox .block-image h2 a {
   display: block;
   padding: 10px 20px 5px;
   margin: 0 0 -20px;

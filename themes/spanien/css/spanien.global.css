@@ -34,7 +34,7 @@ h4 {
   font-size: 15.600000000000001px;
 }
 h5 {
-  font-size: 14.399999999999998px;
+  font-size: 14.399999999999999px;
 }
 h6 {
   font-size: 13.200000000000001px;
@@ -564,10 +564,10 @@ embed {
 .block.block-nodespotbox {
   background-color: #f3f3f3;
 }
-.block.block-nodespotbox.block-image h2 {
+.block.block-nodespotbox .block-image h2 {
   background-color: #f3f3f3;
 }
-.block.block-nodespotbox.block-image h2 a {
+.block.block-nodespotbox .block-image h2 a {
   display: block;
   padding: 10px 20px 5px;
   margin: 0 0 -20px;
