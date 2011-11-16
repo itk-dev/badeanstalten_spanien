@@ -64,8 +64,10 @@ p {
   line-height: 2em;
   font-weight: normal;
 }
-h2.block-title {
+a h2.block-title {
   font-size: 18.900000000000002px;
+  color: #4c4c4c;
+  text-decoration: none;
 }
 h2.block-title a {
   color: #4c4c4c;
@@ -608,10 +610,8 @@ embed {
 .block.block-nodespotbox {
   background-color: #f3f3f3;
 }
-.block.block-nodespotbox .block-image h2 {
+.block.block-nodespotbox .block-image a h2 {
   background-color: #f3f3f3;
-}
-.block.block-nodespotbox .block-image h2 a {
   display: block;
   padding: 10px 20px 5px;
   margin: 0 0 -20px;
