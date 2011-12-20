@@ -180,6 +180,9 @@ input[type="button"] {
   text-transform: none;
 }
 /* !---- Blocks ----- */
+.block.block-nodespotbox .block-image .imagewrapper a {
+  text-decoration: none;
+}
 .section-footer .block h2 {
   color: #fff;
   font-size: 1.5em;
