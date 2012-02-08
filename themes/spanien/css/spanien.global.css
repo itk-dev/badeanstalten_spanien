@@ -13,6 +13,10 @@ body {
   line-height: 1.4em;
   font-size: 12px;
 }
+/* CKeditor */
+html.CSS1Compat, body.cke_show_borders {
+  background: #fff;
+}
 h1,
 h2,
 h3,
