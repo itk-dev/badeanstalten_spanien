@@ -165,7 +165,7 @@ function spanien_office_hours_formatter_default($vars) {
       if (isset($hours[1])) {
         $strhrs2 = $hours[1]['strhrs'];
         $endhrs2 = $hours[1]['endhrs'];
-        $additional = ' , <span class="oh-display-hours">' . $strhrs2 . ' - ' . $endhrs2 . '</span>';
+        $additional = '<span class="oh-display-sep">' . t('and') . '</span><span class="oh-display-hours">' . $strhrs2 . ' - ' . $endhrs2 . '</span>';
       } 
     }
 

@@ -599,6 +599,10 @@ input[type="button"]:hover {
 .office-hours.block li .oh-display.even .oh-display-hours {
   background-color: #f3f3f3;
 }
+.office-hours.block ul .oh-display .oh-display-hours,
+.office-hours.block li .oh-display .oh-display-hours {
+  text-align: center;
+}
 .office-hours .oh-display {
   display: block;
   margin: 0 0 1px;
@@ -618,5 +622,8 @@ input[type="button"]:hover {
 }
 .office-hours .oh-display .oh-display-day,
 .office-hours .oh-display .oh-display-hours {
-  min-width: 115px;
+  min-width: 72px;
+}
+.office-hours .oh-display-sep {
+  padding: 0 .30em;
 }

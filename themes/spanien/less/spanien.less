@@ -716,7 +716,7 @@ input[type="button"] {
       .oh-display {
         &.odd {
           .oh-display-day,
-          .oh-display-hours {    
+          .oh-display-hours {
             background-color: #e1e1e1;
           }
         }
@@ -725,6 +725,9 @@ input[type="button"] {
           .oh-display-hours {    
             background-color: #f3f3f3;
           }
+        }
+        .oh-display-hours {
+          text-align: center;
         }
       }
     }
@@ -751,7 +754,10 @@ input[type="button"] {
     }        
     .oh-display-day,
     .oh-display-hours {
-      min-width: 115px;
+      min-width: 72px;
     }
+  }
+  .oh-display-sep {
+    padding: 0 .30em;
   }
 }
