@@ -12,7 +12,8 @@ body {
   font-size: 12px;
 }
 /* CKeditor */
-html.CSS1Compat, body.cke_show_borders {
+html.CSS1Compat,
+body.cke_show_borders {
   background: #fff;
 }
 h1,
@@ -69,6 +70,7 @@ p {
 a h2.block-title {
   font-size: 18.900000000000002px;
   color: #4c4c4c;
+  line-height: 135%;
   text-decoration: none;
 }
 h2.block-title a {
@@ -150,13 +152,15 @@ a:active {
   color: #059db9;
   text-decoration: none;
 }
-.zone-user a:link, .zone-user a:visited {
+.zone-user a:link,
+.zone-user a:visited {
   border-color: #5d5d5d;
   color: #797979;
   font-size: .9em;
   text-decoration: none;
 }
-.zone-user a:link:hover, .zone-user a:visited:hover {
+.zone-user a:link:hover,
+.zone-user a:visited:hover {
   text-decoration: underline;
 }
 .region-menu a:link,
@@ -194,14 +198,14 @@ input[type="button"] {
   -moz-text-shadow: #0392af 1px 1px 1px;
   text-shadow: #0392af 1px 1px 1px;
 }
-.region-postscript-first .block h2 {
+.grid-12.region-postscript-first .block h2 {
   line-height: 100%;
 }
-.region-postscript-first .block#block-block-6 a {
+.grid-12.region-postscript-first .block#block-block-6 a {
   color: #772600;
   text-decoration: none;
 }
-.region-postscript-first .block#block-block-6 a.link {
+.grid-12.region-postscript-first .block#block-block-6 a.link {
   color: #fff;
   font-size: 1.25em;
   -webkit-text-shadow: #8b3d10 1px 1px 1px;
@@ -276,7 +280,8 @@ input[type="button"] {
 .node-type-news .field-name-field-manchet {
   font-weight: bold;
 }
-.news-list h2, .news-list h4 {
+.news-list h2,
+.news-list h4 {
   color: #4c4c4c;
   font-size: 1.5em;
 }
