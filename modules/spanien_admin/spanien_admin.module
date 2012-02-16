@@ -14,8 +14,8 @@ function spanien_admin_image_styles_alter(&$styles) {
   }
 
   if (isset($styles['spotbox_image'])) {
-    $styles['spotbox_image']['effects'][4]['data']['width'] = 375;
-    $styles['spotbox_image']['effects'][4]['data']['height'] = 155;
+    $styles['spotbox_image']['effects'][4]['data']['width'] = 500;
+    $styles['spotbox_image']['effects'][4]['data']['height'] = 206;
   }
   
   if (isset($styles['title_image'])) {

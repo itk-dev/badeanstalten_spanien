@@ -32,6 +32,12 @@ embed {
   background: url('../images/arrow.png') no-repeat left 5px;
   padding: 0 0 0 .75em;
 }
+.section .zone {
+  margin: 0 auto 3em;
+}
+.section-header.section .zone {
+  margin: 0 auto;
+}
 /* !---- Header ----- */
 .section.section-header {
   background-color: #f3f3f3;
@@ -56,16 +62,16 @@ embed {
   margin: 0;
 }
 /* !---- Zone branding ----- */
+.site-logo {
+  float: left;
+  width: 47.340425531914893617021276595745%;
+}
 .zone-branding {
   min-height: 115px;
   position: relative;
 }
 .zone-branding .region-branding {
   padding: 1em 0 0;
-}
-.zone-branding .region-branding .site-logo {
-  float: left;
-  width: 47.340425531914893617021276595745%;
 }
 .zone-branding .region-search {
   margin-top: -13px;
@@ -85,6 +91,8 @@ embed {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   box-border-radius: 10px;
+  height: 39px;
+  margin-top: -1px;
   margin-right: 0;
   padding: 0;
   text-indent: -10000px;

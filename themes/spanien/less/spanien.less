@@ -39,6 +39,14 @@ img, video, object, embed {
   padding: 0 0 0 .75em;
 }
 
+.section .zone {
+  margin: 0 auto 3em;
+}
+
+.section-header.section .zone {
+  margin: 0 auto;
+}
+
 /* !---- Header ----- */
 
 .section.section-header {
@@ -70,15 +78,16 @@ img, video, object, embed {
 
 /* !---- Zone branding ----- */
 
+.site-logo {
+  float: left;
+  width: 47.340425531914893617021276595745%;
+}
+
 .zone-branding {
   min-height: 115px;
   position: relative;
   .region-branding {
     padding: 1em 0 0;
-    .site-logo {
-      float: left;
-      width: 47.340425531914893617021276595745%;
-    }
   }
   .region-search {
     margin-top: -13px;
@@ -95,6 +104,8 @@ img, video, object, embed {
       background: url('../images/sprites.png') no-repeat -971px 10px #059ebb;
       border: 0;
       .border-radius(10px);
+      height: 39px;
+      margin-top: -1px;
       margin-right: 0;
       padding: 0;
       text-indent: -10000px;
