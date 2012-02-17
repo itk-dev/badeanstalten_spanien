@@ -67,16 +67,16 @@
   }
   .zone-branding .region-search input {
     margin-right: 0;
-    width: 80%;
+    width: 82%;
   }
   ul.main-menu {
     background: none;
   }
-  ul.main-menu li {
-    width: 33%;
+  ul.main-menu li a {
+    padding: 5px;
   }
   .office-hours .oh-display .oh-display-day,
   .office-hours .oh-display .oh-display-hours {
-    width: 27%;
+    width: 25%;
   }
 }
