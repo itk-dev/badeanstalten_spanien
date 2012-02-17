@@ -28,6 +28,7 @@
   }
   .zone-branding .region-search input {
     margin-right: 0;
+    min-width: 0;
     width: 91%;
   }
   ul.main-menu {
