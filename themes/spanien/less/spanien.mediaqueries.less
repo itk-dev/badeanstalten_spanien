@@ -24,7 +24,7 @@ and (max-width: 768px) {
     float: none;
     margin-bottom: 3em;
     text-align: left;
-    width: 66%;
+    width: 100%;
   }
   .zone-user {
     .menu {
@@ -72,8 +72,7 @@ and (max-width: 768px) {
         width: 29%;
       }
     }
-  }  
-
+  }
 }
 
 // Styling of stacked regions
@@ -106,6 +105,34 @@ and (max-width: 525px) {
       input {
         min-width: 0;
         width: 87%;
+      }
+    }
+  }
+}
+
+// Do some stuff when below 400
+@media screen
+and (max-width: 400px) {
+  .zone-branding {
+    .region-search {
+      text-align: left;
+      input {
+        margin-right: 0;
+        width: 80%;
+      }
+    }
+  }
+  ul.main-menu {
+    background: none;
+    li {
+      width: 33%;
+    }
+  }
+  .office-hours {
+    .oh-display {
+      .oh-display-day,
+      .oh-display-hours {
+        width: 27%;
       }
     }
   }
