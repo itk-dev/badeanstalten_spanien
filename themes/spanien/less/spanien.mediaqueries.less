@@ -2,13 +2,24 @@
 
 @import 'spanien.variables.less';
 
+// Styling of stacked regions
+.zone {
+  &.narrow-stack .region,
+  .region.narrow-stack {
+    margin-bottom: 2em;
+  }  
+}
+
 // Do some stuff when below 768
 @media screen
 and (max-width: 768px) {
   // Frontpage styling
   .front {
     .section.section-content {
-      padding-top: 90px;
+      padding-top: 30px;
+    }
+    .block-spanien-featured-content {
+      display: none;
     }
     .slideshow-panorama {
       background: none;
@@ -63,8 +74,7 @@ and (max-width: 768px) {
         }
       }
     }
-  }
-  
+  }  
   .office-hours {
     .oh-display {
       .oh-display-day,
@@ -73,22 +83,19 @@ and (max-width: 768px) {
       }
     }
   }
-}
-
-// Styling of stacked regions
-.zone {
-  .region.narrow-no-stack {
+  .zone-footer {
+    display: none;
   }
-  &.narrow-stack .region,
-  .region.narrow-stack {
-    margin-bottom: 2em;
-  }  
 }
 
 @media screen
 and (min-width: 500px)
 and (max-width: 768px) {
   .zone {
+    &.narrow-no-stack,
+    .region.narrow-no-stack {
+      width: 100%;
+    }
     &.narrow-stack .region,
     .region.narrow-stack {
       float: left;
@@ -139,4 +146,3 @@ and (max-width: 400px) {
     }
   }
 }
-  

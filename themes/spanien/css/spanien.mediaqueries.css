@@ -1,7 +1,14 @@
 /* !----- / Variables / ----- */
+.zone.narrow-stack .region,
+.zone .region.narrow-stack {
+  margin-bottom: 2em;
+}
 @media screen and (max-width: 768px) {
   .front .section.section-content {
-    padding-top: 90px;
+    padding-top: 30px;
+  }
+  .front .block-spanien-featured-content {
+    display: none;
   }
   .front .slideshow-panorama {
     background: none;
@@ -42,12 +49,15 @@
   .office-hours .oh-display .oh-display-hours {
     width: 29%;
   }
-}
-.zone.narrow-stack .region,
-.zone .region.narrow-stack {
-  margin-bottom: 2em;
+  .zone-footer {
+    display: none;
+  }
 }
 @media screen and (min-width: 500px) and (max-width: 768px) {
+  .zone.narrow-no-stack,
+  .zone .region.narrow-no-stack {
+    width: 100%;
+  }
   .zone.narrow-stack .region,
   .zone .region.narrow-stack {
     float: left;
