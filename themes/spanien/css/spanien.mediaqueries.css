@@ -45,6 +45,9 @@
   .grid-12.region-postscript-first .block#block-block-6 a.link {
     display: none;
   }
+  .breadcrumb {
+    margin-left: 10px;
+  }
   .office-hours .oh-display .oh-display-day,
   .office-hours .oh-display .oh-display-hours {
     width: 29%;
@@ -68,7 +71,7 @@
 @media screen and (max-width: 525px) {
   .zone-branding .region-search input {
     min-width: 0;
-    width: 87%;
+    width: 83%;
   }
 }
 @media screen and (max-width: 400px) {
