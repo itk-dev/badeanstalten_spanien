@@ -1,9 +1,46 @@
+/* !----- / Variables / ----- */
 @media screen and (max-width: 768px) {
+  .front .section.section-content {
+    padding-top: 90px;
+  }
+  .front .slideshow-panorama {
+    background: none;
+  }
+  .front .slideshow-panorama .coverlayer .coverlayer-inner {
+    background: none;
+    height: 47px;
+  }
   .site-logo {
     float: none;
     margin-bottom: 3em;
+    text-align: left;
+    width: 66%;
+  }
+  .zone-branding .region-search {
+    text-align: left;
+  }
+  .zone-branding .region-search input {
+    margin-right: 0;
+    width: 91%;
+  }
+  ul.main-menu {
+    background: none;
+  }
+  ul.main-menu li {
+    width: 33%;
+  }
+  ul.main-menu li a {
+    background-color: #404040;
+    margin: 0 10px 10px 0;
+    padding: 10px;
     text-align: center;
-    width: 100%;
+  }
+  .grid-12.region-postscript-first .block#block-block-6 a.link {
+    display: none;
+  }
+  .office-hours .oh-display .oh-display-day,
+  .office-hours .oh-display .oh-display-hours {
+    width: 30%;
   }
 }
 .zone.narrow-stack .region,
@@ -14,6 +51,13 @@
   .zone.narrow-stack .region,
   .zone .region.narrow-stack {
     float: left;
-    width: 45%;
+    margin-right: 0;
+    width: 47%;
+  }
+}
+@media screen and (max-width: 525px) {
+  .zone-branding .region-search input {
+    min-width: 0;
+    width: 87%;
   }
 }

@@ -401,7 +401,8 @@ embed {
 }
 /* !---- Zone user ----- */
 .zone-user .menu {
-  margin: 1em 0 0;
+  margin: 0;
+  padding: 1em 0;
   text-align: right;
 }
 .zone-user .menu li {
@@ -453,7 +454,6 @@ embed {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   box-border-radius: 10px;
-  height: 39px;
   margin-top: -1px;
   margin-right: 0;
   padding: 0;
@@ -990,6 +990,7 @@ input[type="button"]:hover {
 .office-hours.block ul,
 .office-hours.block li {
   margin: 0;
+  text-align: center;
 }
 .office-hours.block ul .oh-display.odd .oh-display-day,
 .office-hours.block li .oh-display.odd .oh-display-day,
@@ -1026,7 +1027,7 @@ input[type="button"]:hover {
 }
 .office-hours .oh-display .oh-display-day,
 .office-hours .oh-display .oh-display-hours {
-  min-width: 72px;
+  min-width: 65px;
 }
 .office-hours .oh-display-sep {
   padding: 0 .30em;

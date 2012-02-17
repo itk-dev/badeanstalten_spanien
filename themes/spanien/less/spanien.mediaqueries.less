@@ -1,12 +1,79 @@
+/* !----- / Variables / ----- */
+
+@import 'spanien.variables.less';
+
 // Do some stuff when below 768
 @media screen
 and (max-width: 768px) {
+  // Frontpage styling
+  .front {
+    .section.section-content {
+      padding-top: 90px;
+    }
+    .slideshow-panorama {
+      background: none;
+      .coverlayer {
+        .coverlayer-inner {
+          background: none;
+          height: 47px;
+        }
+      }
+    }
+  }
   .site-logo {
     float: none;
     margin-bottom: 3em;
-    text-align: center;
-    width: 100%;
+    text-align: left;
+    width: 66%;
   }
+  .zone-user {
+    .menu {
+      a {
+      }
+    }
+  }
+  .zone-branding {
+    .region-search {
+      text-align: left;
+      input {
+        margin-right: 0;
+        width: 91%;
+      }
+    }
+  }
+  ul.main-menu {
+    background: none;
+    li {
+      width: 33%;
+      a {
+        background-color: #404040;
+        margin: 0 10px 10px 0;
+        padding: 10px;
+        text-align: center;
+      }
+    }
+  }
+  .grid-12.region-postscript-first {
+    .block {
+      &#block-block-6 {
+        a {
+         &.link {
+          display: none;
+         }
+        }
+      }
+    }
+  }
+  
+  .office-hours {
+    .oh-display {
+      .oh-display-day,
+      .oh-display-hours {
+        width: 30%;
+      }
+    }
+  }  
+
 }
 
 // Styling of stacked regions
@@ -26,7 +93,21 @@ and (max-width: 768px) {
     &.narrow-stack .region,
     .region.narrow-stack {
       float: left;
-      width: 45%;
+      margin-right: 0;
+      width: 47%;
     }    
   }
 }
+
+@media screen
+and (max-width: 525px) {
+  .zone-branding {
+    .region-search {
+      input {
+        min-width: 0;
+        width: 87%;
+      }
+    }
+  }
+}
+  
