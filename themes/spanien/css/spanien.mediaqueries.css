@@ -70,7 +70,7 @@
 }
 @media screen and (max-width: 525px) {
   .zone-branding .region-search input {
-    min-width: 0;
+    margin-right: 0;
     width: 83%;
   }
 }
@@ -80,7 +80,7 @@
   }
   .zone-branding .region-search input {
     margin-right: 0;
-    width: 82%;
+    width: 80%;
   }
   ul.main-menu {
     background: none;
