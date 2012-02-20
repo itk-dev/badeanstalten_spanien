@@ -1,8 +1,4 @@
 /* !----- / Variables / ----- */
-.zone.narrow-stack .region,
-.zone .region.narrow-stack {
-  margin-bottom: 2em;
-}
 @media screen and (max-width: 768px) {
   .front .section.section-content {
     padding-top: 30px;
@@ -57,16 +53,28 @@
     display: none;
   }
 }
-@media screen and (min-width: 500px) and (max-width: 768px) {
-  .zone.narrow-no-stack,
-  .zone .region.narrow-no-stack {
-    width: 100%;
+@media screen and (max-width: 768px) {
+  .zone.narrow-stack .region {
+    float: left;
+    margin-right: 0;
+    margin-bottom: 2em;
+    width: 31%;
   }
-  .zone.narrow-stack .region,
-  .zone .region.narrow-stack {
+}
+@media screen and (max-width: 650px) {
+  .zone.narrow-stack .region {
     float: left;
     margin-right: 0;
     width: 47%;
+  }
+  .zone.narrow-stack .narrow-no-stack {
+    clear: both;
+    width: 96%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .zone.narrow-stack .region {
+    width: 96%;
   }
 }
 @media screen and (max-width: 525px) {
@@ -75,7 +83,7 @@
     width: 83%;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .zone-branding .region-search {
     text-align: left;
   }

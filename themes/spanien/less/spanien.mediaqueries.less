@@ -2,14 +2,6 @@
 
 @import 'spanien.variables.less';
 
-// Styling of stacked regions
-.zone {
-  &.narrow-stack .region,
-  .region.narrow-stack {
-    margin-bottom: 2em;
-  }  
-}
-
 // Do some stuff when below 768
 @media screen
 and (max-width: 768px) {
@@ -92,23 +84,53 @@ and (max-width: 768px) {
   }
 }
 
+// Stack variables
+@no-stack-3-col-width : 31%;
+@no-stack-2-col-width : 47%;
+@stack-width : 96%;
+
+.stack-default() {
+  float: left;
+  margin-right: 0;
+}
+
+// Styling of stack/no-stack regions
+
 @media screen
-and (min-width: 500px)
 and (max-width: 768px) {
   .zone {
-    &.narrow-no-stack,
-    .region.narrow-no-stack {
-      width: 100%;
+    &.narrow-stack .region {
+      .stack-default();
+      margin-bottom: 2em;
+      width: @no-stack-3-col-width;
     }
-    &.narrow-stack .region,
-    .region.narrow-stack {
-      float: left;
-      margin-right: 0;
-      width: 47%;
-    }    
   }
 }
 
+@media screen
+and (max-width: 650px) {
+  .zone {
+    &.narrow-stack .region {
+      .stack-default();
+      width: @no-stack-2-col-width;
+    }
+    &.narrow-stack .narrow-no-stack {
+      clear: both;
+      width: @stack-width;      
+    }
+  }
+}
+
+@media screen
+and (max-width: 500px) {
+  .zone {
+    &.narrow-stack .region {
+      width: @stack-width;
+    }
+  }
+}
+
+// Search width below 525
 @media screen
 and (max-width: 525px) {
   .zone-branding {
@@ -121,9 +143,9 @@ and (max-width: 525px) {
   }
 }
 
-// Do some stuff when below 400
+// Search width, menu and office hours below 400
 @media screen
-and (max-width: 400px) {
+and (max-width: 500px) {
   .zone-branding {
     .region-search {
       text-align: left;
