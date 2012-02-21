@@ -16,7 +16,7 @@ a.menu-link {
   cursor: pointer;
   float: right;
   margin: 7px 0 0;
-  padding: 8px 20px;
+  padding: 9px 20px 8px;
   -webkit-text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
   -moz-text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
   text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
@@ -55,7 +55,7 @@ a.menu-link:hover {
     margin: 0;
   }
   .logo-img {
-    width: 60%;
+    width: 58%;
   }
   .zone-branding .region {
     padding: 0 0 2em;
