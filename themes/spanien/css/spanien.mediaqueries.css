@@ -111,11 +111,11 @@
     margin-right: 0;
     width: 80%;
   }
-  ul.main-menu {
+  .zone-menu ul.main-menu {
     background: none;
   }
-  ul.main-menu li a {
-    padding: 10px 5px 5px;
+  .zone-menu ul.main-menu li a {
+    padding: 10px 5px 8px;
   }
   .office-hours .oh-display .oh-display-day,
   .office-hours .oh-display .oh-display-hours {
