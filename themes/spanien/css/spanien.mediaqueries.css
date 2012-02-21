@@ -16,7 +16,7 @@ a.menu-link {
   cursor: pointer;
   float: right;
   margin: 7px 0 0;
-  padding: 9px 15px 8px;
+  padding: 9px 12px 8px;
   -webkit-text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
   -moz-text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
   text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
@@ -158,5 +158,10 @@ a.menu-link:hover {
   .office-hours .oh-display .oh-display-day,
   .office-hours .oh-display .oh-display-hours {
     width: 25%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .logo-img {
+    padding-top: 14px;
   }
 }
