@@ -2,6 +2,39 @@
 
 @import 'spanien.variables.less';
 
+.menu-link,
+.mobile-menu {
+  display: none;
+  .unselectable();
+}
+
+a.menu-link {
+  background-color: #404040;
+  .border-radius(8px);
+  color: #fff;
+  cursor: pointer;
+  float: right;
+  margin: 7px 0 0;
+  padding: 8px 20px;
+  .text-shadow(rgba(0, 0, 0, 0.5) 1px 1px 1px);
+  &:hover {
+    background-color: #059ebb;
+    color: #fff;
+  }
+}
+
+// Make sure menu and search is displayed above 768
+@media screen
+and (min-width: 768px) {
+  #zone-menu,
+  #region-search {
+    display: block;
+  }
+  .zone-branding {
+    min-height: 112px;
+  }
+}
+
 // Do some stuff when below 768
 @media screen
 and (max-width: 768px) {
@@ -33,10 +66,8 @@ and (max-width: 768px) {
       margin: 0;
     }
   }
-  .site-logo {
-    float: none;
-    text-align: center;
-    width: 100%;
+  .logo-img {
+    width: 60%;
   }
   .zone-user {
     .menu {
@@ -49,11 +80,12 @@ and (max-width: 768px) {
       padding: 0 0 2em;
     }
     .region-search {
+      margin-right: 0;
       text-align: left;
       input {
-        margin-right: 0;
+        margin: -1px -15px 0 0;
         min-width: 0;
-        width: 87%;
+        width: 92%;
       }
     }
   }
@@ -93,6 +125,17 @@ and (max-width: 768px) {
   .breadcrumb {
     margin-left: 10px;
   }
+  #zone-menu,
+  #region-search {
+    display: none;
+  }
+  .menu-link,
+  .mobile-menu {
+    display: block;
+  }
+  .zone-branding {
+    min-height: 0;
+  }
   .office-hours {
     .oh-display {
       .oh-display-day,
@@ -131,6 +174,9 @@ and (max-width: 768px) {
 
 @media screen
 and (max-width: 650px) {
+  .logo-img {
+    padding-top: 8px;
+  }
   .zone {
     &.narrow-stack .region,
     &.narrow-no-stack .region {
@@ -146,6 +192,9 @@ and (max-width: 650px) {
 
 @media screen
 and (max-width: 500px) {
+  .logo-img {
+    padding-top: 12px;
+  }
   .zone {
     &.narrow-stack .region,
     &.narrow-no-stack .region {
@@ -155,31 +204,9 @@ and (max-width: 500px) {
   }
 }
 
-// Search width below 525
-@media screen
-and (max-width: 525px) {
-  .zone-branding {
-    .region-search {
-      input {
-        margin-right: 0;
-        width: 83%;
-      }
-    }
-  }
-}
-
 // Search width, menu and office hours below 400
 @media screen
 and (max-width: 500px) {
-  .zone-branding {
-    .region-search {
-      text-align: left;
-      input {
-        margin-right: 0;
-        width: 80%;
-      }
-    }
-  }
   .zone-menu {
     ul.main-menu {
       background: none;

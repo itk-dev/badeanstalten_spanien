@@ -1,4 +1,39 @@
 /* !----- / Variables / ----- */
+.menu-link,
+.mobile-menu {
+  display: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+a.menu-link {
+  background-color: #404040;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  box-border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  float: right;
+  margin: 7px 0 0;
+  padding: 8px 20px;
+  -webkit-text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
+  -moz-text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
+  text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
+}
+a.menu-link:hover {
+  background-color: #059ebb;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  #zone-menu,
+  #region-search {
+    display: block;
+  }
+  .zone-branding {
+    min-height: 112px;
+  }
+}
 @media screen and (max-width: 768px) {
   .front .section.section-content {
     padding: 30px 0 1px;
@@ -19,21 +54,20 @@
   .section .zone {
     margin: 0;
   }
-  .site-logo {
-    float: none;
-    text-align: center;
-    width: 100%;
+  .logo-img {
+    width: 60%;
   }
   .zone-branding .region {
     padding: 0 0 2em;
   }
   .zone-branding .region-search {
+    margin-right: 0;
     text-align: left;
   }
   .zone-branding .region-search input {
-    margin-right: 0;
+    margin: -1px -15px 0 0;
     min-width: 0;
-    width: 87%;
+    width: 92%;
   }
   .zone-menu .region-menu {
     margin-bottom: 0;
@@ -61,6 +95,17 @@
   .breadcrumb {
     margin-left: 10px;
   }
+  #zone-menu,
+  #region-search {
+    display: none;
+  }
+  .menu-link,
+  .mobile-menu {
+    display: block;
+  }
+  .zone-branding {
+    min-height: 0;
+  }
   .office-hours .oh-display .oh-display-day,
   .office-hours .oh-display .oh-display-hours {
     width: 29%;
@@ -78,6 +123,9 @@
   }
 }
 @media screen and (max-width: 650px) {
+  .logo-img {
+    padding-top: 8px;
+  }
   .zone.narrow-stack .region,
   .zone.narrow-no-stack .region {
     float: left;
@@ -91,26 +139,16 @@
   }
 }
 @media screen and (max-width: 500px) {
+  .logo-img {
+    padding-top: 12px;
+  }
   .zone.narrow-stack .region,
   .zone.narrow-no-stack .region {
     clear: both;
     width: 96%;
   }
 }
-@media screen and (max-width: 525px) {
-  .zone-branding .region-search input {
-    margin-right: 0;
-    width: 83%;
-  }
-}
 @media screen and (max-width: 500px) {
-  .zone-branding .region-search {
-    text-align: left;
-  }
-  .zone-branding .region-search input {
-    margin-right: 0;
-    width: 80%;
-  }
   .zone-menu ul.main-menu {
     background: none;
   }

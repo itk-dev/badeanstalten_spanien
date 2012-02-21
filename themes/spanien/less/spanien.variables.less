@@ -46,3 +46,10 @@
   background: -ms-linear-gradient(bottom, @start, @stop);
   background: -moz-linear-gradient(center bottom, @start 0%, @stop 100%);
 }
+
+.unselectable() {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;  
+}
