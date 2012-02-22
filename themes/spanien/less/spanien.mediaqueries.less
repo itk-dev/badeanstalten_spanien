@@ -169,6 +169,17 @@ and (max-width: 768px) {
       .stack-default();
       width: @stack-width-3-col;
     }
+    .region {
+      &.always-stack,
+      .always-stack {
+        clear: both;
+        width: @stack-width-1-col;      
+      }
+      &.narrow-no-stack {
+        .stack-default();
+        width: @stack-width-2-col;        
+      }
+    }
   }
 }
 
@@ -186,7 +197,7 @@ and (max-width: 650px) {
         clear: both;
         width: @stack-width-1-col;      
       }
-    }
+    } 
   }
 }
 
@@ -201,6 +212,12 @@ and (max-width: 500px) {
       clear: both;
       width: @stack-width-1-col;
     }
+    .region {
+      &.narrow-no-stack {
+        clear: both;
+        width: @stack-width-1-col;
+      }
+    }    
   }
 }
 

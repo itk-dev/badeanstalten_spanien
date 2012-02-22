@@ -45,6 +45,7 @@
 
       var el = $(this);
       
+      
       var hasChildren = el.find("ul"),
           children    = el.find("li");
 

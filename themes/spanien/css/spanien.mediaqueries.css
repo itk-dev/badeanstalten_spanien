@@ -121,6 +121,16 @@ a.menu-link:hover {
     margin-right: 0;
     width: 31%;
   }
+  .zone .region.always-stack,
+  .zone .region .always-stack {
+    clear: both;
+    width: 96%;
+  }
+  .zone .region.narrow-no-stack {
+    float: left;
+    margin-right: 0;
+    width: 47%;
+  }
 }
 @media screen and (max-width: 650px) {
   .logo-img {
@@ -144,6 +154,10 @@ a.menu-link:hover {
   }
   .zone.narrow-stack .region,
   .zone.narrow-no-stack .region {
+    clear: both;
+    width: 96%;
+  }
+  .zone .region.narrow-no-stack {
     clear: both;
     width: 96%;
   }
