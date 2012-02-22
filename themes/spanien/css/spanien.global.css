@@ -396,7 +396,8 @@ embed {
 }
 /* !---- Header ----- */
 .section.section-header {
-  background-color: #f3f3f3;
+  background: #f3f3f3 url('../images/header-bg.jpg') no-repeat;
+  background-size: cover;
   margin: -1px 0 0;
 }
 /* !---- Zone user ----- */
@@ -490,7 +491,7 @@ embed {
 }
 .region-menu ul li a {
   display: block;
-  padding: 10px 35px;
+  padding: 11px 35px 10px;
 }
 .region-menu ul li a:hover {
   background-color: #333;
@@ -776,12 +777,18 @@ embed {
   z-index: 10;
 }
 .slideshow-panorama .next {
-  background-position: right center;
+  background-position: right top;
   right: -20px;
 }
+.slideshow-panorama .next:hover {
+  background-position: right bottom;
+}
 .slideshow-panorama .previous {
-  background-position: left center;
+  background-position: left top;
   left: -20px;
+}
+.slideshow-panorama .previous:hover {
+  background-position: left bottom;
 }
 .slideshow-panorama .views-row {
   width: 980px;

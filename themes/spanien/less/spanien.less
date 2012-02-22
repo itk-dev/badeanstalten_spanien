@@ -50,7 +50,8 @@ img, video, object, embed {
 /* !---- Header ----- */
 
 .section.section-header {
-  background-color: #f3f3f3;
+  background: #f3f3f3 url('../images/header-bg.jpg') no-repeat;
+  background-size: cover;  
   margin: -1px 0 0; // Fix 1px margin in top to avoid html background showing
 }
 
@@ -488,13 +489,18 @@ img, video, object, embed {
     z-index: 10;
   }
   .next {
-    background-position: right center;    
+    background-position: right top;
     right: -20px;
+    &:hover {
+      background-position: right bottom;
+    }
   }
   .previous {
-    background-position: left center;    
+    background-position: left top;    
     left: -20px;
-  }
+    &:hover {
+      background-position: left bottom;
+    }  }
   .views-row {
     width: 980px;
   }  
