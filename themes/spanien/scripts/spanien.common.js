@@ -24,8 +24,6 @@
         "class" : "mobile-menu"
       }).appendTo(destination);
       
-      console.log($(source));
-
       // Create menu-title
       $("<h2 />", {
         "class" : "menu-title block-title",
