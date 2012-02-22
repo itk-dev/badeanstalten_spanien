@@ -778,7 +778,7 @@ embed {
 }
 .slideshow-panorama .next {
   background-position: right top;
-  right: -20px;
+  right: -18px;
 }
 .slideshow-panorama .next:hover {
   background-position: right bottom;
