@@ -396,8 +396,7 @@ embed {
 }
 /* !---- Header ----- */
 .section.section-header {
-  background: #f3f3f3 url('../images/header-bg.jpg') no-repeat;
-  background-size: cover;
+  background: #f3f3f3 url('../images/header-bg.jpg') no-repeat top center;
   margin: -1px 0 0;
 }
 /* !---- Zone user ----- */
