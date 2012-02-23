@@ -53,6 +53,16 @@ a.menu-link:hover {
   .section .zone {
     margin: 0;
   }
+  .slideshow-panorama .next,
+  .slideshow-panorama .previous {
+    display: block;
+  }
+  .slideshow-panorama .next {
+    right: 20px;
+  }
+  .slideshow-panorama .previous {
+    left: 20px;
+  }
   .logo-img {
     width: 58%;
   }

@@ -69,6 +69,9 @@
         
     }
   }
+  
+  function makeTall(){ console.log('over');}
+  function makeShort(){ console.log('out');}  
 
   /**
    * Run functions on document ready.
@@ -78,7 +81,7 @@
       addMenuLink(['#zone-menu','#region-search']);      
     });
     
-    menuToSelect("#block-menu-block-spanien-default-content-1", "#section-content");
+    menuToSelect("#block-menu-block-spanien-default-content-1", "#section-content");       
   });
 
 })(jQuery);
