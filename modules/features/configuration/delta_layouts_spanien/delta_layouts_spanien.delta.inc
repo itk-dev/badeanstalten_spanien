@@ -43,7 +43,7 @@ function delta_layouts_spanien_delta_default_templates() {
       'alpha_viewport_min_scale' => '1',
       'alpha_viewport_max_scale' => '4',
       'alpha_viewport_user_scaleable' => 1,
-      'alpha_primary_alpha_default' => 'fluid',
+      'alpha_primary_alpha_default' => 'normal',
       'alpha_layouts_alpha_default_fluid_responsive' => 1,
       'alpha_layouts_alpha_default_fluid_weight' => '0',
       'alpha_layouts_alpha_default_fluid_media' => 'all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)',

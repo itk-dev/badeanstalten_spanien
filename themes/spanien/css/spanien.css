@@ -1,13 +1,13 @@
 /* !----- / Variables / ----- */
 /* !----- / Image, video, object, embed / ----- */
+.ie8 img {
+  width: auto;
+}
 img,
 video,
 object,
 embed {
   height: auto;
-  width: 100%\9;
-  /* ie8 */
-
 }
 /* !---- General styling ----- */
 .align-right {

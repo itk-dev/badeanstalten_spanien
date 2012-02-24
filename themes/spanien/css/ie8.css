@@ -1,0 +1,5 @@
+/* !----- / IE 8 specific styles / ----- */
+img,
+video {
+  width: auto;
+}
