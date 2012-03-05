@@ -20,12 +20,12 @@ function spanien_admin_image_styles_alter(&$styles) {
   
   if (isset($styles['title_image'])) {
     $styles['title_image']['effects'][3]['data']['width'] = 1000;
-    $styles['title_image']['effects'][3]['data']['height'] = 286;
+    $styles['title_image']['effects'][3]['data']['height'] = 447;
   }
   
   if (isset($styles['news_large'])) {
     $styles['news_large']['effects'][2]['data']['width'] = 1000;
-    $styles['news_large']['effects'][2]['data']['height'] = 286;
+    $styles['news_large']['effects'][2]['data']['height'] = 447;
   }  
 }
 
