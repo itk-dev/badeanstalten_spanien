@@ -70,9 +70,6 @@
     }
   }
   
-  function makeTall(){ console.log('over');}
-  function makeShort(){ console.log('out');}  
-
   /**
    * Run functions on document ready.
    */
