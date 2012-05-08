@@ -5,3 +5,30 @@
  */
 
 include_once 'kultunaut_events.features.inc';
+
+/**
+ * Defines a new feeds parser to parse globusdata calendar feeds.
+ *
+ * @return array $info
+ */
+function kultunaut_events_feeds_plugins() {
+  $info = array();
+  $info['KultunautParser'] = array(
+    'name' => "Kultunaut event parser",
+    'description' => t('Parse Kultunaut events feed'),
+    'handler' => array(
+      'parent' => 'FeedsParser',
+      'class' => 'KultunautParser',
+      'file' => 'kultunaut.class.inc',
+      'path' => drupal_get_path('module', 'kultunaut_events' ) . '/includes',
+    ),
+  );
+  return $info;
+}
+
+/**
+ * Make sure that the feed parser cache is cleared on module activation.
+ */
+function kultunaut_events_enable() {
+  cache_clear_all('plugins:feeds:plugins', 'cache');
+}
