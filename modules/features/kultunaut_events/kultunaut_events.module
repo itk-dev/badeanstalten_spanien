@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Kultunaut events feature.
+ */
+
+include_once 'kultunaut_events.features.inc';
