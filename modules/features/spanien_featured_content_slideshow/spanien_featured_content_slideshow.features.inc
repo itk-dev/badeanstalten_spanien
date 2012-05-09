@@ -18,8 +18,5 @@ function spanien_featured_content_slideshow_ctools_plugin_api() {
  * Implements hook_views_api().
  */
 function spanien_featured_content_slideshow_views_api() {
-  list($module, $api) = func_get_args();
-  if ($module == "views" && $api == "views_default") {
-    return array("version" => "3.0");
-  }
+  return array("version" => "3.0");
 }

@@ -17,26 +17,34 @@ function spanien_activities_views_default_views() {
   $view->base_table = 'node';
   $view->human_name = 'Activities';
   $view->core = 7;
-  $view->api_version = '3.0-alpha1';
+  $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Activities';
   $handler->display->display_options['css_class'] = 'activities';
+  $handler->display->display_options['use_more_text'] = 'mere';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Gendan';
+  $handler->display->display_options['exposed_form']['options']['exposed_sorts_label'] = 'Sortér efter';
+  $handler->display->display_options['exposed_form']['options']['sort_asc_label'] = 'Stigende';
+  $handler->display->display_options['exposed_form']['options']['sort_desc_label'] = 'Faldende';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+  $handler->display->display_options['pager']['options']['expose']['items_per_page_label'] = 'Elementer pr. side';
+  $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all_label'] = '- Alle -';
+  $handler->display->display_options['pager']['options']['expose']['offset_label'] = 'Forskydning';
   $handler->display->display_options['style_plugin'] = 'list';
   $handler->display->display_options['style_options']['grouping'] = 'field_hold_date';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['hide_empty'] = 0;
   $handler->display->display_options['row_options']['default_field_elements'] = 0;
-  /* Field: Content: Dato */
+  /* Felt: Indhold: Dato */
   $handler->display->display_options['fields']['field_hold_date']['id'] = 'field_hold_date';
   $handler->display->display_options['fields']['field_hold_date']['table'] = 'field_data_field_hold_date';
   $handler->display->display_options['fields']['field_hold_date']['field'] = 'field_hold_date';
@@ -68,7 +76,7 @@ function spanien_activities_views_default_views() {
     'show_repeat_rule' => 'show',
   );
   $handler->display->display_options['fields']['field_hold_date']['field_api_classes'] = 0;
-  /* Field: Content: Sted */
+  /* Felt: Indhold: Sted */
   $handler->display->display_options['fields']['field_hold_location']['id'] = 'field_hold_location';
   $handler->display->display_options['fields']['field_hold_location']['table'] = 'field_data_field_hold_location';
   $handler->display->display_options['fields']['field_hold_location']['field'] = 'field_hold_location';
@@ -93,7 +101,7 @@ function spanien_activities_views_default_views() {
   $handler->display->display_options['fields']['field_hold_location']['hide_alter_empty'] = 0;
   $handler->display->display_options['fields']['field_hold_location']['type'] = 'text_plain';
   $handler->display->display_options['fields']['field_hold_location']['field_api_classes'] = 0;
-  /* Field: Content: Title */
+  /* Felt: Indhold: Titel */
   $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
   $handler->display->display_options['fields']['title_1']['table'] = 'node';
   $handler->display->display_options['fields']['title_1']['field'] = 'title';
@@ -117,7 +125,7 @@ function spanien_activities_views_default_views() {
   $handler->display->display_options['fields']['title_1']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title_1']['hide_alter_empty'] = 0;
   $handler->display->display_options['fields']['title_1']['link_to_node'] = 1;
-  /* Field: Title + location */
+  /* Felt: Title + location */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -142,7 +150,7 @@ function spanien_activities_views_default_views() {
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = 0;
   $handler->display->display_options['fields']['title']['link_to_node'] = 0;
-  /* Field: Content: Beskrivelse */
+  /* Felt: Indhold: Beskrivelse */
   $handler->display->display_options['fields']['field_hold_description']['id'] = 'field_hold_description';
   $handler->display->display_options['fields']['field_hold_description']['table'] = 'field_data_field_hold_description';
   $handler->display->display_options['fields']['field_hold_description']['field'] = 'field_hold_description';
@@ -165,9 +173,9 @@ function spanien_activities_views_default_views() {
   $handler->display->display_options['fields']['field_hold_description']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_hold_description']['hide_alter_empty'] = 0;
   $handler->display->display_options['fields']['field_hold_description']['field_api_classes'] = 0;
-  /* Field: Content: Link */
+  /* Felt: Indhold: Link */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
-  $handler->display->display_options['fields']['view_node']['table'] = 'node';
+  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['label'] = '';
   $handler->display->display_options['fields']['view_node']['alter']['alter_text'] = 1;
@@ -188,18 +196,18 @@ function spanien_activities_views_default_views() {
   $handler->display->display_options['fields']['view_node']['hide_empty'] = 0;
   $handler->display->display_options['fields']['view_node']['empty_zero'] = 0;
   $handler->display->display_options['fields']['view_node']['hide_alter_empty'] = 0;
-  /* Sort criterion: Content: Dato -  start date (field_hold_date) */
+  /* Sorteringskriterie: Indhold: Dato -  startdato (field_hold_date) */
   $handler->display->display_options['sorts']['field_hold_date_value']['id'] = 'field_hold_date_value';
   $handler->display->display_options['sorts']['field_hold_date_value']['table'] = 'field_data_field_hold_date';
   $handler->display->display_options['sorts']['field_hold_date_value']['field'] = 'field_hold_date_value';
-  /* Filter criterion: Content: Type */
+  /* Filterkriterie: Indhold: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'holdbooking' => 'holdbooking',
   );
-  /* Filter criterion: Content: Dato -  start date (field_hold_date) */
+  /* Filterkriterie: Indhold: Dato -  startdato (field_hold_date) */
   $handler->display->display_options['filters']['field_hold_date_value']['id'] = 'field_hold_date_value';
   $handler->display->display_options['filters']['field_hold_date_value']['table'] = 'field_data_field_hold_date';
   $handler->display->display_options['filters']['field_hold_date_value']['field'] = 'field_hold_date_value';
@@ -212,7 +220,7 @@ function spanien_activities_views_default_views() {
   $handler->display->display_options['title'] = 'Vis kun i dag';
   $handler->display->display_options['display_description'] = 'Show activities that happens today only';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Dato */
+  /* Felt: Indhold: Dato */
   $handler->display->display_options['fields']['field_hold_date']['id'] = 'field_hold_date';
   $handler->display->display_options['fields']['field_hold_date']['table'] = 'field_data_field_hold_date';
   $handler->display->display_options['fields']['field_hold_date']['field'] = 'field_hold_date';
@@ -244,7 +252,7 @@ function spanien_activities_views_default_views() {
     'show_repeat_rule' => 'show',
   );
   $handler->display->display_options['fields']['field_hold_date']['field_api_classes'] = 0;
-  /* Field: Content: Title */
+  /* Felt: Indhold: Titel */
   $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
   $handler->display->display_options['fields']['title_1']['table'] = 'node';
   $handler->display->display_options['fields']['title_1']['field'] = 'title';
@@ -268,7 +276,7 @@ function spanien_activities_views_default_views() {
   $handler->display->display_options['fields']['title_1']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title_1']['hide_alter_empty'] = 0;
   $handler->display->display_options['fields']['title_1']['link_to_node'] = 1;
-  /* Field: Content: Sted */
+  /* Felt: Indhold: Sted */
   $handler->display->display_options['fields']['field_hold_location']['id'] = 'field_hold_location';
   $handler->display->display_options['fields']['field_hold_location']['table'] = 'field_data_field_hold_location';
   $handler->display->display_options['fields']['field_hold_location']['field'] = 'field_hold_location';
@@ -293,7 +301,7 @@ function spanien_activities_views_default_views() {
   $handler->display->display_options['fields']['field_hold_location']['hide_alter_empty'] = 0;
   $handler->display->display_options['fields']['field_hold_location']['type'] = 'text_plain';
   $handler->display->display_options['fields']['field_hold_location']['field_api_classes'] = 0;
-  /* Field: Title + location */
+  /* Felt: Title + location */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -318,7 +326,7 @@ function spanien_activities_views_default_views() {
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = 0;
   $handler->display->display_options['fields']['title']['link_to_node'] = 0;
-  /* Field: Content: Beskrivelse */
+  /* Felt: Indhold: Beskrivelse */
   $handler->display->display_options['fields']['field_hold_description']['id'] = 'field_hold_description';
   $handler->display->display_options['fields']['field_hold_description']['table'] = 'field_data_field_hold_description';
   $handler->display->display_options['fields']['field_hold_description']['field'] = 'field_hold_description';
@@ -341,7 +349,7 @@ function spanien_activities_views_default_views() {
   $handler->display->display_options['fields']['field_hold_description']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_hold_description']['hide_alter_empty'] = 0;
   $handler->display->display_options['fields']['field_hold_description']['field_api_classes'] = 0;
-  /* Field: Content: Emne */
+  /* Felt: Indhold: Emne */
   $handler->display->display_options['fields']['field_hold_emne']['id'] = 'field_hold_emne';
   $handler->display->display_options['fields']['field_hold_emne']['table'] = 'field_data_field_hold_emne';
   $handler->display->display_options['fields']['field_hold_emne']['field'] = 'field_hold_emne';
@@ -368,14 +376,14 @@ function spanien_activities_views_default_views() {
   $handler->display->display_options['fields']['field_hold_emne']['hide_alter_empty'] = 0;
   $handler->display->display_options['fields']['field_hold_emne']['field_api_classes'] = 0;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Type */
+  /* Filterkriterie: Indhold: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'holdbooking' => 'holdbooking',
   );
-  /* Filter criterion: Content: Dato -  start date (field_hold_date) */
+  /* Filterkriterie: Indhold: Dato -  startdato (field_hold_date) */
   $handler->display->display_options['filters']['field_hold_date_value']['id'] = 'field_hold_date_value';
   $handler->display->display_options['filters']['field_hold_date_value']['table'] = 'field_data_field_hold_date';
   $handler->display->display_options['filters']['field_hold_date_value']['field'] = 'field_hold_date_value';
@@ -393,21 +401,21 @@ function spanien_activities_views_default_views() {
   $handler->display->display_options['title'] = 'Denne uge';
   $handler->display->display_options['display_description'] = 'Show activities that happens this week only';
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Type */
+  /* Filterkriterie: Indhold: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'holdbooking' => 'holdbooking',
   );
-  /* Filter criterion: Content: Dato -  start date (field_hold_date) */
+  /* Filterkriterie: Indhold: Dato -  startdato (field_hold_date) */
   $handler->display->display_options['filters']['field_hold_date_value']['id'] = 'field_hold_date_value';
   $handler->display->display_options['filters']['field_hold_date_value']['table'] = 'field_data_field_hold_date';
   $handler->display->display_options['filters']['field_hold_date_value']['field'] = 'field_hold_date_value';
   $handler->display->display_options['filters']['field_hold_date_value']['operator'] = 'between';
   $handler->display->display_options['filters']['field_hold_date_value']['default_date'] = 'last monday';
   $handler->display->display_options['filters']['field_hold_date_value']['default_to_date'] = 'next monday -1 day';
-  /* Filter criterion: Content: Dato -  start date (field_hold_date) */
+  /* Filterkriterie: Indhold: Dato -  startdato (field_hold_date) */
   $handler->display->display_options['filters']['field_hold_date_value_1']['id'] = 'field_hold_date_value_1';
   $handler->display->display_options['filters']['field_hold_date_value_1']['table'] = 'field_data_field_hold_date';
   $handler->display->display_options['filters']['field_hold_date_value_1']['field'] = 'field_hold_date_value';
@@ -425,14 +433,14 @@ function spanien_activities_views_default_views() {
   $handler->display->display_options['title'] = 'Denne måned';
   $handler->display->display_options['display_description'] = 'Show activities that happens this month only';
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Type */
+  /* Filterkriterie: Indhold: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'holdbooking' => 'holdbooking',
   );
-  /* Filter criterion: Content: Dato -  start date (field_hold_date) */
+  /* Filterkriterie: Indhold: Dato -  startdato (field_hold_date) */
   $handler->display->display_options['filters']['field_hold_date_value']['id'] = 'field_hold_date_value';
   $handler->display->display_options['filters']['field_hold_date_value']['table'] = 'field_data_field_hold_date';
   $handler->display->display_options['filters']['field_hold_date_value']['field'] = 'field_hold_date_value';
@@ -440,7 +448,7 @@ function spanien_activities_views_default_views() {
   $handler->display->display_options['filters']['field_hold_date_value']['form_type'] = 'date_text';
   $handler->display->display_options['filters']['field_hold_date_value']['default_date'] = 'now';
   $handler->display->display_options['filters']['field_hold_date_value']['default_to_date'] = 'last day of month';
-  /* Filter criterion: Content: Dato -  start date (field_hold_date) */
+  /* Filterkriterie: Indhold: Dato -  startdato (field_hold_date) */
   $handler->display->display_options['filters']['field_hold_date_value_1']['id'] = 'field_hold_date_value_1';
   $handler->display->display_options['filters']['field_hold_date_value_1']['table'] = 'field_data_field_hold_date';
   $handler->display->display_options['filters']['field_hold_date_value_1']['field'] = 'field_hold_date_value';
@@ -464,15 +472,15 @@ function spanien_activities_views_default_views() {
   $translatables['activities'] = array(
     t('Master'),
     t('Activities'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
+    t('mere'),
+    t('Udfør'),
+    t('Gendan'),
+    t('Sortér efter'),
+    t('Stigende'),
+    t('Faldende'),
+    t('Elementer pr. side'),
+    t('- Alle -'),
+    t('Forskydning'),
     t('<h4>[title_1] <span>- [field_hold_location]</span></h4>'),
     t('<span class="link-icon">[title_1]</span>'),
     t('Today'),

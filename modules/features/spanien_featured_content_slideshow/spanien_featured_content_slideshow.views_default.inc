@@ -23,11 +23,16 @@ function spanien_featured_content_slideshow_views_default_views() {
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Featured Content';
+  $handler->display->display_options['use_more_text'] = 'mere';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Gendan';
+  $handler->display->display_options['exposed_form']['options']['exposed_sorts_label'] = 'Sortér efter';
+  $handler->display->display_options['exposed_form']['options']['sort_asc_label'] = 'Stigende';
+  $handler->display->display_options['exposed_form']['options']['sort_desc_label'] = 'Faldende';
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
   $handler->display->display_options['pager']['options']['offset'] = '0';
@@ -82,7 +87,7 @@ function spanien_featured_content_slideshow_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['hide_empty'] = 1;
   $handler->display->display_options['row_options']['default_field_elements'] = 0;
-  /* Field: Content: Title */
+  /* Felt: Indhold: Titel */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -98,7 +103,7 @@ function spanien_featured_content_slideshow_views_default_views() {
   $handler->display->display_options['fields']['title']['hide_empty'] = 0;
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title']['link_to_node'] = 1;
-  /* Field: Content: Link */
+  /* Felt: Indhold: Link */
   $handler->display->display_options['fields']['field_featured_link']['id'] = 'field_featured_link';
   $handler->display->display_options['fields']['field_featured_link']['table'] = 'field_data_field_featured_link';
   $handler->display->display_options['fields']['field_featured_link']['field'] = 'field_featured_link';
@@ -124,7 +129,7 @@ function spanien_featured_content_slideshow_views_default_views() {
   $handler->display->display_options['fields']['field_featured_link']['hide_alter_empty'] = 0;
   $handler->display->display_options['fields']['field_featured_link']['click_sort_column'] = 'url';
   $handler->display->display_options['fields']['field_featured_link']['field_api_classes'] = 0;
-  /* Field: Broken/missing handler */
+  /* Felt: Handler mangler eller er i stykker */
   $handler->display->display_options['fields']['field_featured_text']['id'] = 'field_featured_text';
   $handler->display->display_options['fields']['field_featured_text']['table'] = 'field_data_field_featured_text';
   $handler->display->display_options['fields']['field_featured_text']['field'] = 'field_featured_text';
@@ -148,7 +153,7 @@ function spanien_featured_content_slideshow_views_default_views() {
   $handler->display->display_options['fields']['field_featured_text']['hide_empty'] = 0;
   $handler->display->display_options['fields']['field_featured_text']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_featured_text']['hide_alter_empty'] = 0;
-  /* Field: Content: Image */
+  /* Felt: Indhold: Image */
   $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
@@ -178,7 +183,7 @@ function spanien_featured_content_slideshow_views_default_views() {
     'image_link' => '',
   );
   $handler->display->display_options['fields']['field_featured_image']['field_api_classes'] = 0;
-  /* Field: Global: View result counter */
+  /* Felt: Global: View resultattæller */
   $handler->display->display_options['fields']['counter']['id'] = 'counter';
   $handler->display->display_options['fields']['counter']['table'] = 'views';
   $handler->display->display_options['fields']['counter']['field'] = 'counter';
@@ -201,12 +206,12 @@ function spanien_featured_content_slideshow_views_default_views() {
   $handler->display->display_options['fields']['counter']['empty_zero'] = 0;
   $handler->display->display_options['fields']['counter']['hide_alter_empty'] = 0;
   $handler->display->display_options['fields']['counter']['counter_start'] = '1';
-  /* Sort criterion: Content: Post date */
+  /* Sorteringskriterie: Indhold: Oprettelsesdato */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Filter criterion: Content: Type */
+  /* Filterkriterie: Indhold: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -221,7 +226,7 @@ function spanien_featured_content_slideshow_views_default_views() {
   $handler->display->display_options['defaults']['css_class'] = FALSE;
   $handler->display->display_options['css_class'] = 'slideshow-panorama';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Link */
+  /* Felt: Link */
   $handler->display->display_options['fields']['field_featured_link']['id'] = 'field_featured_link';
   $handler->display->display_options['fields']['field_featured_link']['table'] = 'field_data_field_featured_link';
   $handler->display->display_options['fields']['field_featured_link']['field'] = 'field_featured_link';
@@ -254,7 +259,7 @@ function spanien_featured_content_slideshow_views_default_views() {
   $handler->display->display_options['fields']['field_featured_link']['click_sort_column'] = 'url';
   $handler->display->display_options['fields']['field_featured_link']['type'] = 'link_url';
   $handler->display->display_options['fields']['field_featured_link']['field_api_classes'] = 0;
-  /* Field: Title (excluded) */
+  /* Felt: Title (excluded) */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -282,7 +287,7 @@ function spanien_featured_content_slideshow_views_default_views() {
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = 0;
   $handler->display->display_options['fields']['title']['link_to_node'] = 0;
-  /* Field: Image (excluded) */
+  /* Felt: Image (excluded) */
   $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
@@ -315,7 +320,7 @@ function spanien_featured_content_slideshow_views_default_views() {
     'image_link' => '',
   );
   $handler->display->display_options['fields']['field_featured_image']['field_api_classes'] = 0;
-  /* Field: Title and image */
+  /* Felt: Title and image */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
@@ -342,7 +347,7 @@ function spanien_featured_content_slideshow_views_default_views() {
   $handler->display->display_options['fields']['nothing']['hide_empty'] = 0;
   $handler->display->display_options['fields']['nothing']['empty_zero'] = 0;
   $handler->display->display_options['fields']['nothing']['hide_alter_empty'] = 1;
-  /* Field: Counter */
+  /* Felt: Counter */
   $handler->display->display_options['fields']['counter']['id'] = 'counter';
   $handler->display->display_options['fields']['counter']['table'] = 'views';
   $handler->display->display_options['fields']['counter']['field'] = 'counter';
@@ -384,12 +389,12 @@ function spanien_featured_content_slideshow_views_default_views() {
   $translatables['spanien_custom_featured_content'] = array(
     t('Master'),
     t('Featured Content'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
+    t('mere'),
+    t('Udfør'),
+    t('Gendan'),
+    t('Sortér efter'),
+    t('Stigende'),
+    t('Faldende'),
     t('[field_featured_link]'),
     t('Content pane'),
     t('Spanien forside Slideshow'),

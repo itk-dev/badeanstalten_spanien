@@ -26,10 +26,7 @@ function spanien_activities_ctools_plugin_api() {
  * Implements hook_views_api().
  */
 function spanien_activities_views_api() {
-  list($module, $api) = func_get_args();
-  if ($module == "views" && $api == "views_default") {
-    return array("version" => "3.0");
-  }
+  return array("version" => "3.0");
 }
 
 /**
@@ -40,7 +37,7 @@ function spanien_activities_node_info() {
     'holdbooking' => array(
       'name' => t('Hold'),
       'base' => 'node_content',
-      'description' => t('Hold brugt i kanlendar system til at reserver et tidsinterval.'),
+      'description' => t('Hold brugt i kalendar system til at reserver et tidsinterval.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
