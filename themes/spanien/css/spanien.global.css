@@ -471,7 +471,9 @@ embed {
 }
 /* !----- / Breadcrumb / ----- */
 .breadcrumb {
+  border-bottom: 1px solid #f3f3f3;
   margin: 0 0 1.25em;
+  padding-bottom: 10px;
 }
 .breadcrumb a {
   background: url('../images/breadcrumb-arrow.png') no-repeat right center;
@@ -625,7 +627,7 @@ embed {
 /* !---- Content ----- */
 .section.section-content {
   background-color: #fff;
-  padding: 30px 0;
+  padding: 15px 0 30px;
 }
 .front .section.section-content {
   padding: 60px 0 30px;
