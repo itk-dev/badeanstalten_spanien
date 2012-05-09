@@ -180,6 +180,9 @@ a.menu-link:hover {
     clear: both;
     width: 96%;
   }
+  .office-hours {
+    max-width: 100%;
+  }
 }
 @media screen and (max-width: 500px) {
   .zone-menu ul.main-menu {
