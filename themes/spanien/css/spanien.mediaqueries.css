@@ -116,10 +116,6 @@ a.menu-link:hover {
   .zone-branding {
     min-height: 0;
   }
-  .office-hours .oh-display .oh-display-day,
-  .office-hours .oh-display .oh-display-hours {
-    width: 29%;
-  }
   .zone-footer {
     display: none;
   }
@@ -184,6 +180,9 @@ a.menu-link:hover {
     clear: both;
     width: 96%;
   }
+  .office-hours {
+    max-width: 100%;
+  }
 }
 @media screen and (max-width: 500px) {
   .zone-menu ul.main-menu {
@@ -191,10 +190,6 @@ a.menu-link:hover {
   }
   .zone-menu ul.main-menu li a {
     padding: 10px 5px 8px;
-  }
-  .office-hours .oh-display .oh-display-day,
-  .office-hours .oh-display .oh-display-hours {
-    width: 25%;
   }
 }
 @media screen and (max-width: 400px) {
