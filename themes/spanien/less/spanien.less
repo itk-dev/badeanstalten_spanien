@@ -728,56 +728,34 @@ input[type="button"] {
 
 .office-hours {
   margin: 0 0 1.5em;
+  max-width: 40%;
   &.block {
-    ul,
-    li {
+    max-width: 100%;
+    ul {
       margin: 0;
-      text-align: center;
-      .oh-display {
-        &.odd {
-          .oh-display-day,
-          .oh-display-hours {
-            background-color: #e1e1e1;
+      li {
+        margin: 0;
+        .oh-display {
+          &.odd {
+            background-color: #fff;
           }
-        }
-        &.even {
-          .oh-display-day,
-          .oh-display-hours {    
-            background-color: #f3f3f3;
-          }
-        }
-        .oh-display-hours {
-          text-align: center;
-        }
+        }  
       }
     }
-  }  
+  }
   .oh-display {
     display: block;
     margin: 0 0 1px;
-    &.odd {
-      .oh-display-day,
-      .oh-display-hours {    
-        background-color: #f3f3f3;
-      }
-    }
-    &.even {
-      .oh-display-day,
-      .oh-display-hours {    
-        background-color: #fff;
-      }
-    }
     .oh-display-day,
     .oh-display-hours {
       display: inline-block;
       padding: 5px;
-    }        
-    .oh-display-day,
-    .oh-display-hours {
-      min-width: 65px;
     }
-  }
-  .oh-display-sep {
-    padding: 0 .30em;
+    .oh-display-day {
+      min-width: 65px;        
+    }
+    &.odd {
+      background-color: #f3f3f3;
+    }
   }
 }
