@@ -95,5 +95,79 @@ function spanien_activities_feeds_importer_default() {
   );
   $export['globusdata'] = $feeds_importer;
 
+  $feeds_importer = new stdClass();
+  $feeds_importer->disabled = FALSE; /* Edit this to true to make a default feeds_importer disabled initially */
+  $feeds_importer->api_version = 1;
+  $feeds_importer->id = 'kultunaut';
+  $feeds_importer->config = array(
+    'name' => 'Kultunaut',
+    'description' => 'Imports kultunaut events',
+    'fetcher' => array(
+      'plugin_key' => 'FeedsFileFetcher',
+      'config' => array(
+        'allowed_extensions' => 'txt csv tsv xml opml',
+        'direct' => FALSE,
+      ),
+    ),
+    'parser' => array(
+      'plugin_key' => 'KultunautParser',
+      'config' => array(),
+    ),
+    'processor' => array(
+      'plugin_key' => 'FeedsNodeProcessor',
+      'config' => array(
+        'content_type' => 'holdbooking',
+        'expire' => '-1',
+        'author' => 0,
+        'mappings' => array(
+          0 => array(
+            'source' => 'id',
+            'target' => 'guid',
+            'unique' => 1,
+          ),
+          1 => array(
+            'source' => 'title',
+            'target' => 'title',
+            'unique' => FALSE,
+          ),
+          2 => array(
+            'source' => 'location',
+            'target' => 'field_hold_location',
+            'unique' => FALSE,
+          ),
+          3 => array(
+            'source' => 'start',
+            'target' => 'field_hold_date:start',
+            'unique' => FALSE,
+          ),
+          4 => array(
+            'source' => 'end',
+            'target' => 'field_hold_date:end',
+            'unique' => FALSE,
+          ),
+          5 => array(
+            'source' => 'description',
+            'target' => 'field_hold_description',
+            'unique' => FALSE,
+          ),
+          6 => array(
+            'source' => 'tag',
+            'target' => 'field_hold_emne',
+            'unique' => FALSE,
+          ),
+        ),
+        'update_existing' => '1',
+        'input_format' => 'editor_html',
+      ),
+    ),
+    'content_type' => '',
+    'update' => 0,
+    'import_period' => 1800,
+    'expire_period' => 3600,
+    'import_on_create' => TRUE,
+    'process_in_background' => FALSE,
+  );
+  $export['kultunaut'] = $feeds_importer;
+
   return $export;
 }
