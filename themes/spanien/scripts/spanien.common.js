@@ -78,7 +78,9 @@
       addMenuLink(['#zone-menu','#region-search']);      
     });
     
-    menuToSelect("#block-menu-block-spanien-default-content-1", "#section-content");       
+    menuToSelect("#block-menu-block-spanien-default-content-1", "#section-content");
+    
+    $(".block-nodespotbox").equalHeights();
   });
 
 })(jQuery);
