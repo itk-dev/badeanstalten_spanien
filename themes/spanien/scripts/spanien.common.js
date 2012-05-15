@@ -84,7 +84,7 @@
      * Add equal heights to spotboxes.
      */
     if (!Drupal.behaviors.hasOwnProperty('omegaMediaQueries') || Drupal.omega.getCurrentLayout() != 'mobile') {
-      $(".block-nodespotbox").equalHeights();
+      //$(".block-nodespotbox").equalHeights();
     }
   });
 
