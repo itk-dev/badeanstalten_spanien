@@ -83,9 +83,7 @@
     /**
      * Add equal heights to spotboxes.
      */
-    if (Drupal.omega.getCurrentLayout() != 'mobile') {
-      $(".block-nodespotbox").equalHeights();
-    }
+    $(".block-nodespotbox").equalHeights();
   });
 
 })(jQuery);
