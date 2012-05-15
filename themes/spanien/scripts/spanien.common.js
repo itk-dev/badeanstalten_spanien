@@ -80,7 +80,12 @@
     
     menuToSelect("#block-menu-block-spanien-default-content-1", "#section-content");
     
-    $(".block-nodespotbox").equalHeights();
+    /**
+     * Add equal heights to spotboxes.
+     */
+    if (!Drupal.behaviors.hasOwnProperty('omegaMediaQueries') || Drupal.omega.getCurrentLayout() != 'mobile') {
+      $(".block-nodespotbox").equalHeights();
+    }
   });
 
 })(jQuery);
