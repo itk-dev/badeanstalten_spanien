@@ -81,9 +81,9 @@
     menuToSelect("#block-menu-block-spanien-default-content-1", "#section-content");
     
     /**
-     * Add equal heights to spotboxes.
+     * Add equal heights to spotboxes with the equal heights class.
      */
-    $(".block-nodespotbox").equalHeights();
+    $(".equal-heights .block-nodespotbox").equalHeights();
   });
 
 })(jQuery);

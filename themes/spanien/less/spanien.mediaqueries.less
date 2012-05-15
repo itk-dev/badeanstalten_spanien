@@ -183,9 +183,12 @@ and (max-width: 768px) {
     }
   }
   // Make sure height is auto on spotboxes to avoid scroll bars.
-  // The equal heights plugin sets overflow to auto.
-  .block-nodespotbox {
-    height: auto !important;
+  // The equal heights plugin sets overflow to auto so we set it back to visible.
+  .equal-heights {
+    .block-nodespotbox {
+      height: auto !important;
+      overflow: visible !important;
+    }
   }
 }
 

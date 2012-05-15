@@ -294,8 +294,8 @@ embed {
   padding: 20px 20px 15px 22px;
 }
 .block.block-nodespotbox .link {
-  margin: -25px 0 0;
-  padding: 0 20px 0;
+  margin: -15px 0 0;
+  padding: 0 20px 20px;
   text-align: right;
 }
 .grid-12.region-postscript-first {
