@@ -83,8 +83,8 @@
     /**
      * Add equal heights to spotboxes.
      */
-    if (!Drupal.behaviors.hasOwnProperty('omegaMediaQueries') || Drupal.omega.getCurrentLayout() != 'mobile') {
-      //$(".block-nodespotbox").equalHeights();
+    if (Drupal.omega.getCurrentLayout() != 'mobile') {
+      $(".block-nodespotbox").equalHeights();
     }
   });
 
