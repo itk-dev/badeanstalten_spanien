@@ -77,7 +77,6 @@ stylesheets[all][] = css/cartogothic-std/cartogothic-std.css
 ; ----- / SCRIPTS / -----
 
 scripts[] = scripts/spanien.common.js
-scripts[] = scripts/jquery.hoverIntent.minified.js
 
 ; ----- / DEFAULT SETTINGS / -----
 
