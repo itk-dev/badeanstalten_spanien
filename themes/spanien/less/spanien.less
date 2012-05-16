@@ -201,7 +201,12 @@ img, video, object, embed {
         }
         &.active-trail.active {
           background-color: #059ebb;
-        }        
+        }
+        // TODO: Find a different solution to add active trail to main menu.
+        // For now we have added the module menu position which adds links to the pages selected in the module configuration.
+        &.menu-position-link {
+          display: none;
+        }
       }
       &.menu-item,
       &.level-2 {

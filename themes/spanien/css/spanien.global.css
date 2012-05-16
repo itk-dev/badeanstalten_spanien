@@ -533,6 +533,9 @@ embed {
 .block-style-menu ul.menu li a.active-trail.active {
   background-color: #059ebb;
 }
+.block-style-menu ul.menu li a.menu-position-link {
+  display: none;
+}
 .block-style-menu ul.menu li.menu-item a,
 .block-style-menu ul.menu li.level-2 a {
   background-position: -68px -71px;
