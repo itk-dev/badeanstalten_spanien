@@ -305,6 +305,21 @@ embed {
   padding: 0 20px 20px;
   text-align: right;
 }
+.block.block-gallery {
+  background-color: #fff;
+}
+.block.block-gallery .images {
+  margin-right: -20px;
+}
+.block.block-gallery .images img {
+  background-color: #fff;
+  border: 1px solid #e2e2e2;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  box-border-radius: 8px;
+  margin: 0 22px 22px 0;
+  padding: 8px;
+}
 .equal-heights .block-nodespotbox .view-spotbox-video .text-content {
   min-height: 83px;
 }
