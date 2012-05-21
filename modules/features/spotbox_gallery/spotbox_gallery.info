@@ -5,6 +5,7 @@ package = Features
 php = 5.2.4
 version = 7.x-1.0-beta1
 project = spotbox_gallery
+dependencies[] = colorbox
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = image

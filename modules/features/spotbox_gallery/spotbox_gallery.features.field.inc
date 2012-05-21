@@ -118,12 +118,16 @@ function spotbox_gallery_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'image',
+          'module' => 'colorbox',
           'settings' => array(
-            'image_link' => '',
-            'image_style' => '',
+            'colorbox_caption' => 'auto',
+            'colorbox_caption_custom' => '',
+            'colorbox_gallery' => 'post',
+            'colorbox_gallery_custom' => '',
+            'colorbox_image_style' => 'spotbox_gallery_thumbnail',
+            'colorbox_node_style' => 'spotbox_gallery_thumbnail',
           ),
-          'type' => 'image',
+          'type' => 'colorbox',
           'weight' => '1',
         ),
         'teaser' => array(
