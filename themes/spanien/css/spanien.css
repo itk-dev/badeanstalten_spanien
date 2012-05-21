@@ -307,6 +307,7 @@ embed {
 }
 .block.block-gallery {
   background-color: #fff;
+  margin-top: 20px;
 }
 .block.block-gallery .images {
   margin-right: -20px;
