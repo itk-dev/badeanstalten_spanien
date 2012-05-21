@@ -305,6 +305,12 @@ embed {
   padding: 0 20px 20px;
   text-align: right;
 }
+.equal-heights .block-nodespotbox .view-spotbox-video .text-content {
+  min-height: 83px;
+}
+.equal-heights .block-nodespotbox .text-content {
+  min-height: 70px;
+}
 .grid-12.region-postscript-first {
   margin-bottom: 2.5em;
 }

@@ -78,12 +78,7 @@
       addMenuLink(['#zone-menu','#region-search']);      
     });
     
-    menuToSelect("#block-menu-block-spanien-default-content-1", "#section-content");
-    
-    /**
-     * Add equal heights to spotboxes with the equal heights class.
-     */
-    $(".equal-heights .block-nodespotbox").equalHeights();
+    menuToSelect("#block-menu-block-spanien-default-content-1", "#section-content");    
   });
 
 })(jQuery);
