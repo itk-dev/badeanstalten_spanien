@@ -40,7 +40,7 @@ function spotbox_gallery_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['hide_empty'] = 0;
   $handler->display->display_options['row_options']['default_field_elements'] = 0;
-  /* Felt: Indhold: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -66,7 +66,7 @@ function spotbox_gallery_views_default_views() {
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['title']['link_to_node'] = 0;
-  /* Felt: Indhold: Body */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -90,7 +90,7 @@ function spotbox_gallery_views_default_views() {
   $handler->display->display_options['fields']['body']['empty_zero'] = 0;
   $handler->display->display_options['fields']['body']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['body']['field_api_classes'] = 0;
-  /* Felt: Images */
+  /* Field: Images */
   $handler->display->display_options['fields']['field_spotbox_gallery_images']['id'] = 'field_spotbox_gallery_images';
   $handler->display->display_options['fields']['field_spotbox_gallery_images']['table'] = 'field_data_field_spotbox_gallery_images';
   $handler->display->display_options['fields']['field_spotbox_gallery_images']['field'] = 'field_spotbox_gallery_images';
@@ -132,12 +132,12 @@ function spotbox_gallery_views_default_views() {
   $handler->display->display_options['fields']['field_spotbox_gallery_images']['delta_first_last'] = 0;
   $handler->display->display_options['fields']['field_spotbox_gallery_images']['separator'] = '';
   $handler->display->display_options['fields']['field_spotbox_gallery_images']['field_api_classes'] = 0;
-  /* Sorteringskriterie: Indhold: Oprettelsesdato */
+  /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Kontekstuelt filter: Indhold: Nid */
+  /* Contextual filter: Content: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
   $handler->display->display_options['arguments']['nid']['table'] = 'node';
   $handler->display->display_options['arguments']['nid']['field'] = 'nid';
@@ -149,7 +149,7 @@ function spotbox_gallery_views_default_views() {
   $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['arguments']['nid']['break_phrase'] = 0;
   $handler->display->display_options['arguments']['nid']['not'] = 0;
-  /* Filterkriterie: Indhold: Type */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -165,13 +165,14 @@ function spotbox_gallery_views_default_views() {
     t('Master'),
     t('Spotbox: Gallery'),
     t('mere'),
-    t('Udfør'),
+    t('Apply'),
     t('Gendan'),
     t('Sortér efter'),
     t('Stigende'),
     t('Faldende'),
-    t('Alle'),
+    t('All'),
     t('Spotbox displaying a gallery'),
+    t('more'),
   );
   $export['spotbox_gallery'] = $view;
 
