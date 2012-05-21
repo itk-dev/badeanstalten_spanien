@@ -137,10 +137,6 @@ a.menu-link:hover {
     margin-right: 0;
     width: 47%;
   }
-  .equal-heights .block-nodespotbox {
-    height: auto !important;
-    overflow: visible !important;
-  }
 }
 @media screen and (max-width: 650px) {
   .front .section.section-content {
