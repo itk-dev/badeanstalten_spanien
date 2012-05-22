@@ -909,7 +909,10 @@ embed {
   margin: 0 0 1em;
 }
 .node-type-news .field-name-field-manchet {
-  padding: 0 0 .5em 0;
+  padding: 0;
+}
+.node-type-news .field-name-field-manchet p {
+  margin: 1em 0;
 }
 .news-list {
   list-style: none;
