@@ -26,7 +26,13 @@ function spanien_admin_image_styles_alter(&$styles) {
   if (isset($styles['news_large'])) {
     $styles['news_large']['effects'][4]['data']['width'] = 1000;
     $styles['news_large']['effects'][4]['data']['height'] = 447;
-  }  
+  } 
+  
+  if (isset($styles['news_title_image'])) {
+    $styles['news_title_image']['effects'][4]['data']['width'] = 1000;
+    $styles['news_title_image']['effects'][4]['data']['height'] = 250;
+  } 
+  
 }
 
 /**
