@@ -851,7 +851,14 @@ table tbody + tbody {
   *border-collapse: collapsed;
   border-left: 0;
   .border-radius(4px);
-
+  &.first-column-wide {
+    tr:first-child {
+      th,
+      td {
+        min-width: 85%;
+      }
+    }
+  }
 }
 
 .table-bordered th {

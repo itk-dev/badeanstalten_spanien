@@ -704,6 +704,10 @@ table tbody + tbody {
   -moz-border-radius: 4px;
   box-border-radius: 4px;
 }
+.table-bordered.first-column-wide tr:first-child th,
+.table-bordered.first-column-wide tr:first-child td {
+  min-width: 85%;
+}
 .table-bordered th {
   background-color: #f1f1f1;
 }
