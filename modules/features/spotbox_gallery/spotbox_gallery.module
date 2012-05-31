@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the spotbox_gallery feature.
+ */
+
+include_once 'spotbox_gallery.features.inc';

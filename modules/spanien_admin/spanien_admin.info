@@ -1,0 +1,7 @@
+name = "Spanien administration"
+description = "Resizes image styles and other stuff special for Spanien"
+package = "Other"
+core = "7.x"
+dependencies[] = "spanien_featured_content_slideshow"
+dependencies[] = "itkore_featured_content"
+

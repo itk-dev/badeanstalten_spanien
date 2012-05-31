@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Spanien Featured Content: Slideshow feature.
+ */
+
+include_once('spanien_featured_content_slideshow.features.inc');

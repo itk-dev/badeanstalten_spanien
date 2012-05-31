@@ -1,0 +1,274 @@
+/* !----- / Variables / ----- */
+
+@import 'spanien.variables.less';
+
+.menu-link,
+.mobile-menu {
+  display: none;
+  .unselectable();
+}
+
+.mobile-menu {
+  background-color: #e1e1e1;
+  margin: 0 10px;
+  padding: 1em;
+}
+
+.mobile-menu select {
+  padding: .5em;
+  min-width: 40%;
+}
+
+a.menu-link {
+  background-color: #404040;
+  .border-radius(8px);
+  color: #fff;
+  cursor: pointer;
+  float: right;
+  margin: 7px 0 0;
+  padding: 9px 12px 8px;
+  .text-shadow(rgba(0, 0, 0, 0.5) 1px 1px 1px);
+  &:hover {
+    background-color: #059ebb;
+    color: #fff;
+  }
+}
+
+// Make sure menu and search is displayed above 768
+@media screen
+and (min-width: 768px) {
+  #zone-menu,
+  #region-search {
+    display: block;
+  }
+  .zone-branding {
+    min-height: 112px;
+  }
+}
+
+// Do some stuff when below 768
+@media screen
+and (max-width: 768px) {
+  .section {
+    &.section-header {
+      background: #f3f3f3;
+    }
+    &.section-content {
+      .region {
+        margin-bottom: 2em;    
+      }    
+    }
+    .zone {
+      margin: 0;
+    }
+  }  
+  .slideshow-panorama {
+    .next,
+    .previous {
+      display: block;
+    }
+    .next {
+      right: 20px;
+    }
+    .previous {
+      left: 20px;
+    }
+  }
+  .logo-img {
+    width: 58%;
+  }
+  .zone-user {
+    .menu {
+      a {
+      }
+    }
+  }
+  .zone-branding {
+    .region {
+      padding: 0 0 2em;
+    }
+    .region-search {
+      margin-right: 0;
+      text-align: left;
+      input {
+        margin: -1px -15px 0 0;
+        min-width: 0;
+        width: 92%;
+      }
+    }
+  }
+  .zone-menu {
+    .region-menu {
+      margin-bottom: 0;
+      margin-right: 0;
+    }
+    ul.main-menu {
+      background: none;
+      li {
+        width: 33%;
+        a {
+          background-color: #404040;
+          margin: 0 10px 10px 0;
+          padding: 10px;
+          text-align: center;
+        }
+        &.active a,
+        &.active-trail a {
+          background-color: #059ebb;
+        }
+      }
+    }    
+  }
+  .grid-12.region-postscript-first {
+    .block {
+      &#block-block-6 {
+        a {
+         &.link {
+          display: none;
+         }
+        }
+      }
+    }
+  }
+  .breadcrumb {
+    margin-left: 10px;
+  }
+  #zone-menu,
+  #region-search,
+  #region-sidebar-first {
+    display: none;
+  }
+  .menu-link,
+  .mobile-menu {
+    display: block;
+  }
+  .zone-branding {
+    min-height: 0;
+  }
+  .zone-footer {
+    display: none;
+  }   
+}
+
+// Stack variables
+@stack-width-1-col : 96%;
+@stack-width-2-col : 47%;
+@stack-width-3-col : 31%;
+
+.stack-default() {
+  float: left;
+  margin-right: 0;
+}
+
+// Styling of stack/no-stack regions
+
+@media screen
+and (max-width: 768px) {
+  .zone {
+    &.narrow-stack .region,
+    &.narrow-no-stack .region {
+      .stack-default();
+      width: @stack-width-3-col;
+    }
+    .region {
+      &.always-stack,
+      .always-stack {
+        clear: both;
+        width: @stack-width-1-col;      
+      }
+      &.narrow-no-stack {
+        .stack-default();
+        width: @stack-width-2-col;        
+      }
+    }
+  }
+}
+
+@media screen
+and (max-width: 650px) {
+  // Frontpage styling
+  .front {
+    .section.section-content {
+      padding: 30px 0 1px;
+    }
+    .block-spanien-featured-content {
+      display: none;
+    }
+    .slideshow-panorama {
+      background: none;
+      .coverlayer {
+        .coverlayer-inner {
+          background: none;
+          height: 47px;
+        }
+      }
+    }
+  }
+  .logo-img {
+    padding-top: 8px;
+  }
+  .zone {
+    &.narrow-stack .region,
+    &.narrow-no-stack .region {
+      .stack-default();
+      width: @stack-width-2-col;
+      &.narrow-stack {
+        clear: both;
+        width: @stack-width-1-col;      
+      }
+    } 
+  }
+}
+
+@media screen
+and (max-width: 500px) {
+  .logo-img {
+    padding-top: 12px;
+  }
+  .zone {
+    &.narrow-stack .region,
+    &.narrow-no-stack .region {
+      clear: both;
+      width: @stack-width-1-col;
+    }
+    .region {
+      &.narrow-no-stack {
+        clear: both;
+        width: @stack-width-1-col;
+      }
+    }    
+  }
+  .office-hours {
+    max-width: 100%;
+  }
+
+}
+
+// Search width, menu below 500
+@media screen
+and (max-width: 500px) {
+  .zone-menu {
+    ul.main-menu {
+      background: none;
+      li {
+        a {
+          padding: 10px 5px 8px;
+        }
+      }
+    }
+  }  
+}
+
+@media screen
+and (max-width: 400px) {
+  .logo-img {
+    padding-top: 14px;
+  }
+  .zone-branding {
+    .region-search {
+      input {
+        width: 88%;
+      }
+    }
+  }  
+}

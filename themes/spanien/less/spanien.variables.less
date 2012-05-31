@@ -1,0 +1,56 @@
+// Define {less} variables
+@color-background : #0db7d7;
+@color-text-primary : #5d5d5d;
+
+// Brand colors
+@color-gray-lighter : #f6f6f6;
+@color-gray-light : #f1f1f1;
+@color-gray-med : #ddd;
+@color-gray-dark : #999;
+
+// Typography
+@font-std-fam : 'CartoGothicStdBook', 'arial', sans-serif;
+@font-std-wgt : 400;
+@font-lgt-fam : 'CartoGothicStdBook', 'arial', sans-serif;
+@font-lgt-wgt : 300;
+@font-hvy-fam : 'CartoGothicStdBook', 'arial', sans-serif;
+@font-hvy-wgt : 700;
+
+@font-size-title : @font-size-base * 1.95;
+@font-size-h2 : @font-size-base * 1.75;
+@font-size-h3 : @font-size-base * 1.5;
+@font-size-h4 : @font-size-base * 1.3;
+@font-size-h5 : @font-size-base * 1.2;
+@font-size-h6 : @font-size-base * 1.1;
+@font-size-base : 12px;
+@font-size-small : @font-size-base * 0.9;
+
+@parapgraph-space : 1.5em;
+
+// Define {less} mixins
+
+.text-shadow(@param) {
+  -webkit-text-shadow: @param;
+  -moz-text-shadow: @param;
+  text-shadow: @param;
+}
+
+.border-radius(@param) {
+  -webkit-border-radius: @param;
+  -moz-border-radius: @param;
+  box-border-radius: @param;
+}
+
+.gradient(@color: #F5F5F5, @start: #EEE, @stop: #FFF) {
+  background: @color;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, @start), color-stop(1, @stop));
+  background: -ms-linear-gradient(bottom, @start, @stop);
+  background: -moz-linear-gradient(center bottom, @start 0%, @stop 100%);
+}
+
+.unselectable() {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;  
+}

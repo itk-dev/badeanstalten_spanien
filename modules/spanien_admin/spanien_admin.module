@@ -1,0 +1,58 @@
+<?php
+
+/**
+ * Implements hook_image_styles_alter().
+ *
+ * Cange image styles for select spotboxes and title images.
+ */
+function spanien_admin_image_styles_alter(&$styles) {
+
+  // Update the featured content image width.
+  if (isset($styles['panorama_image'])) {
+    $styles['panorama_image']['effects'][5]['data']['width'] = 980;
+    $styles['panorama_image']['effects'][5]['data']['height'] = 248;
+  }
+
+  if (isset($styles['spotbox_image'])) {
+    $styles['spotbox_image']['effects'][4]['data']['width'] = 600;
+    $styles['spotbox_image']['effects'][4]['data']['height'] = 268;
+  }
+  
+  if (isset($styles['title_image'])) {
+    $styles['title_image']['effects'][6]['data']['width'] = 1000;
+    $styles['title_image']['effects'][6]['data']['height'] = 250;
+  }
+  
+  if (isset($styles['news_large'])) {
+    $styles['news_large']['effects'][4]['data']['width'] = 1000;
+    $styles['news_large']['effects'][4]['data']['height'] = 447;
+  } 
+  
+  if (isset($styles['news_title_image'])) {
+    $styles['news_title_image']['effects'][4]['data']['width'] = 1000;
+    $styles['news_title_image']['effects'][4]['data']['height'] = 250;
+  } 
+  
+}
+
+/**
+ * Implements hook_init().
+ *
+ * Remove textarea from the featured content node type.
+ */
+function spanien_admin_init() {
+  $instance = field_info_instance('node', 'field_featured_text', 'featured_content');
+  if ($instance) {
+    field_delete_instance($instance);
+    field_purge_batch(10000);
+  }
+}
+
+
+/**
+ * Implements hook_pathauto_alias_alter().
+ */
+function spanien_admin_pathauto_alias_alter(&$alias, array &$context) {
+  // Force all aliases to be saved as language neutral.
+  $context['language'] = LANGUAGE_NONE;
+}

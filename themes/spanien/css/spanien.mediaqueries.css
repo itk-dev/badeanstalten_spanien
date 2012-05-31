@@ -1,0 +1,202 @@
+/* !----- / Variables / ----- */
+.menu-link,
+.mobile-menu {
+  display: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.mobile-menu {
+  background-color: #e1e1e1;
+  margin: 0 10px;
+  padding: 1em;
+}
+.mobile-menu select {
+  padding: .5em;
+  min-width: 40%;
+}
+a.menu-link {
+  background-color: #404040;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  box-border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  float: right;
+  margin: 7px 0 0;
+  padding: 9px 12px 8px;
+  -webkit-text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
+  -moz-text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
+  text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
+}
+a.menu-link:hover {
+  background-color: #059ebb;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  #zone-menu,
+  #region-search {
+    display: block;
+  }
+  .zone-branding {
+    min-height: 112px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section.section-header {
+    background: #f3f3f3;
+  }
+  .section.section-content .region {
+    margin-bottom: 2em;
+  }
+  .section .zone {
+    margin: 0;
+  }
+  .slideshow-panorama .next,
+  .slideshow-panorama .previous {
+    display: block;
+  }
+  .slideshow-panorama .next {
+    right: 20px;
+  }
+  .slideshow-panorama .previous {
+    left: 20px;
+  }
+  .logo-img {
+    width: 58%;
+  }
+  .zone-branding .region {
+    padding: 0 0 2em;
+  }
+  .zone-branding .region-search {
+    margin-right: 0;
+    text-align: left;
+  }
+  .zone-branding .region-search input {
+    margin: -1px -15px 0 0;
+    min-width: 0;
+    width: 92%;
+  }
+  .zone-menu .region-menu {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+  .zone-menu ul.main-menu {
+    background: none;
+  }
+  .zone-menu ul.main-menu li {
+    width: 33%;
+  }
+  .zone-menu ul.main-menu li a {
+    background-color: #404040;
+    margin: 0 10px 10px 0;
+    padding: 10px;
+    text-align: center;
+  }
+  .zone-menu ul.main-menu li.active a,
+  .zone-menu ul.main-menu li.active-trail a {
+    background-color: #059ebb;
+  }
+  .grid-12.region-postscript-first .block#block-block-6 a.link {
+    display: none;
+  }
+  .breadcrumb {
+    margin-left: 10px;
+  }
+  #zone-menu,
+  #region-search,
+  #region-sidebar-first {
+    display: none;
+  }
+  .menu-link,
+  .mobile-menu {
+    display: block;
+  }
+  .zone-branding {
+    min-height: 0;
+  }
+  .zone-footer {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .zone.narrow-stack .region,
+  .zone.narrow-no-stack .region {
+    float: left;
+    margin-right: 0;
+    width: 31%;
+  }
+  .zone .region.always-stack,
+  .zone .region .always-stack {
+    clear: both;
+    width: 96%;
+  }
+  .zone .region.narrow-no-stack {
+    float: left;
+    margin-right: 0;
+    width: 47%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .front .section.section-content {
+    padding: 30px 0 1px;
+  }
+  .front .block-spanien-featured-content {
+    display: none;
+  }
+  .front .slideshow-panorama {
+    background: none;
+  }
+  .front .slideshow-panorama .coverlayer .coverlayer-inner {
+    background: none;
+    height: 47px;
+  }
+  .logo-img {
+    padding-top: 8px;
+  }
+  .zone.narrow-stack .region,
+  .zone.narrow-no-stack .region {
+    float: left;
+    margin-right: 0;
+    width: 47%;
+  }
+  .zone.narrow-stack .region.narrow-stack,
+  .zone.narrow-no-stack .region.narrow-stack {
+    clear: both;
+    width: 96%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .logo-img {
+    padding-top: 12px;
+  }
+  .zone.narrow-stack .region,
+  .zone.narrow-no-stack .region {
+    clear: both;
+    width: 96%;
+  }
+  .zone .region.narrow-no-stack {
+    clear: both;
+    width: 96%;
+  }
+  .office-hours {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .zone-menu ul.main-menu {
+    background: none;
+  }
+  .zone-menu ul.main-menu li a {
+    padding: 10px 5px 8px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .logo-img {
+    padding-top: 14px;
+  }
+  .zone-branding .region-search input {
+    width: 88%;
+  }
+}

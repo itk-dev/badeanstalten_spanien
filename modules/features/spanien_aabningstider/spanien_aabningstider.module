@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the aabningstider feature.
+ */
+
+include_once('spanien_aabningstider.features.inc');
