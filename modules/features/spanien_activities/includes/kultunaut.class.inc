@@ -52,7 +52,7 @@ class KultunautParser extends FeedsParser {
    */
   private function parseTag($tag) {
     $tag = explode(':', $tag);
-    return trim($tag[count($tag) - 1]);
+    return trim(array_pop($tag));
   }
 
   /**
