@@ -19,18 +19,20 @@ class KultunautParser extends FeedsParser {
 
     // Build result object.
     $result = new FeedsParserResult();
-    $result->title = 'Globusdata calendar';
-    $result->description = 'Globusdata calendar';
+    $result->title = 'Kultunaut calendar';
+    $result->description = 'Kultunaut calendar';
 
     // Run through news items.
-    foreach ($xml as $event) {
+    foreach ($xml->arrlist->arr as $event) {
       if (isset($event->arrid)) {
+        $time = $this->parseTime((string)$event->tid);
+
         $item = array();
         $item['id'] = (int)$event->arrid;
         $item['title'] = (string)$event->overskrift;
         $item['location'] = (string)$event->sted;
-        $item['start'] = $this->parseDate((string)$event->startdato, (string)$event->tid);
-        $item['end'] = $this->parseDate((string)$event->startdato, (string)$event->tid, FALSE);
+        $item['start'] = strtotime((string)$event->startdato . 'T' . $time['start']);
+        $item['end'] = strtotime((string)$event->slutdato . 'T' . $time['end']);
         $item['description'] = (string)$event->beskrivelse;
         $item['tag'] = $this->parseTag((string)$event->kategori);
 
@@ -54,23 +56,21 @@ class KultunautParser extends FeedsParser {
   }
 
   /**
-   * Convert time from Kultunaut into a unix timestamp.
+   * Convert time from Kultunaut (random string) into a unix timestamp.
    *
    * @param string $date
    * @param sting $time
    * @param bool $start
    * @return sting
    */
-  private function parseDate($date, $time, $start = TRUE) {
+  private function parseTime($time) {
     // Try to parse time string, which may have many formats.
-    preg_match('/kl\.\s+(\d{1,2}((:|\.)\d{1,2})?)(-|\s)?(\d{1,2}((:|\.)\d{1,2})?)/', $time, $matches);
-    if ($start) {
-      $time = $matches[1];
-    }
-    else {
-      $time = $matches[5];
-    }
-    return strtotime($date . 'T' . $time . ':00');
+    preg_match('/kl\. (\d{1,2}(?:[:\.]\d{1,2})?)[-\s]*(\d{1,2}(?:[:\.]\d{1,2})?)?\s*$/', $time, $matches);
+
+    return array(
+      'start' => $matches[1] . ':00',
+      'end' => isset($matches[2]) ? $matches[2] . ':00' : '00:00:00',
+    );
   }
 
   public function getMappingSources() {
