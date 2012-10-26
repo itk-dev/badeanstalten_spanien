@@ -95,7 +95,7 @@ embed {
   border: 0;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
-  box-border-radius: 10px;
+  border-radius: 10px;
   margin-top: -1px;
   margin-right: 0;
   padding: 0;
@@ -317,7 +317,7 @@ embed {
   border: 1px solid #e2e2e2;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
-  box-border-radius: 8px;
+  border-radius: 8px;
   margin: 0 22px 22px 0;
   padding: 8px;
 }
@@ -351,7 +351,7 @@ embed {
   border: 1px solid #b24100;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
-  box-border-radius: 10px;
+  border-radius: 10px;
   display: block;
   padding: 8px 15px 6px;
   position: absolute;
@@ -482,7 +482,7 @@ embed {
   background-color: #949494;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
-  box-border-radius: 10px;
+  border-radius: 10px;
   cursor: pointer;
   height: 12px;
   overflow: hidden;
@@ -572,7 +572,7 @@ input[type="button"] {
   border: 1px solid #7beafd;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
-  box-border-radius: 0;
+  border-radius: 0;
   color: #059ebb;
   padding: 5px 10px 4px;
 }
@@ -702,7 +702,7 @@ table tbody + tbody {
   border-left: 0;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
-  box-border-radius: 4px;
+  border-radius: 4px;
 }
 .table-bordered.first-column-wide tr:first-child th,
 .table-bordered.first-column-wide tr:first-child td {
@@ -742,7 +742,7 @@ table tbody + tbody {
 .table-bordered tbody:last-child tr:last-child td:first-child {
   -webkit-border-radius: 0 0 0 4px;
   -moz-border-radius: 0 0 0 4px;
-  box-border-radius: 0 0 0 4px;
+  border-radius: 0 0 0 4px;
   -webkit-border-bottom-left-radius: 4px;
   border-bottom-left-radius: 4px;
   -moz-border-radius-bottomleft: 4px;

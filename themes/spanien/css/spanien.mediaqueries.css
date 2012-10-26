@@ -20,7 +20,7 @@ a.menu-link {
   background-color: #404040;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
-  box-border-radius: 8px;
+  border-radius: 8px;
   color: #fff;
   cursor: pointer;
   float: right;
