@@ -73,11 +73,6 @@ function spanien_breadcrumb($variables) {
       $breadcrumb[] = l('Nyheder', 'nyheder');
     }
 
-    // Add breadcrumb for activities.
-    if (preg_match('/^aktiviteter\/hold\/(\d+)/', $path)) {
-      $breadcrumb[] = l('Aktiviteter', 'aktiviteter');
-    }
-
     // Add current page title to the end of the breadcrumb.
     $breadcrumb[] = '<span>' . drupal_get_title() . '</span>';
   }
