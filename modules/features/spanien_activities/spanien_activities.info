@@ -31,6 +31,7 @@ features[node][] = holdbooking
 features[taxonomy][] = activities
 features[variable][] = date_format_activities_medium_
 features[variable][] = date_format_activities_time
+features[variable][] = field_bundle_settings_node__holdbooking
 features[variable][] = language_content_type_holdbooking
 features[variable][] = menu_default_active_menus
 features[variable][] = menu_options_holdbooking
