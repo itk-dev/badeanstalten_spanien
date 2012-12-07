@@ -156,6 +156,11 @@ function spanien_activities_feeds_importer_default() {
             'target' => 'field_hold_emne',
             'unique' => FALSE,
           ),
+          7 => array(
+            'source' => 'image',
+            'target' => 'field_hold_image',
+            'unique' => FALSE,
+          ),
         ),
         'update_existing' => '1',
         'input_format' => 'editor_html',
