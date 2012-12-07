@@ -10,7 +10,7 @@
 function spanien_activities_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-holdbooking-field_hold_date'.
+  // Exported field: 'node-holdbooking-field_hold_date'
   $fields['node-holdbooking-field_hold_date'] = array(
     'field_config' => array(
       'active' => '1',
@@ -20,7 +20,6 @@ function spanien_activities_field_default_fields() {
       'field_name' => 'field_hold_date',
       'foreign keys' => array(),
       'indexes' => array(),
-      'locked' => '0',
       'module' => 'date',
       'settings' => array(
         'granularity' => array(
@@ -94,7 +93,7 @@ function spanien_activities_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-holdbooking-field_hold_description'.
+  // Exported field: 'node-holdbooking-field_hold_description'
   $fields['node-holdbooking-field_hold_description'] = array(
     'field_config' => array(
       'active' => '1',
@@ -115,7 +114,6 @@ function spanien_activities_field_default_fields() {
           0 => 'format',
         ),
       ),
-      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',
@@ -161,7 +159,7 @@ function spanien_activities_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-holdbooking-field_hold_emne'.
+  // Exported field: 'node-holdbooking-field_hold_emne'
   $fields['node-holdbooking-field_hold_emne'] = array(
     'field_config' => array(
       'active' => '1',
@@ -182,7 +180,6 @@ function spanien_activities_field_default_fields() {
           0 => 'tid',
         ),
       ),
-      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -234,7 +231,7 @@ function spanien_activities_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-holdbooking-field_hold_instr'.
+  // Exported field: 'node-holdbooking-field_hold_instr'
   $fields['node-holdbooking-field_hold_instr'] = array(
     'field_config' => array(
       'active' => '1',
@@ -255,7 +252,6 @@ function spanien_activities_field_default_fields() {
           0 => 'format',
         ),
       ),
-      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'max_length' => '255',
@@ -303,7 +299,7 @@ function spanien_activities_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-holdbooking-field_hold_location'.
+  // Exported field: 'node-holdbooking-field_hold_location'
   $fields['node-holdbooking-field_hold_location'] = array(
     'field_config' => array(
       'active' => '1',
@@ -324,7 +320,6 @@ function spanien_activities_field_default_fields() {
           0 => 'format',
         ),
       ),
-      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'max_length' => '255',
@@ -372,7 +367,7 @@ function spanien_activities_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-holdbooking-field_hold_status'.
+  // Exported field: 'node-holdbooking-field_hold_status'
   $fields['node-holdbooking-field_hold_status'] = array(
     'field_config' => array(
       'active' => '1',
@@ -393,7 +388,6 @@ function spanien_activities_field_default_fields() {
           0 => 'format',
         ),
       ),
-      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'max_length' => '255',

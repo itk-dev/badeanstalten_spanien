@@ -10,7 +10,7 @@
 function spanien_activities_views_default_views() {
   $export = array();
 
-  $view = new view();
+  $view = new view;
   $view->name = 'activities';
   $view->description = '';
   $view->tag = 'default';
@@ -24,14 +24,12 @@ function spanien_activities_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Activities';
   $handler->display->display_options['css_class'] = 'activities';
-  $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['use_more_text'] = 'mere';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Udfør';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Gendan';
   $handler->display->display_options['exposed_form']['options']['exposed_sorts_label'] = 'Sortér efter';
   $handler->display->display_options['exposed_form']['options']['sort_asc_label'] = 'Stigende';
@@ -41,14 +39,18 @@ function spanien_activities_views_default_views() {
   $handler->display->display_options['pager']['options']['expose']['items_per_page_label'] = 'Elementer pr. side';
   $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all_label'] = '- Alle -';
   $handler->display->display_options['pager']['options']['expose']['offset_label'] = 'Forskydning';
-  $handler->display->display_options['pager']['options']['tags']['first'] = '« første';
-  $handler->display->display_options['pager']['options']['tags']['previous'] = '‹ forrige';
-  $handler->display->display_options['pager']['options']['tags']['next'] = 'næste ›';
-  $handler->display->display_options['pager']['options']['tags']['last'] = 'sidste »';
   $handler->display->display_options['style_plugin'] = 'list';
   $handler->display->display_options['style_options']['grouping'] = 'field_hold_date';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
+  /* Opførsel ved ingen resultater: Global: Tekstområde */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = 'Der er ingen aktiviteter.';
+  $handler->display->display_options['empty']['area']['format'] = 'editor_html';
+  $handler->display->display_options['empty']['area']['tokenize'] = 0;
   /* Felt: Indhold: Dato */
   $handler->display->display_options['fields']['field_hold_date']['id'] = 'field_hold_date';
   $handler->display->display_options['fields']['field_hold_date']['table'] = 'field_data_field_hold_date';
@@ -139,7 +141,15 @@ function spanien_activities_views_default_views() {
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Vis kun i dag';
   $handler->display->display_options['display_description'] = 'Show activities that happens today only';
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* Opførsel ved ingen resultater: Global: Tekstområde */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = 'Der er ingen aktiviteter i dag, se <a href="/aktiviteter/uge">aktiviteter i denne uge</a>, eller <a href="/aktiviteter/maaned">aktiviteter i denne måned</a>.';
+  $handler->display->display_options['empty']['area']['format'] = 'editor_html';
+  $handler->display->display_options['empty']['area']['tokenize'] = 0;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Felt: Indhold: Dato */
   $handler->display->display_options['fields']['field_hold_date']['id'] = 'field_hold_date';
@@ -203,7 +213,6 @@ function spanien_activities_views_default_views() {
   $handler->display->display_options['fields']['view_node']['alter']['text'] = '<span class="link-icon">[title_1]</span>';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node']['element_default_classes'] = FALSE;
-  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filterkriterie: Indhold: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
@@ -229,8 +238,15 @@ function spanien_activities_views_default_views() {
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Denne uge';
   $handler->display->display_options['display_description'] = 'Show activities that happens this week only';
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* Opførsel ved ingen resultater: Global: Tekstområde */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = 'Der er ingen aktiviteter i denne uge, se <a href="/aktiviteter/maaned">alle aktiviteter i denne måned</a>.';
+  $handler->display->display_options['empty']['area']['format'] = 'editor_html';
+  $handler->display->display_options['empty']['area']['tokenize'] = 0;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filterkriterie: Indhold: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
@@ -263,8 +279,15 @@ function spanien_activities_views_default_views() {
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Denne måned';
   $handler->display->display_options['display_description'] = 'Show activities that happens this month only';
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* Opførsel ved ingen resultater: Global: Tekstområde */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = 'Der er ingen aktiviteter i denne måned.';
+  $handler->display->display_options['empty']['area']['format'] = 'editor_html';
+  $handler->display->display_options['empty']['area']['tokenize'] = 0;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filterkriterie: Indhold: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
@@ -297,7 +320,6 @@ function spanien_activities_views_default_views() {
   $handler = $view->new_display('page', 'All', 'page_3');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Vis alle';
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['path'] = 'aktiviteter/all';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Vis alle';
@@ -315,21 +337,21 @@ function spanien_activities_views_default_views() {
     t('Elementer pr. side'),
     t('- Alle -'),
     t('Forskydning'),
-    t('« første'),
-    t('‹ forrige'),
-    t('næste ›'),
-    t('sidste »'),
+    t('Der er ingen aktiviteter.'),
     t('<h4>[title_1] <span>- [field_hold_location]</span></h4>'),
     t('<span class="link-icon">[title_1]</span>'),
     t('Today'),
     t('Vis kun i dag'),
     t('Show activities that happens today only'),
+    t('Der er ingen aktiviteter i dag, se <a href="/aktiviteter/uge">aktiviteter i denne uge</a>, eller <a href="/aktiviteter/maaned">aktiviteter i denne måned</a>.'),
     t('Week'),
     t('Denne uge'),
     t('Show activities that happens this week only'),
+    t('Der er ingen aktiviteter i denne uge, se <a href="/aktiviteter/maaned">alle aktiviteter i denne måned</a>.'),
     t('Month'),
     t('Denne måned'),
     t('Show activities that happens this month only'),
+    t('Der er ingen aktiviteter i denne måned.'),
     t('All'),
     t('Vis alle'),
   );
