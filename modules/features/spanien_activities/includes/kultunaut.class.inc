@@ -20,7 +20,7 @@ class KultunautParser extends FeedsParser {
     // Build result object.
     $result = new FeedsParserResult();
     $result->title = 'Kultunaut calendar';
-    $result->description = 'Kultunaut calendar';
+    $result->description = 'Kultunaut calendar.';
 
     // Run through news items.
     foreach ($xml->arrlist->arr as $event) {
@@ -34,6 +34,7 @@ class KultunautParser extends FeedsParser {
         $item['start'] = strtotime((string)$event->startdato . 'T' . $time['start']);
         $item['end'] = strtotime((string)$event->slutdato . 'T' . $time['end']);
         $item['description'] = (string)$event->beskrivelse;
+        $item['longdescription'] = (string)$event->langbeskrivelse;
         $item['tag'] = $this->parseTag((string)$event->kategori);
 
         // Add feed item.
@@ -89,15 +90,19 @@ class KultunautParser extends FeedsParser {
       ),
       'start' => array(
         'name' => t('Start date'),
-        'description' => t('The team start date and time'),
+        'description' => t('The team start date and time.'),
       ),
       'end' => array(
         'name' => t('End date'),
-        'description' => t('The team end date and time'),
+        'description' => t('The team end date and time.'),
       ),
       'description' => array(
         'name' => t('Description'),
         'description' => t('Description.'),
+      ),
+      'longdescription' => array(
+        'name' => t('Long description'),
+        'description' => t('Full content.'),
       ),
       'tag' => array(
         'name' => t('Tag'),
