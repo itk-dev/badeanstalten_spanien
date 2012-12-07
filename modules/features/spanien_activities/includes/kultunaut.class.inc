@@ -33,6 +33,7 @@ class KultunautParser extends FeedsParser {
         $item['location'] = (string)$event->sted;
         $item['start'] = strtotime((string)$event->startdato . 'T' . $time['start']);
         $item['end'] = strtotime((string)$event->slutdato . 'T' . $time['end']);
+        $item['image'] = (string)$event->billede;
         $item['description'] = (string)$event->beskrivelse;
         $item['longdescription'] = (string)$event->langbeskrivelse;
         $item['tag'] = $this->parseTag((string)$event->kategori);
@@ -74,6 +75,26 @@ class KultunautParser extends FeedsParser {
     );
   }
 
+  /**
+   * Helper function to download image from remote server.
+   *
+   * @param string $url
+   *  Remote URL to download image.
+   * @param string $id
+   *  Id or name to store the image under.
+   */
+  private function downloadImage($url, $id) {
+    // Download and save the image.
+    $photo = file_get_contents($url);
+    $file = file_save_data($photo, 'public://team-images-download' . $id . '.jpg', FILE_EXISTS_REPLACE);
+
+    if (is_object($file) && file_exists($file->uri)) {
+      // Make sure the file is not delete on clean up.
+      $file->status |= FILE_STATUS_PERMANENT;
+      $file = file_save($file);
+    }
+  }
+
   public function getMappingSources() {
     return array(
       'id' => array(
@@ -95,6 +116,10 @@ class KultunautParser extends FeedsParser {
       'end' => array(
         'name' => t('End date'),
         'description' => t('The team end date and time.'),
+      ),
+      'image' => array(
+        'name' => t('Image'),
+        'description' => t('List image.'),
       ),
       'description' => array(
         'name' => t('Description'),
