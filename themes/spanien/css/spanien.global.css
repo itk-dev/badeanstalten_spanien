@@ -957,6 +957,9 @@ input[type="button"]:hover {
 .node-activities .activities-description {
   padding: 1.5em 0 0;
 }
+.node-activities .activities-image {
+  width: 30%;
+}
 /* !---- Opening hours ----- */
 .office-hours {
   margin: 0 0 1.5em;
