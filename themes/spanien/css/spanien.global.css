@@ -936,9 +936,13 @@ input[type="button"]:hover {
   background-color: #f3f3f3;
   margin: 1em 1.6em 1.6em;
   padding: 1em 1.3em;
+  overflow: hidden;
 }
 .activities fieldset .text-content p {
   margin: 1em 0;
+}
+.activities fieldset .alignedimage {
+  width: 30%;
 }
 .node-activities .field-label {
   display: inline;
