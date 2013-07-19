@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Featured content feature.
+ */
+
+include_once('itkore_featured_content.features.inc');

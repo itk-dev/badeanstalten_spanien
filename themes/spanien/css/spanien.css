@@ -474,7 +474,7 @@ embed {
   bottom: 48px;
   position: absolute;
   right: 10px;
-  z-index: 5;
+  z-index: 10;
 }
 .slideshow-panorama .views-slideshow-controls-bottom .pager .pager-item {
   float: left;

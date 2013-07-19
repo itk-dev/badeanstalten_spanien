@@ -1,0 +1,17 @@
+name = Custom Spotbox Displays
+description = Views displays and settings for custom spotboxes
+core = 7.x
+package = Components
+php = 5.2.4
+version = 7.x-2.0
+project = itkore_custom_spotbox_displays
+dependencies[] = features
+dependencies[] = image
+dependencies[] = itkore_custom_spotbox
+dependencies[] = link
+dependencies[] = media
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:1
+features[image][] = spotbox_external_link_image
+features[views_view][] = spotbox_external_link
