@@ -13,24 +13,9 @@ function itkore_news_taxonomy_default_vocabularies() {
       'name' => 'Source',
       'machine_name' => 'source',
       'description' => 'News sources',
-      'hierarchy' => '1',
+      'hierarchy' => 1,
       'module' => 'taxonomy',
-      'weight' => '0',
-      'rdf_mapping' => array(
-        'rdftype' => array(
-          0 => 'skos:ConceptScheme',
-        ),
-        'name' => array(
-          'predicates' => array(
-            0 => 'dc:title',
-          ),
-        ),
-        'description' => array(
-          'predicates' => array(
-            0 => 'rdfs:comment',
-          ),
-        ),
-      ),
+      'weight' => 0,
     ),
   );
 }

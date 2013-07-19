@@ -10,7 +10,7 @@
 function itkore_news_display_context_default_contexts() {
   $export = array();
 
-  $context = new stdClass;
+  $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
   $context->name = 'news_configuration';
@@ -35,12 +35,6 @@ function itkore_news_display_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-news_taxonomy_blocks-block_2' => array(
-          'module' => 'views',
-          'delta' => 'news_taxonomy_blocks-block_2',
-          'region' => 'sidebar_first',
-          'weight' => '-10',
-        ),
         'views-news_taxonomy_blocks-block_1' => array(
           'module' => 'views',
           'delta' => 'news_taxonomy_blocks-block_1',
