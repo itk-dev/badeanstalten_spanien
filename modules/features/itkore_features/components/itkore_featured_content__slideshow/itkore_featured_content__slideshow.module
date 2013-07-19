@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Featured Content: Slideshow feature.
+ */
+
+include_once('itkore_featured_content__slideshow.features.inc');
