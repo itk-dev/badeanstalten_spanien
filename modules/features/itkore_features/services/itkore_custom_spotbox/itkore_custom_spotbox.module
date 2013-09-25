@@ -1,0 +1,28 @@
+<?php
+/**
+ * @file
+ * Code for the Spotbox: External links feature.
+ */
+
+include_once('itkore_custom_spotbox.features.inc');
+
+/**
+ * Implements hook_views_pre_render().
+ *
+ * Try to deteted internal vs. external link, if it's an internal link prepend
+ * this sites base url.
+ *
+ * @global type $base_url
+ * @param type $view
+ */
+function itkore_custom_spotbox_views_pre_render(&$view) {
+  if ($view->name == 'spotbox_external_link') {
+    if (isset($view->result[0]->field_field_spotbox_external_link[0])) {
+      $url = $view->result[0]->field_field_spotbox_external_link[0]['rendered']['#element']['url'];
+      if (!preg_match('/^((http(s)?:\/\/)|(w{3}\.)|((\w)+\.(\w)+))/i', $url)) {
+        global $base_url;
+        $view->result[0]->field_field_spotbox_external_link[0]['rendered']['#element']['url'] = $base_url . $url;
+      }
+    }
+  }
+}

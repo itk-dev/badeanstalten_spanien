@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the News display feature.
+ */
+
+include_once('itkore_news_display.features.inc');

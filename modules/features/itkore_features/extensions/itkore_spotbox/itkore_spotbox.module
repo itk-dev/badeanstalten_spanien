@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Spotbox: Internal link feature.
+ */
+
+include_once('itkore_spotbox.features.inc');

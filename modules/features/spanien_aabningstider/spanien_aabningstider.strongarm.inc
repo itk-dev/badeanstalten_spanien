@@ -124,7 +124,7 @@ function spanien_aabningstider_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_office_hours_pattern';
-  $strongarm->value = '[node:menu-link:parent:url:relative]/[node:title]';
+  $strongarm->value = '[node:menu-link:parent:url:relative]/[node:menu-link:title]';
   $export['pathauto_node_office_hours_pattern'] = $strongarm;
 
   return $export;
